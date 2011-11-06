@@ -1,0 +1,17 @@
+This file is open source software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License version 2 as
+published by the Free Software Foundation. 
+
+
+This plugin is based on Multi QuickButton Rel. 2.7
+from Emanuel (http://www.i-have-a-dreambox.com)
+***special thanks*** to Dr.Best & AliAbdul
+*** special special thanks**** to Emanuel
+
+
+### NOTICE ###
+file functions.py is only for translations (this have to be fixed :) )
+it is not installed at MultiQuickButton package
+
+MultiQuickButton is tagged with "vu" because this plugin
+is not hardware independent (remote control buttons)
