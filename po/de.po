@@ -1,0 +1,536 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-11-06 17:01+0100\n"
+"PO-Revision-Date: \n"
+"Last-Translator: plnick\n"
+"Language-Team: \n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: ../src/plugin.py:198
+#: ../src/plugin.py:237
+#: ../src/plugin.py:239
+#: ../src/plugin.py:244
+#: ../src/MultiQuickButton.py:489
+msgid "Error"
+msgstr "Fehler"
+
+#: ../src/plugin.py:208
+msgid "Quickbutton: Key "
+msgstr "Quickbutton: Taste"
+
+#: ../src/plugin.py:210
+#, python-format
+msgid "file %s not found!"
+msgstr "Datei %s nicht gefunden !"
+
+#: ../src/plugin.py:272
+msgid "Multi Quickbutton"
+msgstr "Multi Quickbutton"
+
+#: ../src/function.py:2
+msgid "Restart SoftCam"
+msgstr "Neustart SoftCam"
+
+#: ../src/function.py:3
+msgid "Plugin Browser"
+msgstr "Erweiterungen"
+
+#: ../src/function.py:4
+msgid "Extension Selection"
+msgstr "Erweiterungsmenü"
+
+#: ../src/function.py:5
+msgid "Sleeptimer"
+msgstr "Sleeptimer"
+
+#: ../src/function.py:6
+msgid "Timer"
+msgstr "Geplante Aufnahmen"
+
+#: ../src/function.py:7
+msgid "Channel zap +"
+msgstr "Sender vor +"
+
+#: ../src/function.py:8
+msgid "Channel zap -"
+msgstr "Sender zurück -"
+
+#: ../src/function.py:9
+msgid "Channel zap (list) +"
+msgstr "Sender vor + (Liste)"
+
+#: ../src/function.py:10
+msgid "Channel zap (list) -"
+msgstr "Sender zurück - (Liste)"
+
+#: ../src/function.py:11
+msgid "Dolby Digital downmix on/off"
+msgstr "Dolby Digital downmix an/aus"
+
+#: ../src/function.py:12
+msgid "List of Bouquets"
+msgstr "Bouquetliste"
+
+#: ../src/function.py:13
+msgid "Channel list"
+msgstr "Senderliste"
+
+#: ../src/function.py:14
+msgid "Zap history back"
+msgstr "Zap Verlauf zurück"
+
+#: ../src/function.py:15
+msgid "Zap history next"
+msgstr "Zap Verlauf vor"
+
+#: ../src/function.py:16
+msgid "InfoBar"
+msgstr "InfoBar"
+
+#: ../src/function.py:17
+msgid "InfoBar EventInfoPlugins"
+msgstr "EPG Erweiterungen"
+
+#: ../src/function.py:18
+msgid "InfoBar EventView"
+msgstr "Sendungsdetails"
+
+#: ../src/function.py:19
+msgid "InfoBar EPG"
+msgstr "Einfacher EPG"
+
+#: ../src/function.py:20
+msgid "InfoBar Multi EPG"
+msgstr "Mehrfach EPG"
+
+#: ../src/function.py:21
+msgid "InfoBar Audio Selection"
+msgstr "Audio Einstellungen"
+
+#: ../src/function.py:22
+msgid "InfoBar Show Radio"
+msgstr "Radio"
+
+#: ../src/function.py:23
+msgid "InfoBar Show Tv"
+msgstr "Tv"
+
+#: ../src/function.py:24
+msgid "InfoBar Show Movies"
+msgstr "Aufnahmen"
+
+#: ../src/function.py:25
+msgid "InfoBar Record"
+msgstr "Aufnahmemenü"
+
+#: ../src/function.py:26
+msgid "InfoBar Instant Record"
+msgstr "Direkte Aufnahme"
+
+#: ../src/function.py:27
+msgid "Start Timeshift"
+msgstr "Starte Timeshift"
+
+#: ../src/function.py:28
+msgid "Start Teletext"
+msgstr "Teletext"
+
+#: ../src/function.py:29
+msgid "Favourite channel 1"
+msgstr "Lieblingssender 1"
+
+#: ../src/function.py:30
+msgid "Favourite channel 2"
+msgstr "Lieblingssender 2"
+
+#: ../src/function.py:31
+msgid "Favourite channel 3"
+msgstr "Lieblingssender 3"
+
+#: ../src/function.py:32
+msgid "Favourite channel 4"
+msgstr "Lieblingssender 4"
+
+#: ../src/function.py:33
+msgid "Favourite channel 5"
+msgstr "Lieblingssender 5"
+
+#: ../src/function.py:34
+msgid "Toggle AtmoLight"
+msgstr "AtmoLight an/aus"
+
+#: ../src/function.py:35
+msgid "Subservice Selection"
+msgstr "Auswahl Optionskanäle"
+
+#: ../src/function.py:36
+msgid "Subtitles"
+msgstr "Untertitel"
+
+#: ../src/function.py:37
+msgid "MediaPlayer"
+msgstr "Media Player"
+
+#: ../src/function.py:38
+msgid "DVDPlayer"
+msgstr "DVD Player"
+
+#: ../src/function.py:39
+msgid "Picture Player"
+msgstr "Bildbetrachter"
+
+#: ../src/function.py:40
+msgid "Cool TV Guide"
+msgstr "Cool TV Guide"
+
+#: ../src/function.py:41
+msgid "A/V Settings"
+msgstr "A/V Einstellungen"
+
+#: ../src/function.py:42
+msgid "Switch 4:3 (Pillarbox) (Pan&Scan)"
+msgstr "Tausche 4:3 (Pillarbox<=> Pan&Scan)"
+
+#: ../src/function.py:43
+msgid "Mount info"
+msgstr "Dateisystem mounts "
+
+#: ../src/function.py:44
+msgid "Show PIP"
+msgstr "Zeige PIP"
+
+#: ../src/function.py:45
+msgid "Swap PIP"
+msgstr "Tausche PIP"
+
+#: ../src/function.py:46
+msgid "Move PIP"
+msgstr "Verschiebe PIP"
+
+#: ../src/function.py:47
+msgid "Reboot"
+msgstr "VU+ neu starten"
+
+#: ../src/function.py:48
+msgid "GUI Restart"
+msgstr "GUI neu starten"
+
+#: ../src/function.py:49
+msgid "DeepStandby"
+msgstr "VU+ ausschalten"
+
+#: ../src/MultiQuickButton.py:47
+msgid "Autostart"
+msgstr "Autostart"
+
+#: ../src/MultiQuickButton.py:48
+#: ../src/MultiQuickButton.py:340
+msgid "Main menu"
+msgstr "Hauptmenü"
+
+#: ../src/MultiQuickButton.py:49
+msgid "Info"
+msgstr "Info"
+
+#: ../src/MultiQuickButton.py:50
+msgid "OK/EXIT"
+msgstr "OK/EXIT"
+
+#: ../src/MultiQuickButton.py:125
+msgid "Restore"
+msgstr "Rücksicherung"
+
+#: ../src/MultiQuickButton.py:126
+msgid "Backup"
+msgstr "Sicherung"
+
+#: ../src/MultiQuickButton.py:129
+msgid "Channels"
+msgstr "Sender"
+
+#: ../src/MultiQuickButton.py:130
+msgid "About"
+msgstr "Über"
+
+#: ../src/MultiQuickButton.py:177
+#: ../src/MultiQuickButton.py:178
+msgid "red"
+msgstr "rot"
+
+#: ../src/MultiQuickButton.py:178
+#: ../src/MultiQuickButton.py:180
+#: ../src/MultiQuickButton.py:182
+#: ../src/MultiQuickButton.py:184
+#: ../src/MultiQuickButton.py:186
+#: ../src/MultiQuickButton.py:187
+#: ../src/MultiQuickButton.py:189
+#: ../src/MultiQuickButton.py:191
+#: ../src/MultiQuickButton.py:193
+#: ../src/MultiQuickButton.py:195
+#: ../src/MultiQuickButton.py:197
+msgid " long"
+msgstr " lang"
+
+#: ../src/MultiQuickButton.py:179
+#: ../src/MultiQuickButton.py:180
+msgid "green"
+msgstr "grün"
+
+#: ../src/MultiQuickButton.py:181
+#: ../src/MultiQuickButton.py:182
+msgid "yellow"
+msgstr "gelb"
+
+#: ../src/MultiQuickButton.py:183
+#: ../src/MultiQuickButton.py:184
+msgid "blue"
+msgstr "blau"
+
+#: ../src/MultiQuickButton.py:185
+#: ../src/MultiQuickButton.py:186
+msgid "TEXT"
+msgstr "Text"
+
+#: ../src/MultiQuickButton.py:187
+msgid "HELP"
+msgstr "Hilfe"
+
+#: ../src/MultiQuickButton.py:188
+#: ../src/MultiQuickButton.py:189
+msgid "VU+ EPG / INFO"
+msgstr "VU+ EPG / INFO"
+
+#: ../src/MultiQuickButton.py:190
+#: ../src/MultiQuickButton.py:191
+msgid "HOME"
+msgstr "Home"
+
+#: ../src/MultiQuickButton.py:192
+#: ../src/MultiQuickButton.py:193
+msgid "END"
+msgstr "End"
+
+#: ../src/MultiQuickButton.py:194
+#: ../src/MultiQuickButton.py:195
+msgid "VU+ R-Button"
+msgstr "VU+R-Taste"
+
+#: ../src/MultiQuickButton.py:196
+#: ../src/MultiQuickButton.py:197
+msgid "RADIO"
+msgstr "Radio"
+
+#: ../src/MultiQuickButton.py:198
+msgid "TV"
+msgstr "TV"
+
+#: ../src/MultiQuickButton.py:199
+msgid "Cross Up"
+msgstr "Steuerkreuz Auf"
+
+#: ../src/MultiQuickButton.py:200
+msgid "Cross Down"
+msgstr "Steuerkreuz Runter"
+
+#: ../src/MultiQuickButton.py:201
+msgid "Cross Left"
+msgstr "Steuerkreuz Links"
+
+#: ../src/MultiQuickButton.py:202
+msgid "Cross Right"
+msgstr "Steuerkreuz Rechts"
+
+#: ../src/MultiQuickButton.py:203
+msgid "Channel +"
+msgstr "Kanal +"
+
+#: ../src/MultiQuickButton.py:204
+msgid "Channel -"
+msgstr "Kanal -"
+
+#: ../src/MultiQuickButton.py:205
+msgid "Forward >"
+msgstr "Vor >"
+
+#: ../src/MultiQuickButton.py:206
+msgid "Backward <"
+msgstr "Zurück <"
+
+#: ../src/MultiQuickButton.py:207
+msgid "Audio"
+msgstr "Audio"
+
+#: ../src/MultiQuickButton.py:210
+msgid "EXIT"
+msgstr "Beenden"
+
+#: ../src/MultiQuickButton.py:211
+msgid "Play"
+msgstr "Play"
+
+#: ../src/MultiQuickButton.py:212
+msgid "Pause"
+msgstr "Pause"
+
+#: ../src/MultiQuickButton.py:213
+msgid "Stop"
+msgstr "Stop"
+
+#: ../src/MultiQuickButton.py:214
+msgid "Rewind <<"
+msgstr "Zurückspulen <<"
+
+#: ../src/MultiQuickButton.py:215
+msgid "FastForward >>"
+msgstr "Vorspulen >>"
+
+#: ../src/MultiQuickButton.py:227
+#: ../src/MultiQuickButton.py:232
+#: ../src/MultiQuickButton.py:237
+#: ../src/MultiQuickButton.py:242
+msgid "on"
+msgstr "an"
+
+#: ../src/MultiQuickButton.py:229
+#: ../src/MultiQuickButton.py:234
+#: ../src/MultiQuickButton.py:239
+#: ../src/MultiQuickButton.py:244
+msgid "off"
+msgstr "aus"
+
+#: ../src/MultiQuickButton.py:257
+msgid "Quickbutton Key : "
+msgstr "Quickbutton Taste :"
+
+#: ../src/MultiQuickButton.py:268
+msgid "Please select the backup path..."
+msgstr "Bitte wählen Sie den Wiederherstellungspfad ..."
+
+#: ../src/MultiQuickButton.py:280
+msgid "Overwrite existing Backup?."
+msgstr "Überschreibe bestehende Sicherung ?"
+
+#: ../src/MultiQuickButton.py:283
+#: ../src/MultiQuickButton.py:295
+msgid "Backup Settings..."
+msgstr "Sichere Einstellungen ..."
+
+#: ../src/MultiQuickButton.py:287
+#, python-format
+msgid "Directory %s nonexistent."
+msgstr "Verzeichnis %s existiert nicht"
+
+#: ../src/MultiQuickButton.py:301
+msgid "Please select the restore path..."
+msgstr "Bitte wählen Sie den Wiederherstellungspfad ..."
+
+#: ../src/MultiQuickButton.py:310
+msgid "Overwrite existing Settings?."
+msgstr "Überschreibe bestehende Einstellungen ?"
+
+#: ../src/MultiQuickButton.py:312
+#, python-format
+msgid "File %s nonexistent."
+msgstr "Datei %s existiert nicht."
+
+#: ../src/MultiQuickButton.py:319
+msgid "Restore Settings..."
+msgstr "Stelle Einstellungen wieder her ..."
+
+#: ../src/MultiQuickButton.py:330
+msgid ""
+"Restarting Enigma2 to set\n"
+"Multi QuickButton Autostart"
+msgstr ""
+"Starte Enigma2 neu um die:\n"
+"Autostarteinstellung zu übernehmen"
+
+#: ../src/MultiQuickButton.py:340
+msgid "Restarting Enigma2 to load:\n"
+msgstr "Starte Enigma2 neu für:\n"
+
+#: ../src/MultiQuickButton.py:340
+msgid "Multi QuickButton settings"
+msgstr "Multi QuickButton Einstellungen"
+
+#: ../src/MultiQuickButton.py:467
+#: ../src/MultiQuickButton.py:688
+msgid "Cancel"
+msgstr "Abbrechen"
+
+#: ../src/MultiQuickButton.py:468
+msgid "Save"
+msgstr "Speichern"
+
+#: ../src/MultiQuickButton.py:469
+msgid "delete"
+msgstr "löschen"
+
+#: ../src/MultiQuickButton.py:470
+msgid "Add"
+msgstr "Hinzufügen"
+
+#: ../src/MultiQuickButton.py:581
+msgid "MQB Functions and Plugins"
+msgstr "MQB Funktionen und Plugins"
+
+#: ../src/MultiQuickButton.py:590
+msgid "No valid selection"
+msgstr "Keine gültige Auswahl"
+
+#: ../src/MultiQuickButton.py:594
+msgid "Add Functions to MQB Key"
+msgstr "Funktion zur MQB Taste hinzufügen"
+
+#: ../src/MultiQuickButton.py:595
+msgid "Add Plugins to MQB Key"
+msgstr "Plugin zur MQB Taste hinzufügen"
+
+#: ../src/MultiQuickButton.py:601
+msgid "Functions"
+msgstr "Funktionen"
+
+#: ../src/MultiQuickButton.py:603
+msgid "No valid function file found"
+msgstr "Keine Funktionsdatei gefunden"
+
+#: ../src/MultiQuickButton.py:607
+msgid "Plugins"
+msgstr "Plugins"
+
+#: ../src/MultiQuickButton.py:613
+#, python-format
+msgid "Entry %s already exists."
+msgstr "Eintrag %s existiert bereits."
+
+#: ../src/MultiQuickButton.py:661
+msgid "Save Settings"
+msgstr "Speichere Einstellungen"
+
+#: ../src/MultiQuickButton.py:689
+msgid "OK"
+msgstr "OK"
+
+#: ../src/MultiQuickButton.py:701
+#: ../src/MultiQuickButton.py:702
+#: ../src/MultiQuickButton.py:703
+#: ../src/MultiQuickButton.py:704
+#: ../src/MultiQuickButton.py:705
+msgid "Channel"
+msgstr "Sender"
+
+#: ../src/MultiQuickButton.py:712
+msgid "Channel Selection"
+msgstr "Senderauswahl"
+
+#: ../src/MultiQuickButton.py:722
+msgid "Quite without saving changes ?"
+msgstr "Ohne speichern der Einstellungen beenden ?"
+

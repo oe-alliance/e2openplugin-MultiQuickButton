@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<Menu>
+		<content>
+		<name>Channel zap (list) -</name>
+		<sel>1</sel>
+			<code><![CDATA[from Screens.InfoBar import InfoBar
+if InfoBar and InfoBar.instance:
+	InfoBar.switchChannelDown(InfoBar.instance)]]></code>
+		</content>
+	</Menu>
+</xml>

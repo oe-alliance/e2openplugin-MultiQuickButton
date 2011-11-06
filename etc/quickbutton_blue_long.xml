@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<Menu>
+		<content>
+			<name>Plugin Browser</name>
+			<sel>1</sel>
+			<module>Screens.PluginBrowser</module>
+			<screen><![CDATA[PluginBrowser]]></screen>
+		</content>
+	</Menu>
+</xml>

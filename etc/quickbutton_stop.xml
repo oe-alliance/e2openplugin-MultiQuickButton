@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<Menu>
+		<content>
+			<name>InfoBar</name>
+			<code><![CDATA[from Screens.InfoBarGenerics import InfoBarShowHide
+self.toggleShow()]]></code>
+		</content>
+	</Menu>
+</xml>

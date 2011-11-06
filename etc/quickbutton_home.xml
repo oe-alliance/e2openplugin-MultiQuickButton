@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<Menu>
+		<content>
+			<name>Dolby Digital downmix on/off</name>
+			<sel>1</sel>
+			<code><![CDATA[
+if config.av.downmix_ac3.value == False:
+	config.av.downmix_ac3.value = True
+else:
+	config.av.downmix_ac3.value = False
+config.av.downmix_ac3.save()
+from Screens.MessageBox import MessageBox
+downmix = {True: _("eingeschaltet"), False: _("ausgeschaltet")}
+self.session.open(MessageBox, _("Dolby Digital downmix: ") + downmix[config.av.downmix_ac3.value], MessageBox.TYPE_INFO, 2)]]></code>
+		</content>
+	</Menu>
+</xml>
