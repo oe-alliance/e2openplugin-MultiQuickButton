@@ -64,7 +64,7 @@ if InfoBar and InfoBar.instance:
 	def showBouquetList(self):
 		self.servicelist.showFavourites()
 		self.session.execDialog(self.servicelist)
-		showBouquetList(InfoBar.instance)</code>
+	showBouquetList(InfoBar.instance)</code>
 </mqbfunction>
 
 <mqbfunction>
