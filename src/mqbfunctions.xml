@@ -285,19 +285,19 @@ if InfoBar and InfoBar.instance:
 <mqbfunction>
 <name>GUI Restart</name>
 <code>import Screens.Standby
-self.session.openWithCallback(self.session.open(Screens.Standby.TryQuitMainloop,3),MessageBox,_(" Restarting GUI ..."), MessageBox.TYPE_INFO, timeout=3)</code>
+self.session.open(Screens.Standby.TryQuitMainloop,3)</code>
 </mqbfunction>
 
 <mqbfunction>
 <name>Reboot</name>
 <code>import Screens.Standby
-self.session.openWithCallback(self.session.open(Screens.Standby.TryQuitMainloop,2),MessageBox,_(" Rebooting ..."), MessageBox.TYPE_INFO, timeout=3)</code>
+self.session.open(Screens.Standby.TryQuitMainloop,2)</code>
 </mqbfunction>
 
 <mqbfunction>
 <name>DeepStandby</name>
 <code>import Screens.Standby
-self.session.openWithCallback(self.session.open(Screens.Standby.TryQuitMainloop,1),MessageBox,_(" ShutDown ..."), MessageBox.TYPE_INFO, timeout=3)</code>
+self.session.open(Screens.Standby.TryQuitMainloop,1)</code>
 </mqbfunction>
 
 <mqbfunction>
