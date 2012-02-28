@@ -301,6 +301,76 @@ self.session.open(Screens.Standby.TryQuitMainloop,1)</code>
 </mqbfunction>
 
 <mqbfunction>
+<name>Remote control macro I</name>
+<code>from Components.InputDevice import iInputDevices
+from enigma import eActionMap
+rcdevicename = iInputDevices.getDeviceName('event0')
+keyaction = eActionMap.getInstance()
+keys = config.plugins.QuickButton.macroI.value
+for key in keys.split(","):
+	if key is not "":
+		key = int(key)
+		keyaction.keyPressed(rcdevicename, key, int(0))
+		keyaction.keyPressed(rcdevicename, key, int(1))</code>
+</mqbfunction>
+
+<mqbfunction>
+<name>Remote control macro II</name>
+<code>from Components.InputDevice import iInputDevices
+from enigma import eActionMap
+rcdevicename = iInputDevices.getDeviceName('event0')
+keyaction = eActionMap.getInstance()
+keys = config.plugins.QuickButton.macroII.value
+for key in keys.split(","):
+	if key is not "":
+		key = int(key)
+		keyaction.keyPressed(rcdevicename, key, int(0))
+		keyaction.keyPressed(rcdevicename, key, int(1))</code>
+</mqbfunction>
+
+<mqbfunction>
+<name>Remote control macro III</name>
+<code>from Components.InputDevice import iInputDevices
+from enigma import eActionMap
+rcdevicename = iInputDevices.getDeviceName('event0')
+keyaction = eActionMap.getInstance()
+keys = config.plugins.QuickButton.macroIII.value
+for key in keys.split(","):
+	if key is not "":
+		key = int(key)
+		keyaction.keyPressed(rcdevicename, key, int(0))
+		keyaction.keyPressed(rcdevicename, key, int(1))</code>
+</mqbfunction>
+
+<mqbfunction>
+<name>Remote control macro IV</name>
+<code>from Components.InputDevice import iInputDevices
+from enigma import eActionMap
+rcdevicename = iInputDevices.getDeviceName('event0')
+keyaction = eActionMap.getInstance()
+keys = config.plugins.QuickButton.macroIV.value
+for key in keys.split(","):
+	if key is not "":
+		key = int(key)
+		keyaction.keyPressed(rcdevicename, key, int(0))
+		keyaction.keyPressed(rcdevicename, key, int(1))</code>
+</mqbfunction>
+
+<mqbfunction>
+<name>Remote control macro V</name>
+<code>from Components.InputDevice import iInputDevices
+from enigma import eActionMap
+rcdevicename = iInputDevices.getDeviceName('event0')
+keyaction = eActionMap.getInstance()
+keys = config.plugins.QuickButton.macroV.value
+for key in keys.split(","):
+	if key is not "":
+		key = int(key)
+		keyaction.keyPressed(rcdevicename, key, int(0))
+		keyaction.keyPressed(rcdevicename, key, int(1))</code>
+</mqbfunction>
+
+<mqbfunction>
 <name>Volume +</name>
 <code><![CDATA[from enigma import eActionMap
 keyaction = eActionMap.getInstance()
@@ -319,6 +389,12 @@ keyaction.keyPressed("dreambox remote control (native)", 114, int(0))]]></code>
 <code><![CDATA[from enigma import eActionMap
 keyaction = eActionMap.getInstance()
 keyaction.keyPressed("dreambox remote control (native)", 113, int(0))]]></code>
+</mqbfunction>
+
+<mqbfunction>
+<name>Remount Network Shares</name>
+<code>from Plugins.SystemPlugins.NetworkBrowser.AutoMount import AutoMount
+AutoMount()</code>
 </mqbfunction>
 
 <mqbfunction>
