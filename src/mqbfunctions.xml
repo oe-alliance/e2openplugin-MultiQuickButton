@@ -123,6 +123,20 @@ if InfoBar and InfoBar.instance:
 </mqbfunction>
 
 <mqbfunction>
+<name>InfoBar VIX EPG</name>
+<code>from Screens.InfoBar import InfoBar
+if InfoBar and InfoBar.instance:
+	InfoBar.openGraphEPG(InfoBar.instance)</code>
+</mqbfunction>
+
+<mqbfunction>
+<name>InfoBar QuickEPG EPG</name>
+<code>from Screens.InfoBar import InfoBar
+if InfoBar and InfoBar.instance:
+	InfoBar.openInfoBarEPG(InfoBar.instance)</code>
+</mqbfunction>
+
+<mqbfunction>
 <name>InfoBar Show Radio</name>
 <code>from Screens.InfoBar import InfoBar
 if InfoBar and InfoBar.instance:
