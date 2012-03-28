@@ -13,7 +13,7 @@ GETTEXT=xgettext
 #MSGFMT = ./msgfmt.py
 MSGFMT = msgfmt
 
-LANGS := de nl
+LANGS = ar bg ca cs da de el en en_GB es et fa fi fr fy he hr hu is it lt lv nl no pl pt ru sv sk sl sr th tr uk
 LANGPO := $(foreach LANG, $(LANGS),$(LANG).po)
 LANGMO := $(foreach LANG, $(LANGS),$(LANG).mo)
 
@@ -58,5 +58,4 @@ install-data-am: default
 	for lang in $(LANGS); do \
 		mkdir -p $(DESTDIR)$(installdir)/locale/$$lang/LC_MESSAGES; \
 		cp $$lang.mo $(DESTDIR)$(installdir)/locale/$$lang/LC_MESSAGES/$(DOMAIN).mo; \
-                cp $$lang.po $(DESTDIR)$(installdir)/locale/$$lang/LC_MESSAGES/$$lang.po; \
 	done
