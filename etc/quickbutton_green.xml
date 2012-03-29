@@ -2,11 +2,10 @@
 <xml>
 	<Menu>
 		<content>
-			<name>Subservice Selection</name>
+			<name>Timer</name>
 			<sel>1</sel>
-			<code><![CDATA[from Screens.InfoBar import InfoBar
-if InfoBar and InfoBar.instance:
-	InfoBar.subserviceSelection(InfoBar.instance)]]></code>
+			<module>Screens.TimerEdit</module>
+			<screen><![CDATA[TimerEditList]]></screen>
 		</content>
 	</Menu>
 </xml>

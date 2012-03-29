@@ -2,10 +2,11 @@
 <xml>
 	<Menu>
 		<content>
-			<name>Timer</name>
+			<name>InfoBar EPG</name>
 			<sel>1</sel>
-			<module>Screens.TimerEdit</module>
-			<screen><![CDATA[TimerEditList]]></screen>
+			<code><![CDATA[from Screens.InfoBar import InfoBar
+if InfoBar and InfoBar.instance:
+	InfoBar.openSingleServiceEPG(InfoBar.instance)]]></code>
 		</content>
 	</Menu>
 </xml>

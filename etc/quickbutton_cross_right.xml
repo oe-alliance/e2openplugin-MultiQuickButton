@@ -2,11 +2,11 @@
 <xml>
 	<Menu>
 		<content>
-			<name>Channel zap +</name>
+			<name>InfoBar QuickEPG EPG</name>
 			<sel>1</sel>
 			<code><![CDATA[from Screens.InfoBar import InfoBar
 if InfoBar and InfoBar.instance:
-	InfoBar.zapDown(InfoBar.instance)]]></code>
+	InfoBar.openInfoBarEPG(InfoBar.instance)]]></code>
 		</content>
 	</Menu>
 </xml>

@@ -2,11 +2,11 @@
 <xml>
 	<Menu>
 		<content>
-			<name>Channel list</name>
+			<name>Channel zap +</name>
 			<sel>1</sel>
 			<code><![CDATA[from Screens.InfoBar import InfoBar
 if InfoBar and InfoBar.instance:
-	InfoBar.openServiceList(InfoBar.instance)]]></code>
+	InfoBar.zapDown(InfoBar.instance)]]></code>
 		</content>
 	</Menu>
 </xml>
