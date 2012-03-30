@@ -1,7 +1,7 @@
 <?xml version="1.0"  encoding="UTF-8" ?>
 
 <!-- global file for MultiQuickButton functions -->
-
+<!-- Added Vix support items vs 1 -->
 <xml>
 
 <mqbfunction>
@@ -27,6 +27,13 @@ if InfoBar and InfoBar.instance:
 <name>Timer</name>
 <module>Screens.TimerEdit</module>
 <screen>TimerEditList</screen>
+</mqbfunction>
+
+<mqbfunction>
+<name>AutoTimer</name>
+<code>from Screens.InfoBar import InfoBar
+if InfoBar and InfoBar.instance:
+	InfoBar.openAutoTimerList(InfoBar.instance)</code>
 </mqbfunction>
 
 <mqbfunction>
@@ -130,7 +137,7 @@ if InfoBar and InfoBar.instance:
 </mqbfunction>
 
 <mqbfunction>
-<name>InfoBar QuickEPG EPG</name>
+<name>InfoBar QuickEPG</name>
 <code>from Screens.InfoBar import InfoBar
 if InfoBar and InfoBar.instance:
 	InfoBar.openInfoBarEPG(InfoBar.instance)</code>
