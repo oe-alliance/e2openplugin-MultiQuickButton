@@ -4,7 +4,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-11-06 17:01+0100\n"
 "PO-Revision-Date: \n"
-"Last-Translator: plnick\n"
+"Last-Translator: delagroov <degroov@hotmail.com>\n"
 "Language-Team: \n"
 "Language: \n"
 "MIME-Version: 1.0\n"
@@ -36,203 +36,195 @@ msgstr "Multi Quickbutton"
 
 #: ../src/function.py:2
 msgid "Restart SoftCam"
-msgstr ""
+msgstr "Restart SoftCam"
 
 #: ../src/function.py:3
 msgid "Plugin Browser"
-msgstr ""
+msgstr "Plugin Browser"
 
 #: ../src/function.py:4
-#, fuzzy
 msgid "Extension Selection"
-msgstr "Kanaal keuze"
+msgstr "Extensie selectie"
 
 #: ../src/function.py:5
 msgid "Sleeptimer"
-msgstr ""
+msgstr "Slaaptimer"
 
 #: ../src/function.py:6
 msgid "Timer"
-msgstr ""
+msgstr "Timer"
 
 #: ../src/function.py:7
-#, fuzzy
 msgid "Channel zap +"
-msgstr "Kanaal +"
+msgstr "Volgende zender"
 
 #: ../src/function.py:8
-#, fuzzy
 msgid "Channel zap -"
-msgstr "Kanaal -"
+msgstr "Vorige zender"
 
 #: ../src/function.py:9
-#, fuzzy
 msgid "Channel zap (list) +"
-msgstr "Kanaal +"
+msgstr "Open zenderlijst (omhoog)"
 
 #: ../src/function.py:10
-#, fuzzy
 msgid "Channel zap (list) -"
-msgstr "Kanaal -"
+msgstr "Open zenderlijst (omlaag)"
 
 #: ../src/function.py:11
 msgid "Dolby Digital downmix on/off"
-msgstr ""
+msgstr "Dolby Digital downmix on/off"
 
 #: ../src/function.py:12
 msgid "List of Bouquets"
-msgstr ""
+msgstr "Bouquet lijst"
 
 #: ../src/function.py:13
-#, fuzzy
 msgid "Channel list"
-msgstr "Kanalen"
+msgstr "Zenderlijst"
 
 #: ../src/function.py:14
 msgid "Zap history back"
-msgstr ""
+msgstr "Vorige zender in geschiedenis"
 
 #: ../src/function.py:15
 msgid "Zap history next"
-msgstr ""
+msgstr "Volgende zender in geschiedenis"
 
 #: ../src/function.py:16
-#, fuzzy
 msgid "InfoBar"
-msgstr "Info"
+msgstr "InfoBar"
 
 #: ../src/function.py:17
 msgid "InfoBar EventInfoPlugins"
-msgstr ""
+msgstr "InfoBar EventInfoPlugins"
 
 #: ../src/function.py:18
 msgid "InfoBar EventView"
-msgstr ""
+msgstr "InfoBar EventView"
 
 #: ../src/function.py:19
 msgid "InfoBar EPG"
-msgstr ""
+msgstr "InfoBar EPG"
 
 #: ../src/function.py:20
 msgid "InfoBar Multi EPG"
-msgstr ""
+msgstr "InfoBar Multi EPG"
 
 #: ../src/function.py:21
 msgid "InfoBar Audio Selection"
-msgstr ""
+msgstr "InfoBar Audio Selectie"
 
 #: ../src/function.py:22
 msgid "InfoBar Show Radio"
-msgstr ""
+msgstr "InfoBar Show Radio"
 
 #: ../src/function.py:23
 msgid "InfoBar Show Tv"
-msgstr ""
+msgstr "InfoBar Show Tv"
 
 #: ../src/function.py:24
 msgid "InfoBar Show Movies"
-msgstr ""
+msgstr "InfoBar Show Movies"
 
 #: ../src/function.py:25
 msgid "InfoBar Record"
-msgstr ""
+msgstr "InfoBar Record"
 
 #: ../src/function.py:26
 msgid "InfoBar Instant Record"
-msgstr ""
+msgstr "InfoBar Instant Record"
 
 #: ../src/function.py:27
 msgid "Start Timeshift"
-msgstr ""
+msgstr "Start Timeshift"
 
 #: ../src/function.py:28
 msgid "Start Teletext"
-msgstr ""
+msgstr "Start Teletext"
 
 #: ../src/function.py:29
 msgid "Favourite channel 1"
-msgstr ""
+msgstr "Favoriete zender 1"
 
 #: ../src/function.py:30
 msgid "Favourite channel 2"
-msgstr ""
+msgstr "Favoriete zender 2"
 
 #: ../src/function.py:31
 msgid "Favourite channel 3"
-msgstr ""
+msgstr "Favoriete zender 3"
 
 #: ../src/function.py:32
 msgid "Favourite channel 4"
-msgstr ""
+msgstr "Favoriete zender 4"
 
 #: ../src/function.py:33
 msgid "Favourite channel 5"
-msgstr ""
+msgstr "Favoriete zender 5"
 
 #: ../src/function.py:34
 msgid "Toggle AtmoLight"
-msgstr ""
+msgstr "Toggle AtmoLight"
 
 #: ../src/function.py:35
 msgid "Subservice Selection"
-msgstr ""
+msgstr "Subservice Selectie"
 
 #: ../src/function.py:36
 msgid "Subtitles"
-msgstr ""
+msgstr "Ondertitels"
 
 #: ../src/function.py:37
 msgid "MediaPlayer"
-msgstr ""
+msgstr "MediaPlayer"
 
 #: ../src/function.py:38
 msgid "DVDPlayer"
-msgstr ""
+msgstr "DVDPlayer"
 
 #: ../src/function.py:39
 msgid "Picture Player"
-msgstr ""
+msgstr "Picture Player"
 
 #: ../src/function.py:40
 msgid "Cool TV Guide"
-msgstr ""
+msgstr "Cool TV Guide"
 
 #: ../src/function.py:41
-#, fuzzy
 msgid "A/V Settings"
-msgstr "Sla de instellingen op"
+msgstr "A/V Instellingen"
 
 #: ../src/function.py:42
 msgid "Switch 4:3 (Pillarbox) (Pan&Scan)"
-msgstr ""
+msgstr "Switch 4:3 (Pillarbox) (Pan&Scan)"
 
 #: ../src/function.py:43
 msgid "Mount info"
-msgstr ""
+msgstr "Mount info"
 
 #: ../src/function.py:44
 msgid "Show PIP"
-msgstr ""
+msgstr "Show PIP"
 
 #: ../src/function.py:45
 msgid "Swap PIP"
-msgstr ""
+msgstr "Swap PIP"
 
 #: ../src/function.py:46
 msgid "Move PIP"
-msgstr ""
+msgstr "Move PIP"
 
 #: ../src/function.py:47
 msgid "Reboot"
-msgstr ""
+msgstr "Reboot"
 
 #: ../src/function.py:48
 msgid "GUI Restart"
-msgstr ""
+msgstr "GUI Restart"
 
 #: ../src/function.py:49
 msgid "DeepStandby"
-msgstr ""
+msgstr "DeepStandby"
 
 #: ../src/MultiQuickButton.py:47
 msgid "Autostart"
@@ -337,7 +329,7 @@ msgstr "Radio"
 
 #: ../src/MultiQuickButton.py:198
 msgid "TV"
-msgstr ""
+msgstr "TV"
 
 #: ../src/MultiQuickButton.py:199
 msgid "Cross Up"
@@ -381,24 +373,23 @@ msgstr "Exit"
 
 #: ../src/MultiQuickButton.py:211
 msgid "Play"
-msgstr ""
+msgstr "Play"
 
 #: ../src/MultiQuickButton.py:212
 msgid "Pause"
-msgstr ""
+msgstr "Pause"
 
 #: ../src/MultiQuickButton.py:213
 msgid "Stop"
-msgstr ""
+msgstr "Stop"
 
 #: ../src/MultiQuickButton.py:214
 msgid "Rewind <<"
-msgstr ""
+msgstr "Achteruit spoelen <<"
 
 #: ../src/MultiQuickButton.py:215
-#, fuzzy
 msgid "FastForward >>"
-msgstr "Vooruit >"
+msgstr "Vooruit spoelen >>"
 
 #: ../src/MultiQuickButton.py:227
 #: ../src/MultiQuickButton.py:232
@@ -415,9 +406,8 @@ msgid "off"
 msgstr "uit"
 
 #: ../src/MultiQuickButton.py:257
-#, fuzzy
 msgid "Quickbutton Key : "
-msgstr "Quickbutton: Knop"
+msgstr "Quickbutton knop : "
 
 #: ../src/MultiQuickButton.py:268
 msgid "Please select the backup path..."
@@ -489,32 +479,31 @@ msgstr "Voeg toe"
 
 #: ../src/MultiQuickButton.py:581
 msgid "MQB Functions and Plugins"
-msgstr ""
+msgstr "MQB Functies en Plugins"
 
 #: ../src/MultiQuickButton.py:590
-#, fuzzy
 msgid "No valid selection"
-msgstr "Kanaal keuze"
+msgstr "No valid selection"
 
 #: ../src/MultiQuickButton.py:594
 msgid "Add Functions to MQB Key"
-msgstr ""
+msgstr "Voeg functies aan MQB button toe"
 
 #: ../src/MultiQuickButton.py:595
 msgid "Add Plugins to MQB Key"
-msgstr ""
+msgstr "Voeg plugins aan MQB button toe"
 
 #: ../src/MultiQuickButton.py:601
 msgid "Functions"
-msgstr ""
+msgstr "Functies"
 
 #: ../src/MultiQuickButton.py:603
 msgid "No valid function file found"
-msgstr ""
+msgstr "Geen geldige functie gevonden"
 
 #: ../src/MultiQuickButton.py:607
 msgid "Plugins"
-msgstr ""
+msgstr "Plugins"
 
 #: ../src/MultiQuickButton.py:613
 #, python-format
