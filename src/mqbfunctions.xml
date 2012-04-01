@@ -1,7 +1,7 @@
 <?xml version="1.0"  encoding="UTF-8" ?>
 
 <!-- global file for MultiQuickButton functions -->
-<!-- Added Vix support items vs 1 -->
+<!-- Added Vix support items vs 2 -->
 <xml>
 
 <mqbfunction>
@@ -34,6 +34,16 @@ if InfoBar and InfoBar.instance:
 <code>from Screens.InfoBar import InfoBar
 if InfoBar and InfoBar.instance:
 	InfoBar.openAutoTimerList(InfoBar.instance)</code>
+</mqbfunction>
+
+<mqbfunction>
+<name>IMDb Details...</name>
+<code><![CDATA[
+for plugin in plugins.getPlugins([PluginDescriptor.WHERE_PLUGINMENU ,PluginDescriptor.WHERE_EXTENSIONSMENU, PluginDescriptor.WHERE_EVENTINFO]):
+    if plugin.name == _("IMDb Details..."):
+        runPlugin(self, plugin)
+        break
+]]></code>
 </mqbfunction>
 
 <mqbfunction>
@@ -232,18 +242,6 @@ if InfoBar and InfoBar.instance:
 <code>from Screens.InfoBar import InfoBar
 if InfoBar and InfoBar.instance:
 	InfoBar.subserviceSelection(InfoBar.instance)</code>
-</mqbfunction>
-
-<mqbfunction>
-<name>Subtitles</name>
-<module>Screens.Subtitles</module>
-<screen>Subtitles, self</screen>
-</mqbfunction>
-
-<mqbfunction>
-<name>A/V Settings</name>
-<module>Screens.Setup</module>
-<screen>Setup, "avsetup"</screen>
 </mqbfunction>
 
 <mqbfunction>
