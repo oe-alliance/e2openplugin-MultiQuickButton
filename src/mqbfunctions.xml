@@ -1,7 +1,7 @@
 <?xml version="1.0"  encoding="UTF-8" ?>
 
 <!-- global file for MultiQuickButton functions -->
-<!-- Added Vix support items vs 2 -->
+<!-- Added Vix support items vs 3 -->
 <xml>
 
 <mqbfunction>
@@ -58,20 +58,6 @@ if InfoBar and InfoBar.instance:
 <code>from Screens.InfoBar import InfoBar
 if InfoBar and InfoBar.instance:
 	InfoBar.zapUp(InfoBar.instance)</code>
-</mqbfunction>
-
-<mqbfunction>
-<name>Channel zap (list) +</name>
-<code>from Screens.InfoBar import InfoBar
-if InfoBar and InfoBar.instance:
-	InfoBar.switchChannelUp(InfoBar.instance)</code>
-</mqbfunction>
-
-<mqbfunction>
-<name>Channel zap (list) -</name>
-<code>from Screens.InfoBar import InfoBar
-if InfoBar and InfoBar.instance:
-	InfoBar.switchChannelDown(InfoBar.instance)</code>
 </mqbfunction>
 
 <mqbfunction>
@@ -444,12 +430,6 @@ CIGmain(self.session, self.servicelist)]]></code>
 <name>MediaPlayer</name>
 <module>Plugins.Extensions.MediaPlayer.plugin</module>
 <screen>MediaPlayer</screen>
-</mqbfunction>
-
-<mqbfunction>
-<name>DVDPlayer</name>
-<module>Plugins.Extensions.DVDPlayer.plugin</module>
-<screen>DVDPlayer</screen>
 </mqbfunction>
 
 <mqbfunction>
