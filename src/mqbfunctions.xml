@@ -1,7 +1,7 @@
 <?xml version="1.0"  encoding="UTF-8" ?>
 
 <!-- global file for MultiQuickButton functions -->
-<!-- Added Vix support items vs 3 -->
+<!-- Added Vix support items vs 4 -->
 <xml>
 
 <mqbfunction>
@@ -18,12 +18,6 @@ if InfoBar and InfoBar.instance:
 </mqbfunction>
 
 <mqbfunction>
-<name>Sleeptimer</name>
-<module>Screens.SleepTimerEdit</module>
-<screen>SleepTimerEdit</screen>
-</mqbfunction>
-
-<mqbfunction>
 <name>Timer</name>
 <module>Screens.TimerEdit</module>
 <screen>TimerEditList</screen>
@@ -37,12 +31,26 @@ if InfoBar and InfoBar.instance:
 </mqbfunction>
 
 <mqbfunction>
+<name>Sleeptimer</name>
+<module>Screens.SleepTimerEdit</module>
+<screen>SleepTimerEdit</screen>
+</mqbfunction>
+
+<mqbfunction>
 <name>IMDb Details...</name>
 <code><![CDATA[
 for plugin in plugins.getPlugins([PluginDescriptor.WHERE_PLUGINMENU ,PluginDescriptor.WHERE_EXTENSIONSMENU, PluginDescriptor.WHERE_EVENTINFO]):
     if plugin.name == _("IMDb Details..."):
         runPlugin(self, plugin)
         break
+]]></code>
+</mqbfunction>
+
+<mqbfunction>
+<name>IHbbTV (Red-Button)</name>
+<code><![CDATA[from Screens.InfoBar import InfoBar
+if InfoBar and InfoBar.instance:
+	InfoBar.activateRedButton(InfoBar.instance)
 ]]></code>
 </mqbfunction>
 
@@ -61,23 +69,6 @@ if InfoBar and InfoBar.instance:
 </mqbfunction>
 
 <mqbfunction>
-<name>List of Bouquets</name>
-<code>from Screens.InfoBar import InfoBar
-if InfoBar and InfoBar.instance:
-	def showBouquetList(self):
-		self.servicelist.showFavourites()
-		self.session.execDialog(self.servicelist)
-	showBouquetList(InfoBar.instance)</code>
-</mqbfunction>
-
-<mqbfunction>
-<name>Channel list</name>
-<code>from Screens.InfoBar import InfoBar
-if InfoBar and InfoBar.instance:
-	InfoBar.openServiceList(InfoBar.instance)</code>
-</mqbfunction>
-
-<mqbfunction>
 <name>Zap history back</name>
 <code>from Screens.InfoBar import InfoBar
 if InfoBar and InfoBar.instance:
@@ -89,6 +80,23 @@ if InfoBar and InfoBar.instance:
 <code>from Screens.InfoBar import InfoBar
 if InfoBar and InfoBar.instance:
 	InfoBar.historyNext(InfoBar.instance)</code>
+</mqbfunction>
+
+<mqbfunction>
+<name>Channel list</name>
+<code>from Screens.InfoBar import InfoBar
+if InfoBar and InfoBar.instance:
+	InfoBar.openServiceList(InfoBar.instance)</code>
+</mqbfunction>
+
+<mqbfunction>
+<name>List of Bouquets</name>
+<code>from Screens.InfoBar import InfoBar
+if InfoBar and InfoBar.instance:
+	def showBouquetList(self):
+		self.servicelist.showFavourites()
+		self.session.execDialog(self.servicelist)
+	showBouquetList(InfoBar.instance)</code>
 </mqbfunction>
 
 <mqbfunction>
@@ -119,13 +127,6 @@ if InfoBar and InfoBar.instance:
 </mqbfunction>
 
 <mqbfunction>
-<name>InfoBar Multi EPG</name>
-<code>from Screens.InfoBar import InfoBar
-if InfoBar and InfoBar.instance:
-	InfoBar.openMultiServiceEPG(InfoBar.instance)</code>
-</mqbfunction>
-
-<mqbfunction>
 <name>InfoBar VIX EPG</name>
 <code>from Screens.InfoBar import InfoBar
 if InfoBar and InfoBar.instance:
@@ -137,6 +138,13 @@ if InfoBar and InfoBar.instance:
 <code>from Screens.InfoBar import InfoBar
 if InfoBar and InfoBar.instance:
 	InfoBar.openInfoBarEPG(InfoBar.instance)</code>
+</mqbfunction>
+
+<mqbfunction>
+<name>InfoBar Multi EPG</name>
+<code>from Screens.InfoBar import InfoBar
+if InfoBar and InfoBar.instance:
+	InfoBar.openMultiServiceEPG(InfoBar.instance)</code>
 </mqbfunction>
 
 <mqbfunction>
@@ -175,62 +183,6 @@ if InfoBar and InfoBar.instance:
 </mqbfunction>
 
 <mqbfunction>
-<name>Start Timeshift</name>
-<code>from Screens.InfoBar import InfoBar
-if InfoBar and InfoBar.instance:
-	InfoBar.startTimeshift(InfoBar.instance)</code>
-</mqbfunction>
-
-<mqbfunction>
-<name>Start Teletext</name>
-<code>from Screens.InfoBar import InfoBar
-if InfoBar and InfoBar.instance:
-	InfoBar.startTeletext(InfoBar.instance)</code>
-</mqbfunction>
-
-<mqbfunction>
-<name>Favourite channel 1</name>
-<code>from Screens.InfoBar import InfoBar
-if InfoBar and InfoBar.instance:
-	InfoBar.zapToNumber(InfoBar.instance, config.plugins.QuickButton.channel1.getValue())</code>
-</mqbfunction>
-
-<mqbfunction>
-<name>Favourite channel 2</name>
-<code>from Screens.InfoBar import InfoBar
-if InfoBar and InfoBar.instance:
-	InfoBar.zapToNumber(InfoBar.instance, config.plugins.QuickButton.channel2.getValue())</code>
-</mqbfunction>
-
-<mqbfunction>
-<name>Favourite channel 3</name>
-<code>from Screens.InfoBar import InfoBar
-if InfoBar and InfoBar.instance:
-	InfoBar.zapToNumber(InfoBar.instance, config.plugins.QuickButton.channel3.getValue())</code>
-</mqbfunction>
-
-<mqbfunction>
-<name>Favourite channel 4</name>
-<code>from Screens.InfoBar import InfoBar
-if InfoBar and InfoBar.instance:
-	InfoBar.zapToNumber(InfoBar.instance, config.plugins.QuickButton.channel4.getValue())</code>
-</mqbfunction>
-
-<mqbfunction>
-<name>Favourite channel 5</name>
-<code>from Screens.InfoBar import InfoBar
-if InfoBar and InfoBar.instance:
-	InfoBar.zapToNumber(InfoBar.instance, config.plugins.QuickButton.channel5.getValue())</code>
-</mqbfunction>
-
-<mqbfunction>
-<name>Subservice Selection</name>
-<code>from Screens.InfoBar import InfoBar
-if InfoBar and InfoBar.instance:
-	InfoBar.subserviceSelection(InfoBar.instance)</code>
-</mqbfunction>
-
-<mqbfunction>
 <name>InfoBar Audio Selection</name>
 <code>from Screens.InfoBar import InfoBar
 if InfoBar and InfoBar.instance:
@@ -247,6 +199,27 @@ config.av.downmix_ac3.save()
 from Screens.MessageBox import MessageBox
 downmix = {True: _("eingeschaltet"), False: _("ausgeschaltet")}
 self.session.open(MessageBox, _("Dolby Digital downmix: ") + downmix[config.av.downmix_ac3.value], MessageBox.TYPE_INFO, 2)</code>
+</mqbfunction>
+
+<mqbfunction>
+<name>Start Timeshift</name>
+<code>from Screens.InfoBar import InfoBar
+if InfoBar and InfoBar.instance:
+	InfoBar.startTimeshift(InfoBar.instance)</code>
+</mqbfunction>
+
+<mqbfunction>
+<name>Start Teletext</name>
+<code>from Screens.InfoBar import InfoBar
+if InfoBar and InfoBar.instance:
+	InfoBar.startTeletext(InfoBar.instance)</code>
+</mqbfunction>
+
+<mqbfunction>
+<name>Subservice Selection</name>
+<code>from Screens.InfoBar import InfoBar
+if InfoBar and InfoBar.instance:
+	InfoBar.subserviceSelection(InfoBar.instance)</code>
 </mqbfunction>
 
 <mqbfunction>
@@ -303,6 +276,41 @@ self.session.open(Screens.Standby.TryQuitMainloop,2)</code>
 <name>DeepStandby</name>
 <code>import Screens.Standby
 self.session.open(Screens.Standby.TryQuitMainloop,1)</code>
+</mqbfunction>
+
+<mqbfunction>
+<name>Favourite channel 1</name>
+<code>from Screens.InfoBar import InfoBar
+if InfoBar and InfoBar.instance:
+	InfoBar.zapToNumber(InfoBar.instance, config.plugins.QuickButton.channel1.getValue())</code>
+</mqbfunction>
+
+<mqbfunction>
+<name>Favourite channel 2</name>
+<code>from Screens.InfoBar import InfoBar
+if InfoBar and InfoBar.instance:
+	InfoBar.zapToNumber(InfoBar.instance, config.plugins.QuickButton.channel2.getValue())</code>
+</mqbfunction>
+
+<mqbfunction>
+<name>Favourite channel 3</name>
+<code>from Screens.InfoBar import InfoBar
+if InfoBar and InfoBar.instance:
+	InfoBar.zapToNumber(InfoBar.instance, config.plugins.QuickButton.channel3.getValue())</code>
+</mqbfunction>
+
+<mqbfunction>
+<name>Favourite channel 4</name>
+<code>from Screens.InfoBar import InfoBar
+if InfoBar and InfoBar.instance:
+	InfoBar.zapToNumber(InfoBar.instance, config.plugins.QuickButton.channel4.getValue())</code>
+</mqbfunction>
+
+<mqbfunction>
+<name>Favourite channel 5</name>
+<code>from Screens.InfoBar import InfoBar
+if InfoBar and InfoBar.instance:
+	InfoBar.zapToNumber(InfoBar.instance, config.plugins.QuickButton.channel5.getValue())</code>
 </mqbfunction>
 
 <mqbfunction>
@@ -400,30 +408,6 @@ keyaction.keyPressed("dreambox remote control (native)", 113, int(0))]]></code>
 <name>Remount Network Shares</name>
 <code>from Plugins.SystemPlugins.NetworkBrowser.AutoMount import AutoMount
 AutoMount()</code>
-</mqbfunction>
-
-<mqbfunction>
-<name>CoolTVGuide</name>
-<code><![CDATA[from Plugins.Extensions.CoolTVGuide.plugin import main
-main(self.session, self.servicelist)]]></code>
-</mqbfunction>
-
-<mqbfunction>
-<name>CoolEasyGuide</name>
-<code><![CDATA[from Plugins.Extensions.CoolTVGuide.CoolEasyGuide import CEGmain
-CEGmain(self.session, self.servicelist)]]></code>
-</mqbfunction>
-
-<mqbfunction>
-<name>CoolSingleGuide</name>
-<code><![CDATA[from Plugins.Extensions.CoolTVGuide.CoolSingleGuide import CSGmain
-CSGmain(self.session, self.servicelist)]]></code>
-</mqbfunction>
-
-<mqbfunction>
-<name>CoolInfoGuide</name>
-<code><![CDATA[from Plugins.Extensions.CoolTVGuide.CoolInfoGuide import CIGmain
-CIGmain(self.session, self.servicelist)]]></code>
 </mqbfunction>
 
 <mqbfunction>
