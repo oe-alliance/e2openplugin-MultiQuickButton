@@ -1,450 +1,335 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: \n"
+"Project-Id-Version: MQB for ViX\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-11-06 17:01+0100\n"
+"POT-Creation-Date: 2012-02-28 19:40+0100\n"
 "PO-Revision-Date: \n"
-"Last-Translator: delagroov <degroov@hotmail.com>\n"
-"Language-Team: \n"
+"Last-Translator: \n"
+"Language-Team: Andy Blackburn/Delagroov/Rob van der Does\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-Basepath: .\n"
+"X-Poedit-Language: Dutch\n"
+"X-Poedit-Country: NETHERLANDS\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: ../src/plugin.py:198
-#: ../src/plugin.py:237
-#: ../src/plugin.py:239
-#: ../src/plugin.py:244
-#: ../src/MultiQuickButton.py:489
-msgid "Error"
-msgstr "Fout"
-
-#: ../src/plugin.py:208
-msgid "Quickbutton: Key "
-msgstr "Quickbutton: Knop"
-
-#: ../src/plugin.py:210
-#, python-format
-msgid "file %s not found!"
-msgstr "bestand %s niet gevonden"
-
-#: ../src/plugin.py:272
-msgid "Multi Quickbutton"
-msgstr "Multi Quickbutton"
-
-#: ../src/function.py:2
-msgid "Restart SoftCam"
-msgstr "Restart SoftCam"
-
-#: ../src/function.py:3
-msgid "Plugin Browser"
-msgstr "Plugin Browser"
-
-#: ../src/function.py:4
-msgid "Extension Selection"
-msgstr "Extensie selectie"
-
-#: ../src/function.py:5
-msgid "Sleeptimer"
-msgstr "Slaaptimer"
-
-#: ../src/function.py:6
-msgid "Timer"
-msgstr "Timer"
-
-#: ../src/function.py:7
-msgid "Channel zap +"
-msgstr "Volgende zender"
-
-#: ../src/function.py:8
-msgid "Channel zap -"
-msgstr "Vorige zender"
-
-#: ../src/function.py:9
-msgid "Channel zap (list) +"
-msgstr "Open zenderlijst (omhoog)"
-
-#: ../src/function.py:10
-msgid "Channel zap (list) -"
-msgstr "Open zenderlijst (omlaag)"
-
-#: ../src/function.py:11
-msgid "Dolby Digital downmix on/off"
-msgstr "Dolby Digital downmix on/off"
-
-#: ../src/function.py:12
-msgid "List of Bouquets"
-msgstr "Bouquet lijst"
-
-#: ../src/function.py:13
-msgid "Channel list"
-msgstr "Zenderlijst"
-
-#: ../src/function.py:14
-msgid "Zap history back"
-msgstr "Vorige zender in geschiedenis"
-
-#: ../src/function.py:15
-msgid "Zap history next"
-msgstr "Volgende zender in geschiedenis"
-
-#: ../src/function.py:16
-msgid "InfoBar"
-msgstr "InfoBar"
-
-#: ../src/function.py:17
-msgid "InfoBar EventInfoPlugins"
-msgstr "InfoBar EventInfoPlugins"
-
-#: ../src/function.py:18
-msgid "InfoBar EventView"
-msgstr "InfoBar EventView"
-
-#: ../src/function.py:19
-msgid "InfoBar EPG"
-msgstr "InfoBar EPG"
-
-#: ../src/function.py:20
-msgid "InfoBar Multi EPG"
-msgstr "InfoBar Multi EPG"
-
-#: ../src/function.py:21
-msgid "InfoBar Audio Selection"
-msgstr "InfoBar Audio Selectie"
-
-#: ../src/function.py:22
-msgid "InfoBar Show Radio"
-msgstr "InfoBar Show Radio"
-
-#: ../src/function.py:23
-msgid "InfoBar Show Tv"
-msgstr "InfoBar Show Tv"
-
-#: ../src/function.py:24
-msgid "InfoBar Show Movies"
-msgstr "InfoBar Show Movies"
-
-#: ../src/function.py:25
-msgid "InfoBar Record"
-msgstr "InfoBar Record"
-
-#: ../src/function.py:26
-msgid "InfoBar Instant Record"
-msgstr "InfoBar Instant Record"
-
-#: ../src/function.py:27
-msgid "Start Timeshift"
-msgstr "Start Timeshift"
-
-#: ../src/function.py:28
-msgid "Start Teletext"
-msgstr "Start Teletext"
-
-#: ../src/function.py:29
-msgid "Favourite channel 1"
-msgstr "Favoriete zender 1"
-
-#: ../src/function.py:30
-msgid "Favourite channel 2"
-msgstr "Favoriete zender 2"
-
-#: ../src/function.py:31
-msgid "Favourite channel 3"
-msgstr "Favoriete zender 3"
-
-#: ../src/function.py:32
-msgid "Favourite channel 4"
-msgstr "Favoriete zender 4"
-
-#: ../src/function.py:33
-msgid "Favourite channel 5"
-msgstr "Favoriete zender 5"
-
-#: ../src/function.py:34
-msgid "Toggle AtmoLight"
-msgstr "Toggle AtmoLight"
-
-#: ../src/function.py:35
-msgid "Subservice Selection"
-msgstr "Subservice Selectie"
-
-#: ../src/function.py:36
-msgid "Subtitles"
-msgstr "Ondertitels"
-
-#: ../src/function.py:37
-msgid "MediaPlayer"
-msgstr "MediaPlayer"
-
-#: ../src/function.py:38
-msgid "DVDPlayer"
-msgstr "DVDPlayer"
-
-#: ../src/function.py:39
-msgid "Picture Player"
-msgstr "Picture Player"
-
-#: ../src/function.py:40
-msgid "Cool TV Guide"
-msgstr "Cool TV Guide"
-
-#: ../src/function.py:41
-msgid "A/V Settings"
-msgstr "A/V Instellingen"
-
-#: ../src/function.py:42
-msgid "Switch 4:3 (Pillarbox) (Pan&Scan)"
-msgstr "Switch 4:3 (Pillarbox) (Pan&Scan)"
-
-#: ../src/function.py:43
-msgid "Mount info"
-msgstr "Mount info"
-
-#: ../src/function.py:44
-msgid "Show PIP"
-msgstr "Show PIP"
-
-#: ../src/function.py:45
-msgid "Swap PIP"
-msgstr "Swap PIP"
-
-#: ../src/function.py:46
-msgid "Move PIP"
-msgstr "Move PIP"
-
-#: ../src/function.py:47
-msgid "Reboot"
-msgstr "Reboot"
-
-#: ../src/function.py:48
-msgid "GUI Restart"
-msgstr "GUI Restart"
-
-#: ../src/function.py:49
-msgid "DeepStandby"
-msgstr "DeepStandby"
-
-#: ../src/MultiQuickButton.py:47
-msgid "Autostart"
-msgstr "Autostart"
-
-#: ../src/MultiQuickButton.py:48
-#: ../src/MultiQuickButton.py:340
-msgid "Main menu"
-msgstr "Hoofdmenu"
-
-#: ../src/MultiQuickButton.py:49
-msgid "Info"
-msgstr "Info"
-
-#: ../src/MultiQuickButton.py:50
-msgid "OK/EXIT"
-msgstr "OK/EXIT"
-
-#: ../src/MultiQuickButton.py:125
-msgid "Restore"
-msgstr "Herstel"
-
-#: ../src/MultiQuickButton.py:126
-msgid "Backup"
-msgstr "Backup"
-
-#: ../src/MultiQuickButton.py:129
-msgid "Channels"
-msgstr "Kanalen"
-
-#: ../src/MultiQuickButton.py:130
-msgid "About"
-msgstr "Over"
-
-#: ../src/MultiQuickButton.py:177
-#: ../src/MultiQuickButton.py:178
-msgid "red"
-msgstr "rood"
-
-#: ../src/MultiQuickButton.py:178
-#: ../src/MultiQuickButton.py:180
-#: ../src/MultiQuickButton.py:182
-#: ../src/MultiQuickButton.py:184
-#: ../src/MultiQuickButton.py:186
-#: ../src/MultiQuickButton.py:187
-#: ../src/MultiQuickButton.py:189
-#: ../src/MultiQuickButton.py:191
-#: ../src/MultiQuickButton.py:193
-#: ../src/MultiQuickButton.py:195
-#: ../src/MultiQuickButton.py:197
 msgid " long"
 msgstr "lang"
 
-#: ../src/MultiQuickButton.py:179
-#: ../src/MultiQuickButton.py:180
-msgid "green"
-msgstr "groen"
+msgid "A/V Settings"
+msgstr "A/V Instellingen"
 
-#: ../src/MultiQuickButton.py:181
-#: ../src/MultiQuickButton.py:182
-msgid "yellow"
-msgstr "geel"
+msgid "Add"
+msgstr "Voeg toe"
 
-#: ../src/MultiQuickButton.py:183
-#: ../src/MultiQuickButton.py:184
-msgid "blue"
-msgstr "blauw"
+msgid "Add Functions to MQB Key"
+msgstr "Voeg functies aan MQB button toe"
 
-#: ../src/MultiQuickButton.py:185
-#: ../src/MultiQuickButton.py:186
-msgid "TEXT"
-msgstr "Tekst"
+msgid "Add Plugins to MQB Key"
+msgstr "Voeg plugins aan MQB button toe"
 
-#: ../src/MultiQuickButton.py:187
-msgid "HELP"
-msgstr "Help"
-
-#: ../src/MultiQuickButton.py:188
-#: ../src/MultiQuickButton.py:189
-msgid "VU+ EPG / INFO"
-msgstr "VU+ EPG / INFO"
-
-#: ../src/MultiQuickButton.py:190
-#: ../src/MultiQuickButton.py:191
-msgid "HOME"
-msgstr "Home"
-
-#: ../src/MultiQuickButton.py:192
-#: ../src/MultiQuickButton.py:193
-msgid "END"
-msgstr "End"
-
-#: ../src/MultiQuickButton.py:194
-#: ../src/MultiQuickButton.py:195
-msgid "VU+ R-Button"
-msgstr "VU+ R-knop"
-
-#: ../src/MultiQuickButton.py:196
-#: ../src/MultiQuickButton.py:197
-msgid "RADIO"
-msgstr "Radio"
-
-#: ../src/MultiQuickButton.py:198
-msgid "TV"
-msgstr "TV"
-
-#: ../src/MultiQuickButton.py:199
-msgid "Cross Up"
-msgstr "Pijl omhoog"
-
-#: ../src/MultiQuickButton.py:200
-msgid "Cross Down"
-msgstr "Pijl omlaag"
-
-#: ../src/MultiQuickButton.py:201
-msgid "Cross Left"
-msgstr "Pijl links"
-
-#: ../src/MultiQuickButton.py:202
-msgid "Cross Right"
-msgstr "Pijl rechts"
-
-#: ../src/MultiQuickButton.py:203
-msgid "Channel +"
-msgstr "Kanaal +"
-
-#: ../src/MultiQuickButton.py:204
-msgid "Channel -"
-msgstr "Kanaal -"
-
-#: ../src/MultiQuickButton.py:205
-msgid "Forward >"
-msgstr "Vooruit >"
-
-#: ../src/MultiQuickButton.py:206
-msgid "Backward <"
-msgstr "Achteruit <"
-
-#: ../src/MultiQuickButton.py:207
 msgid "Audio"
 msgstr "Audio"
 
-#: ../src/MultiQuickButton.py:210
-msgid "EXIT"
-msgstr "Exit"
+msgid "Autostart"
+msgstr "Autostart"
 
-#: ../src/MultiQuickButton.py:211
-msgid "Play"
-msgstr "Play"
+msgid "Backup"
+msgstr "Backup"
 
-#: ../src/MultiQuickButton.py:212
-msgid "Pause"
-msgstr "Pause"
-
-#: ../src/MultiQuickButton.py:213
-msgid "Stop"
-msgstr "Stop"
-
-#: ../src/MultiQuickButton.py:214
-msgid "Rewind <<"
-msgstr "Achteruit spoelen <<"
-
-#: ../src/MultiQuickButton.py:215
-msgid "FastForward >>"
-msgstr "Vooruit spoelen >>"
-
-#: ../src/MultiQuickButton.py:227
-#: ../src/MultiQuickButton.py:232
-#: ../src/MultiQuickButton.py:237
-#: ../src/MultiQuickButton.py:242
-msgid "on"
-msgstr "aan"
-
-#: ../src/MultiQuickButton.py:229
-#: ../src/MultiQuickButton.py:234
-#: ../src/MultiQuickButton.py:239
-#: ../src/MultiQuickButton.py:244
-msgid "off"
-msgstr "uit"
-
-#: ../src/MultiQuickButton.py:257
-msgid "Quickbutton Key : "
-msgstr "Quickbutton knop : "
-
-#: ../src/MultiQuickButton.py:268
-msgid "Please select the backup path..."
-msgstr "Kies de backup locatie"
-
-#: ../src/MultiQuickButton.py:280
-msgid "Overwrite existing Backup?."
-msgstr "Overschrijf de bestaande back-up?"
-
-#: ../src/MultiQuickButton.py:283
-#: ../src/MultiQuickButton.py:295
 msgid "Backup Settings..."
 msgstr "Back-up instellingen"
 
-#: ../src/MultiQuickButton.py:287
+msgid "Backward <"
+msgstr "Achteruit <"
+
+msgid "Button : "
+msgstr "Toets:"
+
+msgid "Cancel"
+msgstr "Annuleer"
+
+msgid "Channel"
+msgstr "Kanaal"
+
+msgid "Channel +"
+msgstr "Kanaal +"
+
+msgid "Channel -"
+msgstr "Kanaal -"
+
+msgid "Channel Selection"
+msgstr "Kanaal keuze"
+
+msgid "Channel list"
+msgstr "Zenderlijst"
+
+msgid "Channel zap (list) +"
+msgstr "Open zenderlijst (omhoog)"
+
+msgid "Channel zap (list) -"
+msgstr "Open zenderlijst (omlaag)"
+
+msgid "Channel zap +"
+msgstr "Volgende zender"
+
+msgid "Channel zap -"
+msgstr "Vorige zender"
+
+msgid "Channels"
+msgstr "Kanalen"
+
+msgid "Configure macro"
+msgstr "Stel macro samen"
+
+msgid "Cool TV Guide"
+msgstr "Cool TV Guide"
+
+msgid "Cross Down"
+msgstr "Pijl omlaag"
+
+msgid "Cross Left"
+msgstr "Pijl links"
+
+msgid "Cross Right"
+msgstr "Pijl rechts"
+
+msgid "Cross Up"
+msgstr "Pijl omhoog"
+
+msgid "DVDPlayer"
+msgstr "DVDPlayer"
+
+msgid "DeepStandby"
+msgstr "DeepStandby"
+
+msgid "Delete"
+msgstr "Verwijder"
+
 #, python-format
 msgid "Directory %s nonexistent."
 msgstr "Map %s bestaat niet"
 
-#: ../src/MultiQuickButton.py:301
-msgid "Please select the restore path..."
-msgstr "Kies de locatie van de bestaande back-up"
+msgid "Dolby Digital downmix on/off"
+msgstr "Dolby Digital downmix on/off"
 
-#: ../src/MultiQuickButton.py:310
-msgid "Overwrite existing Settings?."
-msgstr "Bestaande instellingen overschrijven?"
+msgid "END"
+msgstr "End"
 
-#: ../src/MultiQuickButton.py:312
+msgid "EXIT"
+msgstr "Exit"
+
+#, python-format
+msgid "Entry %s already exists."
+msgstr "Waarde %s bestaat al"
+
+msgid "Error"
+msgstr "Fout"
+
+msgid "Exit"
+msgstr "Skuit af"
+
+msgid "Extension Selection"
+msgstr "Extensie selectie"
+
+msgid "FastForward >>"
+msgstr "Vooruit spoelen >>"
+
+msgid "Favourite channel 1"
+msgstr "Favoriete zender 1"
+
+msgid "Favourite channel 2"
+msgstr "Favoriete zender 2"
+
+msgid "Favourite channel 3"
+msgstr "Favoriete zender 3"
+
+msgid "Favourite channel 4"
+msgstr "Favoriete zender 4"
+
+msgid "Favourite channel 5"
+msgstr "Favoriete zender 5"
+
 #, python-format
 msgid "File %s nonexistent."
 msgstr "Bestand %s bestaat niet"
 
-#: ../src/MultiQuickButton.py:319
-msgid "Restore Settings..."
-msgstr "Herstel instellingen"
+msgid "Forward >"
+msgstr "Vooruit >"
 
-#: ../src/MultiQuickButton.py:330
+msgid "Functions"
+msgstr "Functies"
+
+msgid "GUI Restart"
+msgstr "GUI Restart"
+
+msgid "HELP"
+msgstr "Help"
+
+msgid "HOME"
+msgstr "Home"
+
+msgid "Info"
+msgstr "Info"
+
+msgid "InfoBar"
+msgstr "InfoBar"
+
+msgid "InfoBar Audio Selection"
+msgstr "InfoBar Audio Selectie"
+
+msgid "InfoBar EPG"
+msgstr "InfoBar EPG"
+
+msgid "InfoBar EventInfoPlugins"
+msgstr "InfoBar EventInfoPlugins"
+
+msgid "InfoBar EventView"
+msgstr "InfoBar EventView"
+
+msgid "InfoBar Instant Record"
+msgstr "InfoBar Instant Record"
+
+msgid "InfoBar Multi EPG"
+msgstr "InfoBar Multi EPG"
+
+msgid "InfoBar Record"
+msgstr "InfoBar Record"
+
+msgid "InfoBar Show Movies"
+msgstr "InfoBar Show Movies"
+
+msgid "InfoBar Show Radio"
+msgstr "InfoBar Show Radio"
+
+msgid "InfoBar Show Tv"
+msgstr "InfoBar Show Tv"
+
+msgid "List of Bouquets"
+msgstr "Bouquet lijst"
+
+msgid "MQB Functions and Plugins"
+msgstr "MQB Functies en Plugins"
+
+msgid "Macros"
+msgstr "Macro's"
+
+msgid "Main menu"
+msgstr "Hoofdmenu"
+
+msgid "MediaPlayer"
+msgstr "MediaPlayer"
+
+msgid "Menu"
+msgstr "Menu"
+
+msgid "Mount info"
+msgstr "Mount info"
+
+msgid "Move PIP"
+msgstr "Move PIP"
+
+msgid "Multi QuickButton settings"
+msgstr "Multi QuickButton instellingen"
+
+msgid "Multi Quickbutton"
+msgstr "Multi Quickbutton"
+
+msgid "MultiQuickButton macro configuration"
+msgstr "MultiQuickButton macro configuratie"
+
+msgid "Mute"
+msgstr "Mute"
+
+msgid "No valid function file found"
+msgstr "Geen geldige functie gevonden"
+
+msgid "No valid selection"
+msgstr "No valid selection"
+
+msgid "OK"
+msgstr "OK"
+
+msgid "OK/EXIT"
+msgstr "OK/EXIT"
+
+msgid "Ok"
+msgstr "Ok"
+
+msgid "Overwrite existing Backup?."
+msgstr "Overschrijf de bestaande back-up?"
+
+msgid "Overwrite existing Settings?."
+msgstr "Bestaande instellingen overschrijven?"
+
+msgid "Pause"
+msgstr "Pause"
+
+msgid "Picture Player"
+msgstr "Picture Player"
+
+msgid "Play"
+msgstr "Play"
+
+msgid "Please select the backup path..."
+msgstr "Kies de backup locatie"
+
+msgid "Please select the restore path..."
+msgstr "Kies de locatie van de bestaande back-up"
+
+msgid "Plugin Browser"
+msgstr "Plugin Browser"
+
+msgid "Plugins"
+msgstr "Plugins"
+
+msgid "Power"
+msgstr "Power"
+
+msgid "Quickbutton Key : "
+msgstr "Quickbutton knop : "
+
+msgid "Quickbutton: Key "
+msgstr "Quickbutton: Knop"
+
+msgid "Quite without saving changes ?"
+msgstr "Afsluiten zonder op te slaan?"
+
+msgid "RADIO"
+msgstr "Radio"
+
+msgid "Reboot"
+msgstr "Reboot"
+
+msgid "Record"
+msgstr "Opnemen"
+
+msgid "Remote control macro I"
+msgstr "Remote control macro I"
+
+msgid "Remote control macro II"
+msgstr "Remote control macro II"
+
+msgid "Remote control macro III"
+msgstr "Remote control macro III"
+
+msgid "Remote control macro IV"
+msgstr "Remote control macro IV"
+
+msgid "Remote control macro V"
+msgstr "Remote control macro V"
+
+msgid "Remount Network Shares"
+msgstr "Mount netwerk shares opnieuw"
+
+msgid "Restart SoftCam"
+msgstr "Restart SoftCam"
+
+msgid "Restarting Enigma2 to load:\n"
+msgstr "Enigma2 wordt herstart om in te stellen:\n"
+
 msgid ""
 "Restarting Enigma2 to set\n"
 "Multi QuickButton Autostart"
@@ -452,85 +337,111 @@ msgstr ""
 "Herstarting Enigma2 om in te stellen\n"
 "Multi QuickButton Autostart"
 
-#: ../src/MultiQuickButton.py:340
-msgid "Restarting Enigma2 to load:\n"
-msgstr "Enigma2 wordt herstart om in te stellen:\n"
+msgid "Restore"
+msgstr "Herstel"
 
-#: ../src/MultiQuickButton.py:340
-msgid "Multi QuickButton settings"
-msgstr "Multi QuickButton instellingen"
+msgid "Restore Settings..."
+msgstr "Herstel instellingen"
 
-#: ../src/MultiQuickButton.py:467
-#: ../src/MultiQuickButton.py:688
-msgid "Cancel"
-msgstr "Annuleer"
+msgid "Rewind <<"
+msgstr "Achteruit spoelen <<"
 
-#: ../src/MultiQuickButton.py:468
 msgid "Save"
 msgstr "Sla op"
 
-#: ../src/MultiQuickButton.py:469
-msgid "delete"
-msgstr "verwijder"
-
-#: ../src/MultiQuickButton.py:470
-msgid "Add"
-msgstr "Voeg toe"
-
-#: ../src/MultiQuickButton.py:581
-msgid "MQB Functions and Plugins"
-msgstr "MQB Functies en Plugins"
-
-#: ../src/MultiQuickButton.py:590
-msgid "No valid selection"
-msgstr "No valid selection"
-
-#: ../src/MultiQuickButton.py:594
-msgid "Add Functions to MQB Key"
-msgstr "Voeg functies aan MQB button toe"
-
-#: ../src/MultiQuickButton.py:595
-msgid "Add Plugins to MQB Key"
-msgstr "Voeg plugins aan MQB button toe"
-
-#: ../src/MultiQuickButton.py:601
-msgid "Functions"
-msgstr "Functies"
-
-#: ../src/MultiQuickButton.py:603
-msgid "No valid function file found"
-msgstr "Geen geldige functie gevonden"
-
-#: ../src/MultiQuickButton.py:607
-msgid "Plugins"
-msgstr "Plugins"
-
-#: ../src/MultiQuickButton.py:613
-#, python-format
-msgid "Entry %s already exists."
-msgstr "Waarde %s bestaat al"
-
-#: ../src/MultiQuickButton.py:661
 msgid "Save Settings"
 msgstr "Sla de instellingen op"
 
-#: ../src/MultiQuickButton.py:689
-msgid "OK"
-msgstr "OK"
+msgid "Show PIP"
+msgstr "Show PIP"
 
-#: ../src/MultiQuickButton.py:701
-#: ../src/MultiQuickButton.py:702
-#: ../src/MultiQuickButton.py:703
-#: ../src/MultiQuickButton.py:704
-#: ../src/MultiQuickButton.py:705
-msgid "Channel"
-msgstr "Kanaal"
+msgid "Sleeptimer"
+msgstr "Slaaptimer"
 
-#: ../src/MultiQuickButton.py:712
-msgid "Channel Selection"
-msgstr "Kanaal keuze"
+msgid "Start Teletext"
+msgstr "Start Teletext"
 
-#: ../src/MultiQuickButton.py:722
-msgid "Quite without saving changes ?"
-msgstr "Afsluiten zonder op te slaan?"
+msgid "Start Timeshift"
+msgstr "Start Timeshift"
 
+msgid "Stop"
+msgstr "Stop"
+
+msgid "Subservice Selection"
+msgstr "Subservice Selectie"
+
+msgid "Subtitle"
+msgstr "Ondertitel"
+
+msgid "Subtitles"
+msgstr "Ondertitels"
+
+msgid "Swap PIP"
+msgstr "Swap PIP"
+
+msgid "Switch 4:3 (Pillarbox) (Pan&Scan)"
+msgstr "Switch 4:3 (Pillarbox) (Pan&Scan)"
+
+msgid "TEXT"
+msgstr "Tekst"
+
+msgid "TV"
+msgstr "TV"
+
+msgid "Timer"
+msgstr "Timer"
+
+msgid "Toggle AtmoLight"
+msgstr "Toggle AtmoLight"
+
+msgid "VTI Panel"
+msgstr "VTI Panel"
+
+msgid "VU+ EPG / INFO"
+msgstr "VU+ EPG / INFO"
+
+msgid "VU+ EPG / Info"
+msgstr "VU+ EPG / Info"
+
+msgid "VU+ R-Button"
+msgstr "VU+ R-knop"
+
+msgid "Volume +"
+msgstr "Volume +"
+
+msgid "Volume -"
+msgstr "Volume -"
+
+msgid "Zap history back"
+msgstr "Vorige zender in geschiedenis"
+
+msgid "Zap history next"
+msgstr "Volgende zender in geschiedenis"
+
+msgid "blue"
+msgstr "blauw"
+
+msgid "delete"
+msgstr "verwijder"
+
+#, python-format
+msgid "file %s not found!"
+msgstr "bestand %s niet gevonden"
+
+msgid "green"
+msgstr "groen"
+
+msgid "off"
+msgstr "uit"
+
+msgid "on"
+msgstr "aan"
+
+msgid "red"
+msgstr "rood"
+
+msgid "yellow"
+msgstr "geel"
+
+#~ msgid "About"
+#~ msgstr "Over"
