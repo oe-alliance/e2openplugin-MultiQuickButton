@@ -57,7 +57,7 @@ okexit=_("OK/EXIT") + ": "
 
 values = ("red","red_long","green","green_long","yellow","yellow_long","blue","blue_long","pvr","pvr_long","radio","radio_long","text","text_long", \
 			"help_long","info","info_long","end","end_long","home","home_long","cross_up","cross_down","cross_left","cross_right","previous","next", \
-			"channelup","channeldown","audio","ok","exit","play","pause","fastforward","stop","rewind","tv")
+			"channelup","channeldown","audio","ok","exit","play","pause","fastforward","rewind","tv")
 
 class MultiQuickButton(Screen):
 
@@ -217,7 +217,6 @@ class MultiQuickButton(Screen):
 			self.list.append(QuickButtonListEntry('',(_('EXIT') + functionbutton_exit, 'exit')))
 		self.list.append(QuickButtonListEntry('',(_('Play') + functionbutton_play, 'play')))
 		self.list.append(QuickButtonListEntry('',(_('Pause') + functionbutton_pause, 'pause')))
-		self.list.append(QuickButtonListEntry('',(_('Stop') + functionbutton_stop, 'stop')))
 		self.list.append(QuickButtonListEntry('',(_('Rewind <<') + functionbutton_rewind, 'rewind')))
 		self.list.append(QuickButtonListEntry('',(_('FastForward >>') + functionbutton_fastforward, 'fastforward')))
 		
@@ -825,7 +824,6 @@ class MultiQuickButtonMacro(Screen):
 					"400" : _("yellow"),
 					"207" : _("Play"),
 					"119" : _("Pause"),
-					"128" : _("Stop"),
 					"167" : _("Record"),
 					"208" : _("FastForward >>"),
 					"168" : _("Rewind <<"),

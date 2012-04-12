@@ -73,7 +73,6 @@ def checkMQBKeys():
 	text = mqbkeymap.read()
 	mqbkeymap.close()
 	ptskeys = [	"<key id=\"KEY_PLAY\" mapto=\"play\" flags=\"m\" />", \
-			"<key id=\"KEY_STOP\" mapto=\"stop\" flags=\"b\" />", \
 			"<key id=\"KEY_PAUSE\" mapto=\"pause\" flags=\"m\" />", \
 			"<key id=\"KEY_REWIND\" mapto=\"rewind\" flags=\"b\" />", \
 			"<key id=\"KEY_FASTFORWARD\" mapto=\"fastforward\" flags=\"b\" />", \
@@ -170,7 +169,6 @@ def InfoBarPlugins__init__(self):
 				"ok": self.quickSelectGlobal,
 				"exit": self.quickSelectGlobal,	
 				"play": self.quickSelectGlobal,
-				"stop": self.quickSelectGlobal,	
 				"pause": self.quickSelectGlobal,	
 				"fastforward": self.quickSelectGlobal,	
 				"rewind": self.quickSelectGlobal,	
@@ -255,7 +253,7 @@ class MQBActionMap(ActionMap):
 	def action(self, contexts, action):
 		quickSelection = ("red","red_long","green","green_long","yellow","yellow_long","blue","blue_long","pvr","pvr_long","radio","radio_long", \
 				  "text","text_long","help_long","info","info_long","end","end_long","home","home_long","cross_up","cross_down","cross_left", \
-				  "cross_right","previous","next","channelup","channeldown","f1","f2","f3","audio","exit","ok","play","pause","rewind","fastforward","stop","tv")
+				  "cross_right","previous","next","channelup","channeldown","f1","f2","f3","audio","exit","ok","play","pause","rewind","fastforward","tv")
 		if (action in quickSelection and self.actions.has_key(action)):
 			res = self.actions[action](action)
 			if res is not None:
