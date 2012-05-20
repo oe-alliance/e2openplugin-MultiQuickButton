@@ -1,0 +1,668 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-02-28 19:40+0100\n"
+"PO-Revision-Date: \n"
+"Last-Translator: jerry <jerry00@quick.cz>\n"
+"Language-Team: \n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: ../src/function.py:2
+#: ../src/function.py:48
+msgid "VTI Panel"
+msgstr ""
+
+#: ../src/function.py:3
+msgid "Restart SoftCam"
+msgstr "Restartovat SoftCam"
+
+#: ../src/function.py:4
+msgid "Plugin Browser"
+msgstr "Prohlížeč souborů"
+
+#: ../src/function.py:5
+msgid "Extension Selection"
+msgstr "Výběr rozšíření"
+
+#: ../src/function.py:6
+msgid "Sleeptimer"
+msgstr "Uspání"
+
+#: ../src/function.py:7
+msgid "Timer"
+msgstr "Časovač"
+
+#: ../src/function.py:8
+msgid "Channel zap +"
+msgstr "Přepínač +"
+
+#: ../src/function.py:9
+msgid "Channel zap -"
+msgstr "Přepínač -"
+
+#: ../src/function.py:10
+msgid "Channel zap (list) +"
+msgstr "Přepínač (seznamu) +"
+
+#: ../src/function.py:11
+msgid "Channel zap (list) -"
+msgstr "Přepínač (seznamu) -"
+
+#: ../src/function.py:12
+msgid "Dolby Digital downmix on/off"
+msgstr "Zap/Vyp DD downmix"
+
+#: ../src/function.py:13
+msgid "List of Bouquets"
+msgstr "Seznam přehledů"
+
+#: ../src/function.py:14
+msgid "Channel list"
+msgstr "Seznam kanálů"
+
+#: ../src/function.py:15
+msgid "Zap history back"
+msgstr "Historie zap"
+
+#: ../src/function.py:16
+msgid "Zap history next"
+msgstr "Další historie zap"
+
+#: ../src/function.py:17
+msgid "InfoBar"
+msgstr "Infolišta"
+
+#: ../src/function.py:18
+msgid "InfoBar EventInfoPlugins"
+msgstr "Výběr z rozšíření"
+
+#: ../src/function.py:19
+msgid "InfoBar EventView"
+msgstr "Zobrazení info o akt. programu"
+
+#: ../src/function.py:20
+msgid "InfoBar EPG"
+msgstr "Panel EPG"
+
+#: ../src/function.py:21
+msgid "InfoBar Multi EPG"
+msgstr "Panel Multi EPG"
+
+#: ../src/function.py:22
+msgid "InfoBar Audio Selection"
+msgstr "Panel výběru audia"
+
+#: ../src/function.py:23
+msgid "InfoBar Show Radio"
+msgstr "Panel zobrazení rádia"
+
+#: ../src/function.py:24
+msgid "InfoBar Show Tv"
+msgstr "Panel zobrazení TV"
+
+#: ../src/function.py:25
+msgid "InfoBar Show Movies"
+msgstr "Panel zobrazení filmů"
+
+#: ../src/function.py:26
+msgid "InfoBar Record"
+msgstr "Panel záznamu"
+
+#: ../src/function.py:27
+msgid "InfoBar Instant Record"
+msgstr "Panel okamžitého záznamu"
+
+#: ../src/function.py:28
+msgid "Start Timeshift"
+msgstr "Spustit Timeshift"
+
+#: ../src/function.py:29
+msgid "Start Teletext"
+msgstr "Spustit teletext"
+
+#: ../src/function.py:30
+msgid "Favourite channel 1"
+msgstr "Oblíbený kanál 1"
+
+#: ../src/function.py:31
+msgid "Favourite channel 2"
+msgstr "Oblíbený kanál 2"
+
+#: ../src/function.py:32
+msgid "Favourite channel 3"
+msgstr "Oblíbený kanál 3"
+
+#: ../src/function.py:33
+msgid "Favourite channel 4"
+msgstr "Oblíbený kanál 4"
+
+#: ../src/function.py:34
+msgid "Favourite channel 5"
+msgstr "Oblíbený kanál 5"
+
+#: ../src/function.py:35
+msgid "Toggle AtmoLight"
+msgstr "Zásuvka AtomLight"
+
+#: ../src/function.py:36
+msgid "Subservice Selection"
+msgstr "Výběr podslužby"
+
+#: ../src/function.py:37
+msgid "Subtitles"
+msgstr "Titulky"
+
+#: ../src/function.py:38
+msgid "MediaPlayer"
+msgstr "Přehrávač médií"
+
+#: ../src/function.py:39
+msgid "DVDPlayer"
+msgstr "DVD přehrávač"
+
+#: ../src/function.py:40
+msgid "Picture Player"
+msgstr "Přehrávač obrázků"
+
+#: ../src/function.py:41
+msgid "Cool TV Guide"
+msgstr ""
+
+#: ../src/function.py:42
+msgid "A/V Settings"
+msgstr "Nastavení A/V"
+
+#: ../src/function.py:43
+msgid "Switch 4:3 (Pillarbox) (Pan&Scan)"
+msgstr "Přepínač 4:3 (Pillarbox) (Pan&Scan)"
+
+#: ../src/function.py:44
+msgid "Mount info"
+msgstr "Připojovací body"
+
+#: ../src/function.py:45
+msgid "Show PIP"
+msgstr "Zobrazit PIP"
+
+#: ../src/function.py:46
+msgid "Swap PIP"
+msgstr "Přepnout PIP"
+
+#: ../src/function.py:47
+msgid "Move PIP"
+msgstr "Přesunout PIP"
+
+#: ../src/function.py:47
+msgid "Reboot"
+msgstr "Restartovat"
+
+#: ../src/function.py:63
+msgid "GUI Restart"
+msgstr "Restart Enigmy"
+
+#: ../src/function.py:64
+msgid "DeepStandby"
+msgstr "Vypnout"
+
+#: ../src/function.py:65
+msgid "Remount Network Shares"
+msgstr "Připojit síťová sdílení"
+
+#: ../src/function.py:66
+msgid "Remote control macro I"
+msgstr "Dálkové ovládání makro I"
+
+#: ../src/function.py:67
+msgid "Remote control macro II"
+msgstr "Dálkové ovládání makro II"
+
+#: ../src/function.py:68
+msgid "Remote control macro III"
+msgstr "Dálkové ovládání makro II"
+
+#: ../src/function.py:69
+msgid "Remote control macro IV"
+msgstr "Dálkové ovládání makro IV"
+
+#: ../src/function.py:70
+msgid "Remote control macro V"
+msgstr "Dálkové ovládání makro V"
+
+#: ../src/plugin.py:198
+#: ../src/plugin.py:237
+#: ../src/plugin.py:239
+#: ../src/plugin.py:244
+#: ../src/MultiQuickButton.py:499
+msgid "Error"
+msgstr "Chyba"
+
+#: ../src/plugin.py:208
+msgid "Quickbutton: Key "
+msgstr "Quickbutton: Klávesa "
+
+#: ../src/plugin.py:210
+#, python-format
+msgid "file %s not found!"
+msgstr "soubor %s nenalezen"
+
+#: ../src/plugin.py:272
+msgid "Multi Quickbutton"
+msgstr ""
+
+#: ../src/MultiQuickButton.py:53
+msgid "Autostart"
+msgstr ""
+
+#: ../src/MultiQuickButton.py:54
+#: ../src/MultiQuickButton.py:347
+msgid "Main menu"
+msgstr "Hlavní menu"
+
+#: ../src/MultiQuickButton.py:55
+msgid "Info"
+msgstr ""
+
+#: ../src/MultiQuickButton.py:56
+msgid "OK/EXIT"
+msgstr ""
+
+#: ../src/MultiQuickButton.py:131
+msgid "Restore"
+msgstr "Obnovit"
+
+#: ../src/MultiQuickButton.py:132
+msgid "Backup"
+msgstr "Záloha"
+
+#: ../src/MultiQuickButton.py:135
+msgid "Channels"
+msgstr "Kanály"
+
+#: ../src/MultiQuickButton.py:136
+msgid "Macros"
+msgstr "Makra"
+
+#: ../src/MultiQuickButton.py:184
+#: ../src/MultiQuickButton.py:185
+#: ../src/MultiQuickButton.py:822
+msgid "red"
+msgstr "Červené"
+
+#: ../src/MultiQuickButton.py:185
+#: ../src/MultiQuickButton.py:187
+#: ../src/MultiQuickButton.py:189
+#: ../src/MultiQuickButton.py:191
+#: ../src/MultiQuickButton.py:193
+#: ../src/MultiQuickButton.py:194
+#: ../src/MultiQuickButton.py:196
+#: ../src/MultiQuickButton.py:198
+#: ../src/MultiQuickButton.py:200
+#: ../src/MultiQuickButton.py:202
+#: ../src/MultiQuickButton.py:204
+msgid " long"
+msgstr " dlouhý stisk"
+
+#: ../src/MultiQuickButton.py:186
+#: ../src/MultiQuickButton.py:187
+#: ../src/MultiQuickButton.py:824
+msgid "green"
+msgstr "Zelené"
+
+#: ../src/MultiQuickButton.py:188
+#: ../src/MultiQuickButton.py:189
+#: ../src/MultiQuickButton.py:825
+msgid "yellow"
+msgstr "Žluté"
+
+#: ../src/MultiQuickButton.py:190
+#: ../src/MultiQuickButton.py:191
+#: ../src/MultiQuickButton.py:823
+msgid "blue"
+msgstr "Modré"
+
+#: ../src/MultiQuickButton.py:192
+#: ../src/MultiQuickButton.py:193
+#: ../src/MultiQuickButton.py:837
+msgid "TEXT"
+msgstr ""
+
+#: ../src/MultiQuickButton.py:194
+#: ../src/MultiQuickButton.py:841
+msgid "HELP"
+msgstr ""
+
+#: ../src/MultiQuickButton.py:195
+#: ../src/MultiQuickButton.py:196
+msgid "VU+ EPG / INFO"
+msgstr ""
+
+#: ../src/MultiQuickButton.py:197
+#: ../src/MultiQuickButton.py:198
+#: ../src/MultiQuickButton.py:833
+msgid "HOME"
+msgstr "DOMOV"
+
+#: ../src/MultiQuickButton.py:199
+#: ../src/MultiQuickButton.py:200
+#: ../src/MultiQuickButton.py:832
+msgid "END"
+msgstr ""
+
+#: ../src/MultiQuickButton.py:201
+#: ../src/MultiQuickButton.py:202
+#: ../src/MultiQuickButton.py:840
+msgid "VU+ R-Button"
+msgstr "VU+ Č-tlačítko"
+
+#: ../src/MultiQuickButton.py:203
+#: ../src/MultiQuickButton.py:204
+#: ../src/MultiQuickButton.py:839
+msgid "RADIO"
+msgstr "RÁDIO"
+
+#: ../src/MultiQuickButton.py:205
+#: ../src/MultiQuickButton.py:838
+msgid "TV"
+msgstr ""
+
+#: ../src/MultiQuickButton.py:206
+#: ../src/MultiQuickButton.py:819
+msgid "Cross Up"
+msgstr "Křížové horní"
+
+#: ../src/MultiQuickButton.py:207
+#: ../src/MultiQuickButton.py:820
+msgid "Cross Down"
+msgstr "Křížové dolní"
+
+#: ../src/MultiQuickButton.py:208
+#: ../src/MultiQuickButton.py:817
+msgid "Cross Left"
+msgstr "Křížové levé"
+
+#: ../src/MultiQuickButton.py:209
+#: ../src/MultiQuickButton.py:818
+msgid "Cross Right"
+msgstr "Křížové pravé"
+
+#: ../src/MultiQuickButton.py:210
+#: ../src/MultiQuickButton.py:813
+msgid "Channel +"
+msgstr "Kanál +"
+
+#: ../src/MultiQuickButton.py:211
+#: ../src/MultiQuickButton.py:814
+msgid "Channel -"
+msgstr "Kanál -"
+
+#: ../src/MultiQuickButton.py:212
+#: ../src/MultiQuickButton.py:845
+msgid "Forward >"
+msgstr "Kupředu >"
+
+#: ../src/MultiQuickButton.py:213
+#: ../src/MultiQuickButton.py:846
+msgid "Backward <"
+msgstr "Zpět <"
+
+#: ../src/MultiQuickButton.py:214
+#: ../src/MultiQuickButton.py:834
+msgid "Audio"
+msgstr ""
+
+#: ../src/MultiQuickButton.py:217
+#: ../src/MultiQuickButton.py:821
+msgid "EXIT"
+msgstr ""
+
+#: ../src/MultiQuickButton.py:218
+#: ../src/MultiQuickButton.py:826
+msgid "Play"
+msgstr ""
+
+#: ../src/MultiQuickButton.py:219
+#: ../src/MultiQuickButton.py:827
+msgid "Pause"
+msgstr ""
+
+#: ../src/MultiQuickButton.py:220
+#: ../src/MultiQuickButton.py:828
+msgid "Stop"
+msgstr ""
+
+#: ../src/MultiQuickButton.py:221
+#: ../src/MultiQuickButton.py:831
+#: ../src/MultiQuickButton.py:836
+msgid "Rewind <<"
+msgstr "Převíječ <<"
+
+#: ../src/MultiQuickButton.py:222
+#: ../src/MultiQuickButton.py:830
+msgid "FastForward >>"
+msgstr "Převíječ >>"
+
+#: ../src/MultiQuickButton.py:234
+#: ../src/MultiQuickButton.py:239
+#: ../src/MultiQuickButton.py:244
+#: ../src/MultiQuickButton.py:249
+msgid "on"
+msgstr "zap"
+
+#: ../src/MultiQuickButton.py:236
+#: ../src/MultiQuickButton.py:241
+#: ../src/MultiQuickButton.py:246
+#: ../src/MultiQuickButton.py:251
+msgid "off"
+msgstr "vyp"
+
+#: ../src/MultiQuickButton.py:264
+msgid "Quickbutton Key : "
+msgstr "Quickbutton klávesa : "
+
+#: ../src/MultiQuickButton.py:275
+msgid "Please select the backup path..."
+msgstr "Vyberte cestu pro zálohu..."
+
+#: ../src/MultiQuickButton.py:287
+msgid "Overwrite existing Backup?."
+msgstr "Přepsat existující zálohu?"
+
+#: ../src/MultiQuickButton.py:290
+#: ../src/MultiQuickButton.py:302
+msgid "Backup Settings..."
+msgstr "Nastavení zálohy..."
+
+#: ../src/MultiQuickButton.py:294
+#, python-format
+msgid "Directory %s nonexistent."
+msgstr "Adresář %s neexistuje."
+
+#: ../src/MultiQuickButton.py:308
+msgid "Please select the restore path..."
+msgstr "Vyberte cestu k obnově..."
+
+#: ../src/MultiQuickButton.py:317
+msgid "Overwrite existing Settings?."
+msgstr "Přepsat existující nastavení?."
+
+#: ../src/MultiQuickButton.py:319
+#, python-format
+msgid "File %s nonexistent."
+msgstr "Soubor %s neexistje."
+
+#: ../src/MultiQuickButton.py:326
+msgid "Restore Settings..."
+msgstr "Nastavení obnovy..."
+
+#: ../src/MultiQuickButton.py:337
+msgid ""
+"Restarting Enigma2 to set\n"
+"Multi QuickButton Autostart"
+msgstr ""
+"Restart Enigmy2 k nastavení\n"
+"Multi QuickButton Autostartu"
+
+#: ../src/MultiQuickButton.py:347
+msgid "Restarting Enigma2 to load:\n"
+msgstr "Restart Enigmy2 k načtení:\n"
+
+#: ../src/MultiQuickButton.py:347
+msgid "Multi QuickButton settings"
+msgstr "Nastavení Multi QuickButton"
+
+#: ../src/MultiQuickButton.py:477
+#: ../src/MultiQuickButton.py:698
+#: ../src/MultiQuickButton.py:864
+#: ../src/MultiQuickButton.py:894
+#: ../src/MultiQuickButton.py:958
+msgid "Cancel"
+msgstr "Zrušit"
+
+#: ../src/MultiQuickButton.py:478
+#: ../src/MultiQuickButton.py:865
+#: ../src/MultiQuickButton.py:959
+msgid "Save"
+msgstr "Uložit"
+
+#: ../src/MultiQuickButton.py:479
+msgid "delete"
+msgstr "Smazat"
+
+#: ../src/MultiQuickButton.py:480
+#: ../src/MultiQuickButton.py:867
+#: ../src/MultiQuickButton.py:961
+msgid "Add"
+msgstr "Přidat"
+
+#: ../src/MultiQuickButton.py:591
+msgid "MQB Functions and Plugins"
+msgstr "Funkce MQB a pluginy"
+
+#: ../src/MultiQuickButton.py:600
+msgid "No valid selection"
+msgstr "Neplatný výběr"
+
+#: ../src/MultiQuickButton.py:604
+msgid "Add Functions to MQB Key"
+msgstr "Přidat fukci tlačítku MQB"
+
+#: ../src/MultiQuickButton.py:605
+msgid "Add Plugins to MQB Key"
+msgstr "Přidat plugin tlačítku MQB"
+
+#: ../src/MultiQuickButton.py:611
+msgid "Functions"
+msgstr "Funkce"
+
+#: ../src/MultiQuickButton.py:613
+msgid "No valid function file found"
+msgstr "Nenalezen platný soubor funkcí"
+
+#: ../src/MultiQuickButton.py:617
+msgid "Plugins"
+msgstr "Pluginy"
+
+#: ../src/MultiQuickButton.py:623
+#, python-format
+msgid "Entry %s already exists."
+msgstr "Záznam %s již existuje."
+
+#: ../src/MultiQuickButton.py:671
+msgid "Save Settings"
+msgstr "Uložit nastavení"
+
+#: ../src/MultiQuickButton.py:699
+#: ../src/MultiQuickButton.py:783
+#: ../src/MultiQuickButton.py:816
+msgid "OK"
+msgstr ""
+
+#: ../src/MultiQuickButton.py:711
+#: ../src/MultiQuickButton.py:712
+#: ../src/MultiQuickButton.py:713
+#: ../src/MultiQuickButton.py:714
+#: ../src/MultiQuickButton.py:715
+msgid "Channel"
+msgstr "Kanál"
+
+#: ../src/MultiQuickButton.py:722
+msgid "Channel Selection"
+msgstr "Výběr kanálu"
+
+#: ../src/MultiQuickButton.py:732
+msgid "Quite without saving changes ?"
+msgstr "Ukončit bez uložení změn ?"
+
+#: ../src/MultiQuickButton.py:773
+msgid "MultiQuickButton macro configuration"
+msgstr "Nastavení makra MultiQuickButton"
+
+#: ../src/MultiQuickButton.py:782
+#: ../src/MultiQuickButton.py:935
+#: ../src/MultiQuickButton.py:951
+msgid "Exit"
+msgstr "Exit"
+
+#: ../src/MultiQuickButton.py:811
+msgid "Power"
+msgstr "Power"
+
+#: ../src/MultiQuickButton.py:812
+msgid "Menu"
+msgstr ""
+
+#: ../src/MultiQuickButton.py:815
+msgid "VU+ EPG / Info"
+msgstr ""
+
+#: ../src/MultiQuickButton.py:829
+msgid "Record"
+msgstr "Záznam"
+
+#: ../src/MultiQuickButton.py:835
+msgid "Subtitle"
+msgstr "Titulky"
+
+#: ../src/MultiQuickButton.py:842
+msgid "Volume +"
+msgstr "Hlasitost+"
+
+#: ../src/MultiQuickButton.py:843
+msgid "Volume -"
+msgstr "Hlasitost-"
+
+#: ../src/MultiQuickButton.py:844
+msgid "Mute"
+msgstr "Ztlumit"
+
+#: ../src/MultiQuickButton.py:852
+msgid "Configure macro"
+msgstr "Nastavit makro"
+
+#: ../src/MultiQuickButton.py:866
+#: ../src/MultiQuickButton.py:960
+msgid "Delete"
+msgstr "Smazat"
+
+#: ../src/MultiQuickButton.py:885
+#: ../src/MultiQuickButton.py:901
+msgid "Button : "
+msgstr "Tlačítko :"
+
+#: ../src/MultiQuickButton.py:895
+#: ../src/MultiQuickButton.py:936
+#: ../src/MultiQuickButton.py:952
+msgid "Ok"
+msgstr ""
+
+#
+msgid "Multi Quickbutton for Keyboard and RC VU+Version"
+msgstr "Multi Quickbutton verze pro VU+"
+
+
