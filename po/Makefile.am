@@ -1,61 +1,42 @@
-#
-# to use this for the localisation of other plugins,
-# just change the DOMAIN to the name of the Plugin.
-# It is assumed, that the domain ist the same as
-# the directory name of the plugin.
-#
+plugindir = $(libdir)/enigma2/python/Plugins/$(CATEGORY)/$(PLUGIN)
 
-DOMAIN=MultiQuickButton
-installdir = /usr/lib/enigma2/python/Plugins/Extensions/$(DOMAIN)
-#GETTEXT=./pygettext.py
-GETTEXT=xgettext
+LANGS = ar bg ca cs da de el en en_GB es et fa fi fr fy he hr hu is it lt lv nl no pl pt ro ru sv sk sl sr th tr uk
+LANGMO = $(LANGS:=.mo)
+LANGPO = $(LANGS:=.po)
 
-#MSGFMT = ./msgfmt.py
-MSGFMT = msgfmt
-
-LANGS = ar bg ca cs da de el en en_GB es et fa fi fr fy he hr hu is it lt lv nl no pl pt ru sv sk sl sr th tr uk
-LANGPO := $(foreach LANG, $(LANGS),$(LANG).po)
-LANGMO := $(foreach LANG, $(LANGS),$(LANG).mo)
-
-default: $(DOMAIN).pot $(LANGPO) merge $(LANGMO)
-	for lang in $(LANGS); do \
-		mkdir -p $$lang/LC_MESSAGES; \
-		cp $$lang.mo $$lang/LC_MESSAGES/$(DOMAIN).mo; \
-                cp $$lang.po $$lang/LC_MESSAGES/$$lang.po; \
-	done
-
-merge:
-	for lang in $(LANGS); do \
-		msgmerge --no-location -s -N -U $$lang.po $(DOMAIN).pot; \
-	done
-
-
+if UPDATE_PO
 # the TRANSLATORS: allows putting translation comments before the to-be-translated line.
-$(DOMAIN).pot:
-	$(GETTEXT) -L python --add-comments="TRANSLATORS:" -d $(DOMAIN) -s -o $(DOMAIN).pot ../*.py
+$(PLUGIN)-py.pot: $(srcdir)/../src/*.py
+	$(XGETTEXT) -L python --from-code=UTF-8 --add-comments="TRANSLATORS:" -d $(PLUGIN) -s -o $@ $^
 
-	../xml2po.py ../ >> $(DOMAIN).pot
+$(PLUGIN).pot: $(PLUGIN)-py.pot
+	sed --in-place $(PLUGIN)-py.pot --expression=s/CHARSET/UTF-8/
+	$(MSGUNIQ) $^ -o $@
 
-	msguniq -o $(DOMAIN)uniq.pot $(DOMAIN).pot
-	$(RM) $(DOMAIN).pot
-	mv $(DOMAIN)uniq.pot $(DOMAIN).pot
+%.po: $(PLUGIN).pot
+	if [ -f $@ ]; then \
+		$(MSGMERGE) --backup=none --no-location -s -N -U $@ $< && touch $@; \
+	else \
+		$(MSGINIT) -l $@ -o $@ -i $< --no-translator; \
+	fi
+endif
 
-.PHONY: $(DOMAIN).pot
-
-
-%.mo: %.po
+.po.mo:
 	$(MSGFMT) -o $@ $<
 
-%.po:
-	msginit -l $@ -o $@ -i $(DOMAIN).pot --no-translator
+BUILT_SOURCES = $(LANGMO)
+CLEANFILES = $(LANGMO) $(PLUGIN)-py.pot $(PLUGIN)-xml.pot $(PLUGIN).pot
 
-CLEANFILES = $(foreach LANG, $(LANGS),$(LANG).mo)
+dist-hook: $(LANGPO)
 
-clean-local:
-	$(RM) -r $(LANGS)
-
-install-data-am: default
+install-data-local: $(LANGMO)
 	for lang in $(LANGS); do \
-		mkdir -p $(DESTDIR)$(installdir)/locale/$$lang/LC_MESSAGES; \
-		cp $$lang.mo $(DESTDIR)$(installdir)/locale/$$lang/LC_MESSAGES/$(DOMAIN).mo; \
+		$(mkinstalldirs) $(DESTDIR)$(plugindir)/locale/$$lang/LC_MESSAGES; \
+		$(INSTALL_DATA) $$lang.mo $(DESTDIR)$(plugindir)/locale/$$lang/LC_MESSAGES/$(PLUGIN).mo; \
+		$(INSTALL_DATA) $$lang.po $(DESTDIR)$(plugindir)/locale/$$lang.po; \
+	done
+
+uninstall-local:
+	for lang in $(LANGS); do \
+		$(RM) $(DESTDIR)$(plugindir)/locale/$$lang/LC_MESSAGES/$(PLUGIN).mo; \
 	done
