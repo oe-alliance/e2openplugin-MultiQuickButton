@@ -306,24 +306,6 @@ msgstr "Reboot"
 msgid "Record"
 msgstr "Opnemen"
 
-msgid "Remote control macro I"
-msgstr "Remote control macro I"
-
-msgid "Remote control macro II"
-msgstr "Remote control macro II"
-
-msgid "Remote control macro III"
-msgstr "Remote control macro III"
-
-msgid "Remote control macro IV"
-msgstr "Remote control macro IV"
-
-msgid "Remote control macro V"
-msgstr "Remote control macro V"
-
-msgid "Remount Network Shares"
-msgstr "Mount netwerk shares opnieuw"
-
 msgid "Restart SoftCam"
 msgstr "Restart SoftCam"
 
@@ -364,9 +346,6 @@ msgstr "Start Teletext"
 msgid "Start Timeshift"
 msgstr "Start Timeshift"
 
-msgid "Stop"
-msgstr "Stop"
-
 msgid "Subservice Selection"
 msgstr "Subservice Selectie"
 
@@ -393,9 +372,6 @@ msgstr "Timer"
 
 msgid "Toggle AtmoLight"
 msgstr "Toggle AtmoLight"
-
-msgid "VTI Panel"
-msgstr "VTI Panel"
 
 msgid "VU+ EPG / INFO"
 msgstr "VU+ EPG / INFO"
@@ -445,3 +421,27 @@ msgstr "geel"
 
 #~ msgid "About"
 #~ msgstr "Over"
+
+#~ msgid "Remote control macro I"
+#~ msgstr "Remote control macro I"
+
+#~ msgid "Remote control macro II"
+#~ msgstr "Remote control macro II"
+
+#~ msgid "Remote control macro III"
+#~ msgstr "Remote control macro III"
+
+#~ msgid "Remote control macro IV"
+#~ msgstr "Remote control macro IV"
+
+#~ msgid "Remote control macro V"
+#~ msgstr "Remote control macro V"
+
+#~ msgid "Remount Network Shares"
+#~ msgstr "Mount netwerk shares opnieuw"
+
+#~ msgid "Stop"
+#~ msgstr "Stop"
+
+#~ msgid "VTI Panel"
+#~ msgstr "VTI Panel"

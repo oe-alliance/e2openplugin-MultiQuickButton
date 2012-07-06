@@ -1,21 +1,21 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# English translations for enigma2-plugins package.
+# Copyright (C) 2012 THE enigma2-plugins'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the enigma2-plugins package.
+# Automatically generated, 2012.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: enigma2-plugins 3.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-07-06 13:11+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2012-07-06 13:11+0100\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../src/MultiQuickButton.py:185 ../src/MultiQuickButton.py:187
 #: ../src/MultiQuickButton.py:189 ../src/MultiQuickButton.py:191
@@ -24,556 +24,558 @@ msgstr ""
 #: ../src/MultiQuickButton.py:200 ../src/MultiQuickButton.py:202
 #: ../src/MultiQuickButton.py:204
 msgid " long"
-msgstr ""
+msgstr " long"
 
 #: ../src/function.py:41
 msgid "A/V Settings"
-msgstr ""
+msgstr "A/V Settings"
 
 #: ../src/MultiQuickButton.py:479 ../src/MultiQuickButton.py:865
 #: ../src/MultiQuickButton.py:959
 msgid "Add"
-msgstr ""
+msgstr "Add"
 
 #: ../src/MultiQuickButton.py:603
 msgid "Add Functions to MQB Key"
-msgstr ""
+msgstr "Add Functions to MQB Key"
 
 #: ../src/MultiQuickButton.py:604
 msgid "Add Plugins to MQB Key"
-msgstr ""
+msgstr "Add Plugins to MQB Key"
 
 #: ../src/MultiQuickButton.py:214 ../src/MultiQuickButton.py:832
 msgid "Audio"
-msgstr ""
+msgstr "Audio"
 
 #: ../src/MultiQuickButton.py:53
 msgid "Autostart"
-msgstr ""
+msgstr "Autostart"
 
 #: ../src/MultiQuickButton.py:132
 msgid "Backup"
-msgstr ""
+msgstr "Backup"
 
 #: ../src/MultiQuickButton.py:289 ../src/MultiQuickButton.py:301
 msgid "Backup Settings..."
-msgstr ""
+msgstr "Backup Settings..."
 
 #: ../src/MultiQuickButton.py:213 ../src/MultiQuickButton.py:844
 msgid "Backward <"
-msgstr ""
+msgstr "Backward <"
 
 #: ../src/MultiQuickButton.py:883 ../src/MultiQuickButton.py:899
 msgid "Button : "
-msgstr ""
+msgstr "Button : "
 
 #: ../src/MultiQuickButton.py:476 ../src/MultiQuickButton.py:697
 #: ../src/MultiQuickButton.py:862 ../src/MultiQuickButton.py:892
 #: ../src/MultiQuickButton.py:956
 msgid "Cancel"
-msgstr ""
+msgstr "Cancel"
 
 #: ../src/MultiQuickButton.py:710 ../src/MultiQuickButton.py:711
 #: ../src/MultiQuickButton.py:712 ../src/MultiQuickButton.py:713
 #: ../src/MultiQuickButton.py:714
 msgid "Channel"
-msgstr ""
+msgstr "Channel"
 
 #: ../src/MultiQuickButton.py:210 ../src/MultiQuickButton.py:812
 msgid "Channel +"
-msgstr ""
+msgstr "Channel +"
 
 #: ../src/MultiQuickButton.py:211 ../src/MultiQuickButton.py:813
 msgid "Channel -"
-msgstr ""
+msgstr "Channel -"
 
 #: ../src/MultiQuickButton.py:721
 msgid "Channel Selection"
-msgstr ""
+msgstr "Channel Selection"
 
 #: ../src/function.py:13
 msgid "Channel list"
-msgstr ""
+msgstr "Channel list"
 
 #: ../src/function.py:9
 msgid "Channel zap (list) +"
-msgstr ""
+msgstr "Channel zap (list) +"
 
 #: ../src/function.py:10
 msgid "Channel zap (list) -"
-msgstr ""
+msgstr "Channel zap (list) -"
 
 #: ../src/function.py:7
 msgid "Channel zap +"
-msgstr ""
+msgstr "Channel zap +"
 
 #: ../src/function.py:8
 msgid "Channel zap -"
-msgstr ""
+msgstr "Channel zap -"
 
 #: ../src/MultiQuickButton.py:135
 msgid "Channels"
-msgstr ""
+msgstr "Channels"
 
 #: ../src/MultiQuickButton.py:850
 msgid "Configure macro"
-msgstr ""
+msgstr "Configure macro"
 
 #: ../src/function.py:40
 msgid "Cool TV Guide"
-msgstr ""
+msgstr "Cool TV Guide"
 
 #: ../src/MultiQuickButton.py:207 ../src/MultiQuickButton.py:819
 msgid "Cross Down"
-msgstr ""
+msgstr "Cross Down"
 
 #: ../src/MultiQuickButton.py:208 ../src/MultiQuickButton.py:816
 msgid "Cross Left"
-msgstr ""
+msgstr "Cross Left"
 
 #: ../src/MultiQuickButton.py:209 ../src/MultiQuickButton.py:817
 msgid "Cross Right"
-msgstr ""
+msgstr "Cross Right"
 
 #: ../src/MultiQuickButton.py:206 ../src/MultiQuickButton.py:818
 msgid "Cross Up"
-msgstr ""
+msgstr "Cross Up"
 
 #: ../src/function.py:38
 msgid "DVDPlayer"
-msgstr ""
+msgstr "DVDPlayer"
 
 #: ../src/function.py:49
 msgid "DeepStandby"
-msgstr ""
+msgstr "DeepStandby"
 
 #: ../src/MultiQuickButton.py:864 ../src/MultiQuickButton.py:958
 msgid "Delete"
-msgstr ""
+msgstr "Delete"
 
 #: ../src/MultiQuickButton.py:293
 #, python-format
 msgid "Directory %s nonexistent."
-msgstr ""
+msgstr "Directory %s nonexistent."
 
 #: ../src/function.py:11
 msgid "Dolby Digital downmix on/off"
-msgstr ""
+msgstr "Dolby Digital downmix on/off"
 
 #: ../src/MultiQuickButton.py:199 ../src/MultiQuickButton.py:200
 #: ../src/MultiQuickButton.py:830
 msgid "END"
-msgstr ""
+msgstr "END"
 
 #: ../src/MultiQuickButton.py:217 ../src/MultiQuickButton.py:820
 msgid "EXIT"
-msgstr ""
+msgstr "EXIT"
 
 #: ../src/MultiQuickButton.py:622
 #, python-format
 msgid "Entry %s already exists."
-msgstr ""
+msgstr "Entry %s already exists."
 
 #: ../src/MultiQuickButton.py:498 ../src/plugin.py:196 ../src/plugin.py:235
 #: ../src/plugin.py:237 ../src/plugin.py:242
 msgid "Error"
-msgstr ""
+msgstr "Error"
 
 #: ../src/MultiQuickButton.py:781 ../src/MultiQuickButton.py:933
 #: ../src/MultiQuickButton.py:949
 msgid "Exit"
-msgstr ""
+msgstr "Exit"
 
 #: ../src/function.py:4
 msgid "Extension Selection"
-msgstr ""
+msgstr "Extension Selection"
 
 #: ../src/MultiQuickButton.py:221 ../src/MultiQuickButton.py:828
 msgid "FastForward >>"
-msgstr ""
+msgstr "FastForward >>"
 
 #: ../src/function.py:29
 msgid "Favourite channel 1"
-msgstr ""
+msgstr "Favourite channel 1"
 
 #: ../src/function.py:30
 msgid "Favourite channel 2"
-msgstr ""
+msgstr "Favourite channel 2"
 
 #: ../src/function.py:31
 msgid "Favourite channel 3"
-msgstr ""
+msgstr "Favourite channel 3"
 
 #: ../src/function.py:32
 msgid "Favourite channel 4"
-msgstr ""
+msgstr "Favourite channel 4"
 
 #: ../src/function.py:33
 msgid "Favourite channel 5"
-msgstr ""
+msgstr "Favourite channel 5"
 
 #: ../src/MultiQuickButton.py:318
 #, python-format
 msgid "File %s nonexistent."
-msgstr ""
+msgstr "File %s nonexistent."
 
 #: ../src/MultiQuickButton.py:212 ../src/MultiQuickButton.py:843
 msgid "Forward >"
-msgstr ""
+msgstr "Forward >"
 
 #: ../src/MultiQuickButton.py:610
 msgid "Functions"
-msgstr ""
+msgstr "Functions"
 
 #: ../src/function.py:48
 msgid "GUI Restart"
-msgstr ""
+msgstr "GUI Restart"
 
 #: ../src/MultiQuickButton.py:194 ../src/MultiQuickButton.py:839
 msgid "HELP"
-msgstr ""
+msgstr "HELP"
 
 #: ../src/MultiQuickButton.py:197 ../src/MultiQuickButton.py:198
 #: ../src/MultiQuickButton.py:831
 msgid "HOME"
-msgstr ""
+msgstr "HOME"
 
 #: ../src/MultiQuickButton.py:55
 msgid "Info"
-msgstr ""
+msgstr "Info"
 
 #: ../src/function.py:16
 msgid "InfoBar"
-msgstr ""
+msgstr "InfoBar"
 
 #: ../src/function.py:21
 msgid "InfoBar Audio Selection"
-msgstr ""
+msgstr "InfoBar Audio Selection"
 
 #: ../src/function.py:19
 msgid "InfoBar EPG"
-msgstr ""
+msgstr "InfoBar EPG"
 
 #: ../src/function.py:17
 msgid "InfoBar EventInfoPlugins"
-msgstr ""
+msgstr "InfoBar EventInfoPlugins"
 
 #: ../src/function.py:18
 msgid "InfoBar EventView"
-msgstr ""
+msgstr "InfoBar EventView"
 
 #: ../src/function.py:26
 msgid "InfoBar Instant Record"
-msgstr ""
+msgstr "InfoBar Instant Record"
 
 #: ../src/function.py:20
 msgid "InfoBar Multi EPG"
-msgstr ""
+msgstr "InfoBar Multi EPG"
 
 #: ../src/function.py:25
 msgid "InfoBar Record"
-msgstr ""
+msgstr "InfoBar Record"
 
 #: ../src/function.py:24
 msgid "InfoBar Show Movies"
-msgstr ""
+msgstr "InfoBar Show Movies"
 
 #: ../src/function.py:22
 msgid "InfoBar Show Radio"
-msgstr ""
+msgstr "InfoBar Show Radio"
 
 #: ../src/function.py:23
 msgid "InfoBar Show Tv"
-msgstr ""
+msgstr "InfoBar Show Tv"
 
 #: ../src/function.py:12
 msgid "List of Bouquets"
-msgstr ""
+msgstr "List of Bouquets"
 
 #: ../src/MultiQuickButton.py:590
 msgid "MQB Functions and Plugins"
-msgstr ""
+msgstr "MQB Functions and Plugins"
 
 #: ../src/MultiQuickButton.py:136
 msgid "Macros"
-msgstr ""
+msgstr "Macros"
 
 #: ../src/MultiQuickButton.py:54 ../src/MultiQuickButton.py:346
 msgid "Main menu"
-msgstr ""
+msgstr "Main menu"
 
 #: ../src/function.py:37
 msgid "MediaPlayer"
-msgstr ""
+msgstr "MediaPlayer"
 
 #: ../src/MultiQuickButton.py:811
 msgid "Menu"
-msgstr ""
+msgstr "Menu"
 
 #: ../src/function.py:43
 msgid "Mount info"
-msgstr ""
+msgstr "Mount info"
 
 #: ../src/function.py:46
 msgid "Move PIP"
-msgstr ""
+msgstr "Move PIP"
 
 #: ../src/MultiQuickButton.py:346
 msgid "Multi QuickButton settings"
-msgstr ""
+msgstr "Multi QuickButton settings"
 
 #: ../src/plugin.py:270
 msgid "Multi Quickbutton"
-msgstr ""
+msgstr "Multi Quickbutton"
 
 #: ../src/MultiQuickButton.py:772
 msgid "MultiQuickButton macro configuration"
-msgstr ""
+msgstr "MultiQuickButton macro configuration"
 
 #: ../src/MultiQuickButton.py:842
 msgid "Mute"
-msgstr ""
+msgstr "Mute"
 
 #: ../src/MultiQuickButton.py:612
 msgid "No valid function file found"
-msgstr ""
+msgstr "No valid function file found"
 
 #: ../src/MultiQuickButton.py:599
 msgid "No valid selection"
-msgstr ""
+msgstr "No valid selection"
 
 #: ../src/MultiQuickButton.py:698 ../src/MultiQuickButton.py:782
 #: ../src/MultiQuickButton.py:815
 msgid "OK"
-msgstr ""
+msgstr "OK"
 
 #: ../src/MultiQuickButton.py:56
 msgid "OK/EXIT"
-msgstr ""
+msgstr "OK/EXIT"
 
 #: ../src/MultiQuickButton.py:893 ../src/MultiQuickButton.py:934
 #: ../src/MultiQuickButton.py:950
 msgid "Ok"
-msgstr ""
+msgstr "Ok"
 
 #: ../src/MultiQuickButton.py:286
 msgid "Overwrite existing Backup?."
-msgstr ""
+msgstr "Overwrite existing Backup?."
 
 #: ../src/MultiQuickButton.py:316
 msgid "Overwrite existing Settings?."
-msgstr ""
+msgstr "Overwrite existing Settings?."
 
 #: ../src/MultiQuickButton.py:219 ../src/MultiQuickButton.py:826
 msgid "Pause"
-msgstr ""
+msgstr "Pause"
 
 #: ../src/function.py:39
 msgid "Picture Player"
-msgstr ""
+msgstr "Picture Player"
 
 #: ../src/MultiQuickButton.py:218 ../src/MultiQuickButton.py:825
 msgid "Play"
-msgstr ""
+msgstr "Play"
 
 #: ../src/MultiQuickButton.py:274
 msgid "Please select the backup path..."
-msgstr ""
+msgstr "Please select the backup path..."
 
 #: ../src/MultiQuickButton.py:307
 msgid "Please select the restore path..."
-msgstr ""
+msgstr "Please select the restore path..."
 
 #: ../src/function.py:3
 msgid "Plugin Browser"
-msgstr ""
+msgstr "Plugin Browser"
 
 #: ../src/MultiQuickButton.py:616
 msgid "Plugins"
-msgstr ""
+msgstr "Plugins"
 
 #: ../src/MultiQuickButton.py:810
 msgid "Power"
-msgstr ""
+msgstr "Power"
 
 #: ../src/MultiQuickButton.py:263
 msgid "Quickbutton Key : "
-msgstr ""
+msgstr "Quickbutton Key : "
 
 #: ../src/plugin.py:206
 msgid "Quickbutton: Key "
-msgstr ""
+msgstr "Quickbutton: Key "
 
 #: ../src/MultiQuickButton.py:731
 msgid "Quite without saving changes ?"
-msgstr ""
+msgstr "Quite without saving changes ?"
 
 #: ../src/MultiQuickButton.py:203 ../src/MultiQuickButton.py:204
 #: ../src/MultiQuickButton.py:837
 msgid "RADIO"
-msgstr ""
+msgstr "RADIO"
 
 #: ../src/function.py:47
 msgid "Reboot"
-msgstr ""
+msgstr "Reboot"
 
 #: ../src/MultiQuickButton.py:827
 msgid "Record"
-msgstr ""
+msgstr "Record"
 
 #: ../src/function.py:2
 msgid "Restart SoftCam"
-msgstr ""
+msgstr "Restart SoftCam"
 
 #: ../src/MultiQuickButton.py:346
 msgid "Restarting Enigma2 to load:\n"
-msgstr ""
+msgstr "Restarting Enigma2 to load:\n"
 
 #: ../src/MultiQuickButton.py:336
 msgid ""
 "Restarting Enigma2 to set\n"
 "Multi QuickButton Autostart"
 msgstr ""
+"Restarting Enigma2 to set\n"
+"Multi QuickButton Autostart"
 
 #: ../src/MultiQuickButton.py:131
 msgid "Restore"
-msgstr ""
+msgstr "Restore"
 
 #: ../src/MultiQuickButton.py:325
 msgid "Restore Settings..."
-msgstr ""
+msgstr "Restore Settings..."
 
 #: ../src/MultiQuickButton.py:220 ../src/MultiQuickButton.py:829
 #: ../src/MultiQuickButton.py:834
 msgid "Rewind <<"
-msgstr ""
+msgstr "Rewind <<"
 
 #: ../src/MultiQuickButton.py:477 ../src/MultiQuickButton.py:863
 #: ../src/MultiQuickButton.py:957
 msgid "Save"
-msgstr ""
+msgstr "Save"
 
 #: ../src/MultiQuickButton.py:670
 msgid "Save Settings"
-msgstr ""
+msgstr "Save Settings"
 
 #: ../src/function.py:44
 msgid "Show PIP"
-msgstr ""
+msgstr "Show PIP"
 
 #: ../src/function.py:5
 msgid "Sleeptimer"
-msgstr ""
+msgstr "Sleeptimer"
 
 #: ../src/function.py:28
 msgid "Start Teletext"
-msgstr ""
+msgstr "Start Teletext"
 
 #: ../src/function.py:27
 msgid "Start Timeshift"
-msgstr ""
+msgstr "Start Timeshift"
 
 #: ../src/function.py:35
 msgid "Subservice Selection"
-msgstr ""
+msgstr "Subservice Selection"
 
 #: ../src/MultiQuickButton.py:833
 msgid "Subtitle"
-msgstr ""
+msgstr "Subtitle"
 
 #: ../src/function.py:36
 msgid "Subtitles"
-msgstr ""
+msgstr "Subtitles"
 
 #: ../src/function.py:45
 msgid "Swap PIP"
-msgstr ""
+msgstr "Swap PIP"
 
 #: ../src/function.py:42
 msgid "Switch 4:3 (Pillarbox) (Pan&Scan)"
-msgstr ""
+msgstr "Switch 4:3 (Pillarbox) (Pan&Scan)"
 
 #: ../src/MultiQuickButton.py:192 ../src/MultiQuickButton.py:193
 #: ../src/MultiQuickButton.py:835
 msgid "TEXT"
-msgstr ""
+msgstr "TEXT"
 
 #: ../src/MultiQuickButton.py:205 ../src/MultiQuickButton.py:836
 msgid "TV"
-msgstr ""
+msgstr "TV"
 
 #: ../src/function.py:6
 msgid "Timer"
-msgstr ""
+msgstr "Timer"
 
 #: ../src/function.py:34
 msgid "Toggle AtmoLight"
-msgstr ""
+msgstr "Toggle AtmoLight"
 
 #: ../src/MultiQuickButton.py:195 ../src/MultiQuickButton.py:196
 msgid "VU+ EPG / INFO"
-msgstr ""
+msgstr "VU+ EPG / INFO"
 
 #: ../src/MultiQuickButton.py:814
 msgid "VU+ EPG / Info"
-msgstr ""
+msgstr "VU+ EPG / Info"
 
 #: ../src/MultiQuickButton.py:201 ../src/MultiQuickButton.py:202
 #: ../src/MultiQuickButton.py:838
 msgid "VU+ R-Button"
-msgstr ""
+msgstr "VU+ R-Button"
 
 #: ../src/MultiQuickButton.py:840
 msgid "Volume +"
-msgstr ""
+msgstr "Volume +"
 
 #: ../src/MultiQuickButton.py:841
 msgid "Volume -"
-msgstr ""
+msgstr "Volume -"
 
 #: ../src/function.py:14
 msgid "Zap history back"
-msgstr ""
+msgstr "Zap history back"
 
 #: ../src/function.py:15
 msgid "Zap history next"
-msgstr ""
+msgstr "Zap history next"
 
 #: ../src/MultiQuickButton.py:190 ../src/MultiQuickButton.py:191
 #: ../src/MultiQuickButton.py:822
 msgid "blue"
-msgstr ""
+msgstr "blue"
 
 #: ../src/MultiQuickButton.py:478
 msgid "delete"
-msgstr ""
+msgstr "delete"
 
 #: ../src/plugin.py:208
 #, python-format
 msgid "file %s not found!"
-msgstr ""
+msgstr "file %s not found!"
 
 #: ../src/MultiQuickButton.py:186 ../src/MultiQuickButton.py:187
 #: ../src/MultiQuickButton.py:823
 msgid "green"
-msgstr ""
+msgstr "green"
 
 #: ../src/MultiQuickButton.py:235 ../src/MultiQuickButton.py:240
 #: ../src/MultiQuickButton.py:245 ../src/MultiQuickButton.py:250
 msgid "off"
-msgstr ""
+msgstr "off"
 
 #: ../src/MultiQuickButton.py:233 ../src/MultiQuickButton.py:238
 #: ../src/MultiQuickButton.py:243 ../src/MultiQuickButton.py:248
 msgid "on"
-msgstr ""
+msgstr "on"
 
 #: ../src/MultiQuickButton.py:184 ../src/MultiQuickButton.py:185
 #: ../src/MultiQuickButton.py:821
 msgid "red"
-msgstr ""
+msgstr "red"
 
 #: ../src/MultiQuickButton.py:188 ../src/MultiQuickButton.py:189
 #: ../src/MultiQuickButton.py:824
 msgid "yellow"
-msgstr ""
+msgstr "yellow"
