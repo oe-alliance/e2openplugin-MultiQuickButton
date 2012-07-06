@@ -1,4 +1,5 @@
-plugindir = $(libdir)/enigma2/python/Plugins/$(CATEGORY)/$(PLUGIN)
+PLUGIN = MultiQuickButton
+plugindir = $(libdir)/enigma2/python/Plugins/Extensions/$(PLUGIN)
 
 LANGS = ar bg ca cs da de el en en_GB es et fa fi fr fy he hr hu is it lt lv nl no pl pt ro ru sv sk sl sr th tr uk
 LANGMO = $(LANGS:=.mo)
