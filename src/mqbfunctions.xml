@@ -27,7 +27,7 @@ if InfoBar and InfoBar.instance:
 <name>AutoTimer</name>
 <code>from Screens.InfoBar import InfoBar
 if InfoBar and InfoBar.instance:
-	InfoBar.openAutoTimerList(InfoBar.instance)</code>
+	InfoBar.showAutoTimerList(InfoBar.instance)</code>
 </mqbfunction>
 
 <mqbfunction>
