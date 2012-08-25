@@ -1,579 +1,629 @@
-# Estonian translations for enigma2-plugins package.
-# Copyright (C) 2012 THE enigma2-plugins'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the enigma2-plugins package.
-# Automatically generated, 2012.
-#
 msgid ""
 msgstr ""
-"Project-Id-Version: enigma2-plugins 3.0.0\n"
+"Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-07-06 13:11+0100\n"
-"PO-Revision-Date: 2012-07-06 13:11+0100\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
-"Language: et\n"
+"PO-Revision-Date: \n"
+"Last-Translator: rimas\n"
+"Language-Team: rimas\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: .\n"
 
-#: ../src/MultiQuickButton.py:185 ../src/MultiQuickButton.py:187
-#: ../src/MultiQuickButton.py:189 ../src/MultiQuickButton.py:191
-#: ../src/MultiQuickButton.py:193 ../src/MultiQuickButton.py:194
-#: ../src/MultiQuickButton.py:196 ../src/MultiQuickButton.py:198
-#: ../src/MultiQuickButton.py:200 ../src/MultiQuickButton.py:202
+#: ../src/MultiQuickButton.py:185
+#: ../src/MultiQuickButton.py:187
+#: ../src/MultiQuickButton.py:189
+#: ../src/MultiQuickButton.py:191
+#: ../src/MultiQuickButton.py:193
+#: ../src/MultiQuickButton.py:194
+#: ../src/MultiQuickButton.py:196
+#: ../src/MultiQuickButton.py:198
+#: ../src/MultiQuickButton.py:200
+#: ../src/MultiQuickButton.py:202
 #: ../src/MultiQuickButton.py:204
 msgid " long"
-msgstr ""
+msgstr " pikk"
 
 #: ../src/function.py:41
 msgid "A/V Settings"
-msgstr ""
+msgstr "Heli ja pildi seaded"
 
-#: ../src/MultiQuickButton.py:479 ../src/MultiQuickButton.py:865
+#: ../src/MultiQuickButton.py:479
+#: ../src/MultiQuickButton.py:865
 #: ../src/MultiQuickButton.py:959
 msgid "Add"
-msgstr ""
+msgstr "Lisa"
 
 #: ../src/MultiQuickButton.py:603
 msgid "Add Functions to MQB Key"
-msgstr ""
+msgstr "Lisa funktsioone"
 
 #: ../src/MultiQuickButton.py:604
 msgid "Add Plugins to MQB Key"
-msgstr ""
+msgstr "Lisa laiendusi"
 
-#: ../src/MultiQuickButton.py:214 ../src/MultiQuickButton.py:832
+#: ../src/MultiQuickButton.py:214
+#: ../src/MultiQuickButton.py:832
 msgid "Audio"
-msgstr ""
+msgstr "Audio"
 
 #: ../src/MultiQuickButton.py:53
 msgid "Autostart"
-msgstr ""
+msgstr "Autostart"
 
 #: ../src/MultiQuickButton.py:132
 msgid "Backup"
-msgstr ""
+msgstr "Varunda"
 
-#: ../src/MultiQuickButton.py:289 ../src/MultiQuickButton.py:301
+#: ../src/MultiQuickButton.py:289
+#: ../src/MultiQuickButton.py:301
 msgid "Backup Settings..."
-msgstr ""
+msgstr "Varunda seadistus"
 
-#: ../src/MultiQuickButton.py:213 ../src/MultiQuickButton.py:844
+#: ../src/MultiQuickButton.py:213
+#: ../src/MultiQuickButton.py:844
 msgid "Backward <"
-msgstr ""
+msgstr "Tagasi <"
 
-#: ../src/MultiQuickButton.py:883 ../src/MultiQuickButton.py:899
+#: ../src/MultiQuickButton.py:883
+#: ../src/MultiQuickButton.py:899
 msgid "Button : "
-msgstr ""
+msgstr "Nupp : "
 
-#: ../src/MultiQuickButton.py:476 ../src/MultiQuickButton.py:697
-#: ../src/MultiQuickButton.py:862 ../src/MultiQuickButton.py:892
+#: ../src/MultiQuickButton.py:476
+#: ../src/MultiQuickButton.py:697
+#: ../src/MultiQuickButton.py:862
+#: ../src/MultiQuickButton.py:892
 #: ../src/MultiQuickButton.py:956
 msgid "Cancel"
-msgstr ""
+msgstr "Tühista"
 
-#: ../src/MultiQuickButton.py:710 ../src/MultiQuickButton.py:711
-#: ../src/MultiQuickButton.py:712 ../src/MultiQuickButton.py:713
+#: ../src/MultiQuickButton.py:710
+#: ../src/MultiQuickButton.py:711
+#: ../src/MultiQuickButton.py:712
+#: ../src/MultiQuickButton.py:713
 #: ../src/MultiQuickButton.py:714
 msgid "Channel"
-msgstr ""
+msgstr "Kanal"
 
-#: ../src/MultiQuickButton.py:210 ../src/MultiQuickButton.py:812
+#: ../src/MultiQuickButton.py:210
+#: ../src/MultiQuickButton.py:812
 msgid "Channel +"
-msgstr ""
+msgstr "Channel +"
 
-#: ../src/MultiQuickButton.py:211 ../src/MultiQuickButton.py:813
+#: ../src/MultiQuickButton.py:211
+#: ../src/MultiQuickButton.py:813
 msgid "Channel -"
-msgstr ""
+msgstr "Channel -"
 
 #: ../src/MultiQuickButton.py:721
 msgid "Channel Selection"
-msgstr ""
+msgstr "Kanali valik"
 
 #: ../src/function.py:13
 msgid "Channel list"
-msgstr ""
+msgstr "Kanalinimekiri"
 
 #: ../src/function.py:9
 msgid "Channel zap (list) +"
-msgstr ""
+msgstr "Kanali vahetus (loend)+"
 
 #: ../src/function.py:10
 msgid "Channel zap (list) -"
-msgstr ""
+msgstr "Kanali vahetus (loend) -"
 
 #: ../src/function.py:7
 msgid "Channel zap +"
-msgstr ""
+msgstr "Kanalivahetus +"
 
 #: ../src/function.py:8
 msgid "Channel zap -"
-msgstr ""
+msgstr "Kanalivahetus -"
 
 #: ../src/MultiQuickButton.py:135
 msgid "Channels"
-msgstr ""
+msgstr "Kanalid"
 
 #: ../src/MultiQuickButton.py:850
 msgid "Configure macro"
-msgstr ""
+msgstr "Seadista makro"
 
 #: ../src/function.py:40
 msgid "Cool TV Guide"
-msgstr ""
+msgstr "Cool TV Guide"
 
-#: ../src/MultiQuickButton.py:207 ../src/MultiQuickButton.py:819
+#: ../src/MultiQuickButton.py:207
+#: ../src/MultiQuickButton.py:819
 msgid "Cross Down"
-msgstr ""
+msgstr "Rist alla"
 
-#: ../src/MultiQuickButton.py:208 ../src/MultiQuickButton.py:816
+#: ../src/MultiQuickButton.py:208
+#: ../src/MultiQuickButton.py:816
 msgid "Cross Left"
-msgstr ""
+msgstr "Rist vasak"
 
-#: ../src/MultiQuickButton.py:209 ../src/MultiQuickButton.py:817
+#: ../src/MultiQuickButton.py:209
+#: ../src/MultiQuickButton.py:817
 msgid "Cross Right"
-msgstr ""
+msgstr "Rist parem"
 
-#: ../src/MultiQuickButton.py:206 ../src/MultiQuickButton.py:818
+#: ../src/MultiQuickButton.py:206
+#: ../src/MultiQuickButton.py:818
 msgid "Cross Up"
-msgstr ""
+msgstr "Rist üles"
 
 #: ../src/function.py:38
 msgid "DVDPlayer"
-msgstr ""
+msgstr "DVD - mängija"
 
 #: ../src/function.py:49
 msgid "DeepStandby"
-msgstr ""
+msgstr "Sügavooterežiim"
 
-#: ../src/MultiQuickButton.py:864 ../src/MultiQuickButton.py:958
+#: ../src/MultiQuickButton.py:864
+#: ../src/MultiQuickButton.py:958
 msgid "Delete"
-msgstr ""
+msgstr "Kustuta"
 
 #: ../src/MultiQuickButton.py:293
 #, python-format
 msgid "Directory %s nonexistent."
-msgstr ""
+msgstr "Asukohta %s ei ole."
 
 #: ../src/function.py:11
 msgid "Dolby Digital downmix on/off"
-msgstr ""
+msgstr "Dolby Digital downmix on/off"
 
-#: ../src/MultiQuickButton.py:199 ../src/MultiQuickButton.py:200
+#: ../src/MultiQuickButton.py:199
+#: ../src/MultiQuickButton.py:200
 #: ../src/MultiQuickButton.py:830
 msgid "END"
-msgstr ""
+msgstr "END"
 
-#: ../src/MultiQuickButton.py:217 ../src/MultiQuickButton.py:820
+#: ../src/MultiQuickButton.py:217
+#: ../src/MultiQuickButton.py:820
 msgid "EXIT"
-msgstr ""
+msgstr "EXIT"
 
 #: ../src/MultiQuickButton.py:622
 #, python-format
 msgid "Entry %s already exists."
-msgstr ""
+msgstr "Kirje %s on juba olemas."
 
-#: ../src/MultiQuickButton.py:498 ../src/plugin.py:196 ../src/plugin.py:235
-#: ../src/plugin.py:237 ../src/plugin.py:242
+#: ../src/MultiQuickButton.py:498
+#: ../src/plugin.py:196
+#: ../src/plugin.py:235
+#: ../src/plugin.py:237
+#: ../src/plugin.py:242
 msgid "Error"
-msgstr ""
+msgstr "Viga"
 
-#: ../src/MultiQuickButton.py:781 ../src/MultiQuickButton.py:933
+#: ../src/MultiQuickButton.py:781
+#: ../src/MultiQuickButton.py:933
 #: ../src/MultiQuickButton.py:949
 msgid "Exit"
-msgstr ""
+msgstr "Välju"
 
 #: ../src/function.py:4
 msgid "Extension Selection"
-msgstr ""
+msgstr "Laienduste valik"
 
-#: ../src/MultiQuickButton.py:221 ../src/MultiQuickButton.py:828
+#: ../src/MultiQuickButton.py:221
+#: ../src/MultiQuickButton.py:828
 msgid "FastForward >>"
-msgstr ""
+msgstr "Edasikerimine >>"
 
 #: ../src/function.py:29
 msgid "Favourite channel 1"
-msgstr ""
+msgstr "Lemmik kanal 1"
 
 #: ../src/function.py:30
 msgid "Favourite channel 2"
-msgstr ""
+msgstr "Lemmik kanal 2"
 
 #: ../src/function.py:31
 msgid "Favourite channel 3"
-msgstr ""
+msgstr "Lemmik kanal 3"
 
 #: ../src/function.py:32
 msgid "Favourite channel 4"
-msgstr ""
+msgstr "Lemmik kanal 4"
 
 #: ../src/function.py:33
 msgid "Favourite channel 5"
-msgstr ""
+msgstr "Lemmik kanal 5"
 
 #: ../src/MultiQuickButton.py:318
 #, python-format
 msgid "File %s nonexistent."
-msgstr ""
+msgstr "Faili %s ei ole olemas."
 
-#: ../src/MultiQuickButton.py:212 ../src/MultiQuickButton.py:843
+#: ../src/MultiQuickButton.py:212
+#: ../src/MultiQuickButton.py:843
 msgid "Forward >"
-msgstr ""
+msgstr "Edasi >"
 
 #: ../src/MultiQuickButton.py:610
 msgid "Functions"
-msgstr ""
+msgstr "Funktsioonid"
 
 #: ../src/function.py:48
 msgid "GUI Restart"
-msgstr ""
+msgstr "GUI taaskäivitus"
 
-#: ../src/MultiQuickButton.py:194 ../src/MultiQuickButton.py:839
+#: ../src/MultiQuickButton.py:194
+#: ../src/MultiQuickButton.py:839
 msgid "HELP"
-msgstr ""
+msgstr "ABI"
 
-#: ../src/MultiQuickButton.py:197 ../src/MultiQuickButton.py:198
+#: ../src/MultiQuickButton.py:197
+#: ../src/MultiQuickButton.py:198
 #: ../src/MultiQuickButton.py:831
 msgid "HOME"
-msgstr ""
+msgstr "HOME"
 
 #: ../src/MultiQuickButton.py:55
 msgid "Info"
-msgstr ""
+msgstr "Info"
 
 #: ../src/function.py:16
 msgid "InfoBar"
-msgstr ""
+msgstr "Inforiba"
 
 #: ../src/function.py:21
 msgid "InfoBar Audio Selection"
-msgstr ""
+msgstr "Inforiba - Heli valik"
 
 #: ../src/function.py:19
 msgid "InfoBar EPG"
-msgstr ""
+msgstr "Inforiba - Saatekava"
 
 #: ../src/function.py:17
 msgid "InfoBar EventInfoPlugins"
-msgstr ""
+msgstr "Inforiba saateinfo laiendused"
 
 #: ../src/function.py:18
 msgid "InfoBar EventView"
-msgstr ""
+msgstr "Inforiba - Saateinfo"
 
 #: ../src/function.py:26
 msgid "InfoBar Instant Record"
-msgstr ""
+msgstr "Inforiba - Kohene salvestamine"
 
 #: ../src/function.py:20
 msgid "InfoBar Multi EPG"
-msgstr ""
+msgstr "Inforiba - Multi EPG"
 
 #: ../src/function.py:25
 msgid "InfoBar Record"
-msgstr ""
+msgstr "Inforiba - Salvestamine"
 
 #: ../src/function.py:24
 msgid "InfoBar Show Movies"
-msgstr ""
+msgstr "Inforiba - Filmid"
 
 #: ../src/function.py:22
 msgid "InfoBar Show Radio"
-msgstr ""
+msgstr "Inforiba - Raadio"
 
 #: ../src/function.py:23
 msgid "InfoBar Show Tv"
-msgstr ""
+msgstr "Inforiba - TV"
 
 #: ../src/function.py:12
 msgid "List of Bouquets"
-msgstr ""
+msgstr "Lemmikute nimekiri"
 
 #: ../src/MultiQuickButton.py:590
 msgid "MQB Functions and Plugins"
-msgstr ""
+msgstr "MQB funktsioonid ja laiendused"
 
 #: ../src/MultiQuickButton.py:136
 msgid "Macros"
-msgstr ""
+msgstr "Makrod"
 
-#: ../src/MultiQuickButton.py:54 ../src/MultiQuickButton.py:346
+#: ../src/MultiQuickButton.py:54
+#: ../src/MultiQuickButton.py:346
 msgid "Main menu"
-msgstr ""
+msgstr "Peamenüü"
 
 #: ../src/function.py:37
 msgid "MediaPlayer"
-msgstr ""
+msgstr "Meediamängija"
 
 #: ../src/MultiQuickButton.py:811
 msgid "Menu"
-msgstr ""
+msgstr "Menüü"
 
 #: ../src/function.py:43
 msgid "Mount info"
-msgstr ""
+msgstr "Haakepunktid"
 
 #: ../src/function.py:46
 msgid "Move PIP"
-msgstr ""
+msgstr "Liiguta PIP"
 
 #: ../src/MultiQuickButton.py:346
 msgid "Multi QuickButton settings"
-msgstr ""
+msgstr "Multi QuickButton seaded"
 
 #: ../src/plugin.py:270
 msgid "Multi Quickbutton"
-msgstr ""
+msgstr "Multi Quickbutton"
 
 #: ../src/MultiQuickButton.py:772
 msgid "MultiQuickButton macro configuration"
-msgstr ""
+msgstr "Multi QuickButton makro seadistused"
 
 #: ../src/MultiQuickButton.py:842
 msgid "Mute"
-msgstr ""
+msgstr "Vaigista"
 
 #: ../src/MultiQuickButton.py:612
 msgid "No valid function file found"
-msgstr ""
+msgstr "Kehtivat funktsiooni ei leitud"
 
 #: ../src/MultiQuickButton.py:599
 msgid "No valid selection"
-msgstr ""
+msgstr "Kehtiv valik puudub"
 
-#: ../src/MultiQuickButton.py:698 ../src/MultiQuickButton.py:782
+#: ../src/MultiQuickButton.py:698
+#: ../src/MultiQuickButton.py:782
 #: ../src/MultiQuickButton.py:815
 msgid "OK"
-msgstr ""
+msgstr "OK"
 
 #: ../src/MultiQuickButton.py:56
 msgid "OK/EXIT"
-msgstr ""
+msgstr "OK/EXIT"
 
-#: ../src/MultiQuickButton.py:893 ../src/MultiQuickButton.py:934
+#: ../src/MultiQuickButton.py:893
+#: ../src/MultiQuickButton.py:934
 #: ../src/MultiQuickButton.py:950
 msgid "Ok"
 msgstr ""
 
 #: ../src/MultiQuickButton.py:286
 msgid "Overwrite existing Backup?."
-msgstr ""
+msgstr "Kirjutad olemasoleva varukoopia üle?"
 
 #: ../src/MultiQuickButton.py:316
 msgid "Overwrite existing Settings?."
-msgstr ""
+msgstr "Kirjutad praeguse seadistuse üle?"
 
-#: ../src/MultiQuickButton.py:219 ../src/MultiQuickButton.py:826
+#: ../src/MultiQuickButton.py:219
+#: ../src/MultiQuickButton.py:826
 msgid "Pause"
-msgstr ""
+msgstr "Pause"
 
 #: ../src/function.py:39
 msgid "Picture Player"
-msgstr ""
+msgstr "Pildimängija"
 
-#: ../src/MultiQuickButton.py:218 ../src/MultiQuickButton.py:825
+#: ../src/MultiQuickButton.py:218
+#: ../src/MultiQuickButton.py:825
 msgid "Play"
-msgstr ""
+msgstr "Esita"
 
 #: ../src/MultiQuickButton.py:274
 msgid "Please select the backup path..."
-msgstr ""
+msgstr "Vali varukoopiale asukoht..."
 
 #: ../src/MultiQuickButton.py:307
 msgid "Please select the restore path..."
-msgstr ""
+msgstr "Vali taastatava varukoopia asukoht..."
 
 #: ../src/function.py:3
 msgid "Plugin Browser"
-msgstr ""
+msgstr "Laienduste sirvija"
 
 #: ../src/MultiQuickButton.py:616
 msgid "Plugins"
-msgstr ""
+msgstr "Laiendused"
 
 #: ../src/MultiQuickButton.py:810
 msgid "Power"
-msgstr ""
+msgstr "Toide"
 
 #: ../src/MultiQuickButton.py:263
 msgid "Quickbutton Key : "
-msgstr ""
+msgstr "Quickbutton nupp:"
 
 #: ../src/plugin.py:206
 msgid "Quickbutton: Key "
-msgstr ""
+msgstr "Quickbutton: nupp"
 
 #: ../src/MultiQuickButton.py:731
 msgid "Quite without saving changes ?"
-msgstr ""
+msgstr "Väljud seadistusi salvestamata?"
 
-#: ../src/MultiQuickButton.py:203 ../src/MultiQuickButton.py:204
+#: ../src/MultiQuickButton.py:203
+#: ../src/MultiQuickButton.py:204
 #: ../src/MultiQuickButton.py:837
 msgid "RADIO"
-msgstr ""
+msgstr "RADIO"
 
 #: ../src/function.py:47
 msgid "Reboot"
-msgstr ""
+msgstr "Taaskäivitus"
 
 #: ../src/MultiQuickButton.py:827
 msgid "Record"
-msgstr ""
+msgstr "Salvestus"
 
 #: ../src/function.py:2
 msgid "Restart SoftCam"
-msgstr ""
+msgstr "Taaskäivita EMU"
 
 #: ../src/MultiQuickButton.py:346
 msgid "Restarting Enigma2 to load:\n"
-msgstr ""
+msgstr "Taaskäivitame Enigma2, et laadida:\n"
 
 #: ../src/MultiQuickButton.py:336
 msgid ""
 "Restarting Enigma2 to set\n"
 "Multi QuickButton Autostart"
 msgstr ""
+"Multi QuickButton automaatse käivitumise\n"
+"kinnitamiseks taaskäivitatakse Enigma2"
 
 #: ../src/MultiQuickButton.py:131
 msgid "Restore"
-msgstr ""
+msgstr "Taasta"
 
 #: ../src/MultiQuickButton.py:325
 msgid "Restore Settings..."
-msgstr ""
+msgstr "Taasta seadistus"
 
-#: ../src/MultiQuickButton.py:220 ../src/MultiQuickButton.py:829
+#: ../src/MultiQuickButton.py:220
+#: ../src/MultiQuickButton.py:829
 #: ../src/MultiQuickButton.py:834
 msgid "Rewind <<"
-msgstr ""
+msgstr "Tagasikerimine <<"
 
-#: ../src/MultiQuickButton.py:477 ../src/MultiQuickButton.py:863
+#: ../src/MultiQuickButton.py:477
+#: ../src/MultiQuickButton.py:863
 #: ../src/MultiQuickButton.py:957
 msgid "Save"
-msgstr ""
+msgstr "Salvesta"
 
 #: ../src/MultiQuickButton.py:670
 msgid "Save Settings"
-msgstr ""
+msgstr "Salvesta seadistus"
 
 #: ../src/function.py:44
 msgid "Show PIP"
-msgstr ""
+msgstr "Näita PIP"
 
 #: ../src/function.py:5
 msgid "Sleeptimer"
-msgstr ""
+msgstr "Unetaimer"
 
 #: ../src/function.py:28
 msgid "Start Teletext"
-msgstr ""
+msgstr "Teletekst"
 
 #: ../src/function.py:27
 msgid "Start Timeshift"
-msgstr ""
+msgstr "Ajanihe"
 
 #: ../src/function.py:35
 msgid "Subservice Selection"
-msgstr ""
+msgstr "Alamkanalid"
 
 #: ../src/MultiQuickButton.py:833
 msgid "Subtitle"
-msgstr ""
+msgstr "Subtiitrid"
 
 #: ../src/function.py:36
 msgid "Subtitles"
-msgstr ""
+msgstr "Subtiitrid"
 
 #: ../src/function.py:45
 msgid "Swap PIP"
-msgstr ""
+msgstr "Vaheta PIP"
 
 #: ../src/function.py:42
 msgid "Switch 4:3 (Pillarbox) (Pan&Scan)"
-msgstr ""
+msgstr "Vaheta 4:3 (Pillarbox) (Pan&Scan)"
 
-#: ../src/MultiQuickButton.py:192 ../src/MultiQuickButton.py:193
+#: ../src/MultiQuickButton.py:192
+#: ../src/MultiQuickButton.py:193
 #: ../src/MultiQuickButton.py:835
 msgid "TEXT"
-msgstr ""
+msgstr "TEXT"
 
-#: ../src/MultiQuickButton.py:205 ../src/MultiQuickButton.py:836
+#: ../src/MultiQuickButton.py:205
+#: ../src/MultiQuickButton.py:836
 msgid "TV"
-msgstr ""
+msgstr "TV"
 
 #: ../src/function.py:6
 msgid "Timer"
-msgstr ""
+msgstr "Taimer"
 
 #: ../src/function.py:34
 msgid "Toggle AtmoLight"
-msgstr ""
+msgstr "AtmoLight"
 
-#: ../src/MultiQuickButton.py:195 ../src/MultiQuickButton.py:196
+#: ../src/MultiQuickButton.py:195
+#: ../src/MultiQuickButton.py:196
 msgid "VU+ EPG / INFO"
-msgstr ""
+msgstr "VU+ EPG / INFO"
 
 #: ../src/MultiQuickButton.py:814
 msgid "VU+ EPG / Info"
-msgstr ""
+msgstr "VU+ EPG / Info"
 
-#: ../src/MultiQuickButton.py:201 ../src/MultiQuickButton.py:202
+#: ../src/MultiQuickButton.py:201
+#: ../src/MultiQuickButton.py:202
 #: ../src/MultiQuickButton.py:838
 msgid "VU+ R-Button"
-msgstr ""
+msgstr "VU+ R-nupp"
 
 #: ../src/MultiQuickButton.py:840
 msgid "Volume +"
-msgstr ""
+msgstr "Heli +"
 
 #: ../src/MultiQuickButton.py:841
 msgid "Volume -"
-msgstr ""
+msgstr "Heli -"
 
 #: ../src/function.py:14
 msgid "Zap history back"
-msgstr ""
+msgstr "Eelmisele kanalile ajaloos"
 
 #: ../src/function.py:15
 msgid "Zap history next"
-msgstr ""
+msgstr "Järgmisele kanalile ajaloos"
 
-#: ../src/MultiQuickButton.py:190 ../src/MultiQuickButton.py:191
+#: ../src/MultiQuickButton.py:190
+#: ../src/MultiQuickButton.py:191
 #: ../src/MultiQuickButton.py:822
 msgid "blue"
-msgstr ""
+msgstr "sinine"
 
 #: ../src/MultiQuickButton.py:478
 msgid "delete"
-msgstr ""
+msgstr "kustuta"
 
 #: ../src/plugin.py:208
 #, python-format
 msgid "file %s not found!"
-msgstr ""
+msgstr "faili %s ei leitud!"
 
-#: ../src/MultiQuickButton.py:186 ../src/MultiQuickButton.py:187
+#: ../src/MultiQuickButton.py:186
+#: ../src/MultiQuickButton.py:187
 #: ../src/MultiQuickButton.py:823
 msgid "green"
-msgstr ""
+msgstr "roheline"
 
-#: ../src/MultiQuickButton.py:235 ../src/MultiQuickButton.py:240
-#: ../src/MultiQuickButton.py:245 ../src/MultiQuickButton.py:250
+#: ../src/MultiQuickButton.py:235
+#: ../src/MultiQuickButton.py:240
+#: ../src/MultiQuickButton.py:245
+#: ../src/MultiQuickButton.py:250
 msgid "off"
-msgstr ""
+msgstr "väljas"
 
-#: ../src/MultiQuickButton.py:233 ../src/MultiQuickButton.py:238
-#: ../src/MultiQuickButton.py:243 ../src/MultiQuickButton.py:248
+#: ../src/MultiQuickButton.py:233
+#: ../src/MultiQuickButton.py:238
+#: ../src/MultiQuickButton.py:243
+#: ../src/MultiQuickButton.py:248
 msgid "on"
-msgstr ""
+msgstr "sees"
 
-#: ../src/MultiQuickButton.py:184 ../src/MultiQuickButton.py:185
+#: ../src/MultiQuickButton.py:184
+#: ../src/MultiQuickButton.py:185
 #: ../src/MultiQuickButton.py:821
 msgid "red"
-msgstr ""
+msgstr "punane"
 
-#: ../src/MultiQuickButton.py:188 ../src/MultiQuickButton.py:189
+#: ../src/MultiQuickButton.py:188
+#: ../src/MultiQuickButton.py:189
 #: ../src/MultiQuickButton.py:824
 msgid "yellow"
-msgstr ""
+msgstr "kollane"
+
