@@ -12,7 +12,7 @@ if UPDATE_PO
 $(PLUGIN)-py.pot: $(srcdir)/../src/*.py $(srcdir)/../src/Screens/*.py
 	$(XGETTEXT) --no-wrap -L Python --from-code=UTF-8 -kpgettext:1c,2 --add-comments="TRANSLATORS:" -d @PACKAGE_NAME@ -s -o $@ $^
 
-$(PLUGIN)-xml.pot: $(srcdir)/../etc/*.xml $(srcdir)/../src/*.xml
+$(PLUGIN)-xml.pot: $(srcdir)/xml2po.py $(srcdir)/../etc/*.xml $(srcdir)/../src/*.xml
 	$(PYTHON) $^ > $@
 
 $(PLUGIN).pot: $(PLUGIN)-py.pot $(PLUGIN)-xml.pot
