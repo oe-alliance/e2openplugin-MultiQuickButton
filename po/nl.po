@@ -2,9 +2,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MQB for ViX\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-02-28 19:40+0100\n"
+"POT-Creation-Date: 2013-01-18 17:13+0000\n"
 "PO-Revision-Date: \n"
-"Last-Translator: \n"
+"Last-Translator: Delagroov <delagroov@gmail.com>\n"
 "Language-Team: Andy Blackburn/Delagroov/Rob van der Does\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
@@ -16,7 +16,7 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 
 msgid " long"
-msgstr "lang"
+msgstr " lang"
 
 msgid "A/V Settings"
 msgstr "A/V Instellingen"
@@ -33,11 +33,20 @@ msgstr "Voeg plugins aan MQB button toe"
 msgid "Audio"
 msgstr "Audio"
 
+msgid "AutoTimer"
+msgstr "AutoTimer"
+
 msgid "Autostart"
 msgstr "Autostart"
 
+msgid "Back"
+msgstr "Terug"
+
 msgid "Backup"
 msgstr "Backup"
+
+msgid "Backup Settings"
+msgstr "Backup instellingen"
 
 msgid "Backup Settings..."
 msgstr "Back-up instellingen"
@@ -118,8 +127,17 @@ msgstr "Dolby Digital downmix on/off"
 msgid "END"
 msgstr "End"
 
+msgid "EPG"
+msgstr "EPG"
+
+msgid "EPGSearch Plugin"
+msgstr "EPGSearch Plugin"
+
 msgid "EXIT"
 msgstr "Exit"
+
+msgid "End"
+msgstr "Einde"
 
 #, python-format
 msgid "Entry %s already exists."
@@ -127,6 +145,12 @@ msgstr "Waarde %s bestaat al"
 
 msgid "Error"
 msgstr "Fout"
+
+msgid "Execution Progress:"
+msgstr "Voortgang"
+
+msgid "Execution finished!!"
+msgstr "Uitvoering klaar!!"
 
 msgid "Exit"
 msgstr "Skuit af"
@@ -156,6 +180,12 @@ msgstr "Favoriete zender 5"
 msgid "File %s nonexistent."
 msgstr "Bestand %s bestaat niet"
 
+msgid "Filelist"
+msgstr "Filelist"
+
+msgid "Filellist"
+msgstr "Filellist"
+
 msgid "Forward >"
 msgstr "Vooruit >"
 
@@ -165,11 +195,23 @@ msgstr "Functies"
 msgid "GUI Restart"
 msgstr "GUI Restart"
 
+msgid "Guide"
+msgstr "Gids"
+
 msgid "HELP"
 msgstr "Help"
 
 msgid "HOME"
 msgstr "Home"
+
+msgid "HbbTV (Red-Button)"
+msgstr "HbbTV (Rode-toets)"
+
+msgid "Home"
+msgstr "Home"
+
+msgid "IMDb Details..."
+msgstr "IMDb Details..."
 
 msgid "Info"
 msgstr "Info"
@@ -195,6 +237,9 @@ msgstr "InfoBar Instant Record"
 msgid "InfoBar Multi EPG"
 msgstr "InfoBar Multi EPG"
 
+msgid "InfoBar QuickEPG"
+msgstr "InfoBar QuickEPG"
+
 msgid "InfoBar Record"
 msgstr "InfoBar Record"
 
@@ -207,6 +252,15 @@ msgstr "InfoBar Show Radio"
 msgid "InfoBar Show Tv"
 msgstr "InfoBar Show Tv"
 
+msgid "InfoBar VIX EPG"
+msgstr "InfoBar VIX EPG"
+
+msgid "Infobar EPG Search..."
+msgstr "Infobar EPG Search..."
+
+msgid "List"
+msgstr "Ljist"
+
 msgid "List of Bouquets"
 msgstr "Bouquet lijst"
 
@@ -218,6 +272,9 @@ msgstr "Macro's"
 
 msgid "Main menu"
 msgstr "Hoofdmenu"
+
+msgid "Mark"
+msgstr "Markeer"
 
 msgid "MediaPlayer"
 msgstr "MediaPlayer"
@@ -243,11 +300,14 @@ msgstr "MultiQuickButton macro configuratie"
 msgid "Mute"
 msgstr "Mute"
 
+msgid "Next >"
+msgstr "Volgende >"
+
 msgid "No valid function file found"
 msgstr "Geen geldige functie gevonden"
 
 msgid "No valid selection"
-msgstr "No valid selection"
+msgstr "Geen geldige selectie"
 
 msgid "OK"
 msgstr "OK"
@@ -264,6 +324,9 @@ msgstr "Overschrijf de bestaande back-up?"
 msgid "Overwrite existing Settings?."
 msgstr "Bestaande instellingen overschrijven?"
 
+msgid "PIP"
+msgstr "PIP"
+
 msgid "Pause"
 msgstr "Pause"
 
@@ -272,6 +335,12 @@ msgstr "Picture Player"
 
 msgid "Play"
 msgstr "Play"
+
+msgid "Play/Pause"
+msgstr "Play/Pause"
+
+msgid "Playlist"
+msgstr "Playlist"
 
 msgid "Please select the backup path..."
 msgstr "Kies de backup locatie"
@@ -285,8 +354,14 @@ msgstr "Plugin Browser"
 msgid "Plugins"
 msgstr "Plugins"
 
+msgid "Portal"
+msgstr "Portal"
+
 msgid "Power"
 msgstr "Power"
+
+msgid "Prev <"
+msgstr "Vorige <"
 
 msgid "Quickbutton Key : "
 msgstr "Quickbutton knop : "
@@ -298,6 +373,9 @@ msgid "Quite without saving changes ?"
 msgstr "Afsluiten zonder op te slaan?"
 
 msgid "RADIO"
+msgstr "Radio"
+
+msgid "Radio"
 msgstr "Radio"
 
 msgid "Reboot"
@@ -334,6 +412,9 @@ msgstr "Sla op"
 msgid "Save Settings"
 msgstr "Sla de instellingen op"
 
+msgid "Search"
+msgstr "Zoeken"
+
 msgid "Show PIP"
 msgstr "Show PIP"
 
@@ -346,6 +427,12 @@ msgstr "Start Teletext"
 msgid "Start Timeshift"
 msgstr "Start Timeshift"
 
+msgid "Stop"
+msgstr "Stop"
+
+msgid "Stop Timeshift"
+msgstr "Stop Timeshift"
+
 msgid "Subservice Selection"
 msgstr "Subservice Selectie"
 
@@ -354,6 +441,9 @@ msgstr "Ondertitel"
 
 msgid "Subtitles"
 msgstr "Ondertitels"
+
+msgid "Subtitles Settings"
+msgstr "Ondertitel instellingen"
 
 msgid "Swap PIP"
 msgstr "Swap PIP"
@@ -370,17 +460,20 @@ msgstr "TV"
 msgid "Timer"
 msgstr "Timer"
 
+msgid "Timers"
+msgstr "Timers"
+
 msgid "Toggle AtmoLight"
 msgstr "Toggle AtmoLight"
-
-msgid "VU+ EPG / INFO"
-msgstr "VU+ EPG / INFO"
 
 msgid "VU+ EPG / Info"
 msgstr "VU+ EPG / Info"
 
 msgid "VU+ R-Button"
 msgstr "VU+ R-knop"
+
+msgid "Vkey"
+msgstr "Vkey"
 
 msgid "Volume +"
 msgstr "Volume +"
@@ -413,8 +506,14 @@ msgstr "uit"
 msgid "on"
 msgstr "aan"
 
+msgid "query keys"
+msgstr "Macro's"
+
 msgid "red"
 msgstr "rood"
+
+msgid "search EPG..."
+msgstr "EPG doorzoeken..."
 
 msgid "yellow"
 msgstr "geel"
@@ -440,8 +539,8 @@ msgstr "geel"
 #~ msgid "Remount Network Shares"
 #~ msgstr "Mount netwerk shares opnieuw"
 
-#~ msgid "Stop"
-#~ msgstr "Stop"
-
 #~ msgid "VTI Panel"
 #~ msgstr "VTI Panel"
+
+#~ msgid "VU+ EPG / INFO"
+#~ msgstr "VU+ EPG / INFO"
