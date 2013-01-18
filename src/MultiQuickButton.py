@@ -23,19 +23,22 @@ from Plugins.Plugin import PluginDescriptor
 from Screens.Standby import TryQuitMainloop
 from QuickButtonList import QuickButtonList, QuickButtonListEntry
 from QuickButtonXML import QuickButtonXML
-from enigma import getDesktop
+from enigma import getDesktop, getBoxType as e2BoxType
 from Tools.Directories import *
 import xml.sax.xmlreader
 import keymapparser
 import os
 import os.path
 from __init__ import _
+from time import strftime 
+from time import localtime 
 
 functionfile = "/usr/lib/enigma2/python/Plugins/Extensions/MultiQuickButton/mqbfunctions.xml"
 config.plugins.QuickButton = ConfigSubsection()
 config.plugins.QuickButton.enable = ConfigYesNo(default = True)
 config.plugins.QuickButton.info = ConfigYesNo(default = True)
 config.plugins.QuickButton.okexitstate = ConfigYesNo(default = False)
+config.plugins.QuickButton.showbutton = ConfigYesNo(default = True)
 config.plugins.QuickButton.mainmenu = ConfigYesNo(default = True)
 config.plugins.QuickButton.last_backupdir = ConfigText(default=resolveFilename(SCOPE_SYSETC))
 config.plugins.QuickButton.backupdirs = ConfigLocations(default=[resolveFilename(SCOPE_SYSETC)])
@@ -49,15 +52,27 @@ config.plugins.QuickButton.macroII = ConfigText(default = "")
 config.plugins.QuickButton.macroIII = ConfigText(default = "")
 config.plugins.QuickButton.macroIV = ConfigText(default = "")
 config.plugins.QuickButton.macroV = ConfigText(default = "")
-MultiQuickButton_version = "2.7.11"
+MultiQuickButton_version = "2.8.4 (oe-a)"
 autostart=_("Autostart") + ": "
 menuentry=_("Main menu") + ": "
 info=_("Info") + ": "
 okexit=_("OK/EXIT") + ": "
+showbutton=_("query keys") + ": "
 
-values = ("red","red_long","green","green_long","yellow","yellow_long","blue","blue_long","pvr","pvr_long","radio","radio_long","text","text_long", \
-			"help_long","info","info_long","end","end_long","home","home_long","cross_up","cross_down","cross_left","cross_right","previous","next", \
-			"channelup","channeldown","audio","ok","exit","play","pause","fastforward","rewind","tv")
+values = ("vkey","vkey_long","mark","mark_long","guide_long","guide","filelist_long","filelist","red","red_long","green","green_long","yellow","yellow_long","blue","blue_long","pvr","pvr_long","radio","radio_long","text","text_long", \
+			"subtitle","subtitle_long","info","info_long","list","list_long","playlist","playlist_long","epg","epg_long","cross_up","cross_down","cross_left","cross_right","previous","next", "end","end_long","home","home_long", \
+			"channelup","channeldown","audio","audio_long","ok","exit","play","pause","fastforward","stop","rewind","tv","tv_long","activatePiP","pip_long","timer","timer_long","back","back_long","timeshift","timeshift_long","portal","portal_long","search","search_long","displayHelp","help_long","mainMenu","menu_long","slow","slow_long"
+			"f1","f1_long","f2","f2_long","f3","f3_long","f4","f4_long")
+
+def getBoxType():
+	if e2BoxType().startswith('et'):
+		f = open("/proc/stb/info/boxtype")
+		boxtype = f.read().strip()
+		f.close()
+		return boxtype
+	else:
+		return e2BoxType()
+
 
 class MultiQuickButton(Screen):
 
@@ -134,6 +149,7 @@ class MultiQuickButton(Screen):
 		self["key_1"] = Label(okexit)
 		self["key_2"] = Label(_("Channels"))
 		self["key_3"] = Label(_("Macros"))
+		self["key_4"] = Label(_("query keys")
 		self.createList()
 		self["list"] = QuickButtonList(list=self.list, selection = 0)
 		self["actions"] = ActionMap(["OkCancelActions", "ColorActions", "NumberActions", "EPGSelectActions"],
@@ -148,6 +164,7 @@ class MultiQuickButton(Screen):
 			"1": self.toggleOkExit,
 			"2": self.setChannels,
 			"3": self.configMacro,
+			"4": self.showbutton,
 			"info": self.showAbout,
 		}, -1)
 		self.onShown.append(self.updateSettings)
@@ -189,34 +206,91 @@ class MultiQuickButton(Screen):
 		self.list.append(QuickButtonListEntry('',((_('yellow') + _(' long')) + functionbutton_yellow_long, 'yellow_long')))
 		self.list.append(QuickButtonListEntry('',(_('blue') + functionbutton_blue, 'blue')))
 		self.list.append(QuickButtonListEntry('',((_('blue') + _(' long')) + functionbutton_blue_long, 'blue_long')))
-		self.list.append(QuickButtonListEntry('',(_('TEXT') + functionbutton_text, 'text')))
-		self.list.append(QuickButtonListEntry('',((_('TEXT') + _(' long')) + functionbutton_text_long, 'text_long')))
-		self.list.append(QuickButtonListEntry('',((_('HELP') + _(' long')) + functionbutton_help_long, 'help_long')))
-		self.list.append(QuickButtonListEntry('',(_('VU+ EPG / INFO') + functionbutton_info, 'info')))
-		self.list.append(QuickButtonListEntry('',((_('VU+ EPG / INFO') + _(' long')) + functionbutton_info_long, 'info_long')))
-		self.list.append(QuickButtonListEntry('',(_('HOME') + functionbutton_home, 'home')))
-		self.list.append(QuickButtonListEntry('',((_('HOME') + _(' long')) + functionbutton_home_long, 'home_long')))
-		self.list.append(QuickButtonListEntry('',(_('END') + functionbutton_end, 'end')))
-		self.list.append(QuickButtonListEntry('',((_('END') + _(' long')) + functionbutton_end_long, 'end_long')))
-		self.list.append(QuickButtonListEntry('',(_('VU+ R-Button') + functionbutton_pvr, 'pvr')))
-		self.list.append(QuickButtonListEntry('',((_('VU+ R-Button') + _(' long')) + functionbutton_pvr_long, 'pvr_long')))
-		self.list.append(QuickButtonListEntry('',(_('RADIO') + functionbutton_radio, 'radio')))
-		self.list.append(QuickButtonListEntry('',((_('RADIO') + _(' long')) + functionbutton_radio_long, 'radio_long')))
+		self.list.append(QuickButtonListEntry('',( ('Text') + functionbutton_text, 'text')))
+		self.list.append(QuickButtonListEntry('',(( ('Text') + _(' long')) + functionbutton_text_long, 'text_long')))
+#		self.list.append(QuickButtonListEntry('',(_('Help') + functionbutton_displayHelp, 'displayHelp')))
+		self.list.append(QuickButtonListEntry('',(( ('Help') + _(' long')) + functionbutton_help_long, 'help_long')))
+#		self.list.append(QuickButtonListEntry('',((_('MENU') + _(' long')) + functionbutton_menu_long, 'menu_long')))
+		if getBoxType().startswith('et'):
+			self.list.append(QuickButtonListEntry('',(_('Info') + functionbutton_info, 'info')))
+			self.list.append(QuickButtonListEntry('',((_('Info') + _(' long')) + functionbutton_info_long, 'info_long')))
+			if getBoxType() == 'ET9500' or getBoxType() == 'ET6500':
+				self.list.append(QuickButtonListEntry('',(_('EPG') + functionbutton_epg, 'epg')))
+				self.list.append(QuickButtonListEntry('',((_('EPG') + _(' long')) + functionbutton_epg_long, 'epg_long')))
+				self.list.append(QuickButtonListEntry('',(_('List') + functionbutton_list, 'list')))
+				self.list.append(QuickButtonListEntry('',((_('List') + _(' long')) + functionbutton_list_long, 'list_long')))
+				self.list.append(QuickButtonListEntry('',(_('Back') + functionbutton_back, 'back')))
+				self.list.append(QuickButtonListEntry('',(( ('Back') + _(' long')) + functionbutton_back_long, 'back_long')))
+				self.list.append(QuickButtonListEntry('',(_('Portal') + functionbutton_portal, 'portal')))
+				self.list.append(QuickButtonListEntry('',(( ('Portal') + _(' long')) + functionbutton_portal_long, 'portal_long')))
+			else:
+				self.list.append(QuickButtonListEntry('',(_('Guide') + functionbutton_epg, 'epg')))
+				self.list.append(QuickButtonListEntry('',((_('Guide') + _(' long')) + functionbutton_epg_long, 'epg_long')))
+				self.list.append(QuickButtonListEntry('',(_('Vkey') + functionbutton_list, 'list')))
+				self.list.append(QuickButtonListEntry('',(( ('Vkey') + _(' long')) + functionbutton_list_long, 'list_long')))
+				self.list.append(QuickButtonListEntry('',(_('Mark') + functionbutton_portal, 'portal')))
+				self.list.append(QuickButtonListEntry('',(( ('Mark') + _(' long')) + functionbutton_portal_long, 'portal_long')))
+				self.list.append(QuickButtonListEntry('',(_('Playlist') + functionbutton_playlist, 'playlist')))
+				self.list.append(QuickButtonListEntry('',((_('Playlist') + _(' long')) + functionbutton_playlist_long, 'playlist_long')))
+				self.list.append(QuickButtonListEntry('',(_('Filelist') + functionbutton_filelist, 'filelist')))
+				self.list.append(QuickButtonListEntry('',((_('Filelist') + _(' long')) + functionbutton_filelist_long, 'filelist_long')))
+				self.list.append(QuickButtonListEntry('',( ('subtitle') + functionbutton_subtitle, 'subtitle')))
+				self.list.append(QuickButtonListEntry('',(( ('subtitle') + _(' long')) + functionbutton_subtitle_long, 'subtitle_long')))
+				self.list.append(QuickButtonListEntry('',( ('PIP') + functionbutton_activatePiP, 'activatePiP')))
+				self.list.append(QuickButtonListEntry('',(( ('PIP') + _(' long')) + functionbutton_pip_long, 'pip_long')))
+				self.list.append(QuickButtonListEntry('',( ('Timeshift') + functionbutton_timeshift, 'timeshift')))
+				self.list.append(QuickButtonListEntry('',(( ('Timeshift') + _(' long')) + functionbutton_timeshift_long, 'timeshift_long')))
+				self.list.append(QuickButtonListEntry('',(_('Search') + functionbutton_search, 'search')))
+				self.list.append(QuickButtonListEntry('',(( ('Search') + _(' long')) + functionbutton_search_long, 'search_long')))                
+				self.list.append(QuickButtonListEntry('',( ('Timer') + functionbutton_timer, 'timer')))
+				self.list.append(QuickButtonListEntry('',(( ('Timer') + _(' long')) + functionbutton_timer_long, 'timer_long')))
+		else:
+			self.list.append(QuickButtonListEntry('',(_('EPG') + functionbutton_info, 'epg')))
+			self.list.append(QuickButtonListEntry('',((_('EPG') + _(' long')) + functionbutton_info_long, 'epg_long')))
+			self.list.append(QuickButtonListEntry('',(_('Filelist') + functionbutton_pvr, 'pvr')))
+			self.list.append(QuickButtonListEntry('',((_('Filellist') + _(' long')) + functionbutton_pvr_long, 'pvr_long')))
+
+		self.list.append(QuickButtonListEntry('',(_('Radio') + functionbutton_radio, 'radio')))
+		self.list.append(QuickButtonListEntry('',((_('Radio') + _(' long')) + functionbutton_radio_long, 'radio_long')))
 		self.list.append(QuickButtonListEntry('',(_('TV') + functionbutton_tv, 'tv')))
+		self.list.append(QuickButtonListEntry('',((_('TV') + _(' long')) + functionbutton_tv_long, 'tv_long')))
+		if getBoxType().startswith('vu'):
+			self.list.append(QuickButtonListEntry('',(_('Home') + functionbutton_home, 'home')))
+			self.list.append(QuickButtonListEntry('',((_('Home') + _(' long')) + functionbutton_home_long, 'home_long')))
+			self.list.append(QuickButtonListEntry('',(_('End') + functionbutton_end, 'end')))
+			self.list.append(QuickButtonListEntry('',((_('End') + _(' long')) + functionbutton_end_long, 'end_long')))
+
+		if getBoxType().startswith('venton'):
+			self.list.append(QuickButtonListEntry('',( ('Timer') + functionbutton_timer, 'timer')))
+			self.list.append(QuickButtonListEntry('',(( ('Timer') + _(' long')) + functionbutton_timer_long, 'timer_long')))
+			self.list.append(QuickButtonListEntry('',( ('F1') + functionbutton_f1, 'f1')))
+			self.list.append(QuickButtonListEntry('',(( ('F1') + _(' long')) + functionbutton_f1_long, 'f1_long')))
+			self.list.append(QuickButtonListEntry('',( ('F2') + functionbutton_f1, 'f1')))
+			self.list.append(QuickButtonListEntry('',(( ('F2') + _(' long')) + functionbutton_f2_long, 'f2_long')))
+			self.list.append(QuickButtonListEntry('',( ('F3') + functionbutton_f3, 'f3')))
+			self.list.append(QuickButtonListEntry('',(( ('F3') + _(' long')) + functionbutton_f3_long, 'f3_long')))
+			self.list.append(QuickButtonListEntry('',( ('F4') + functionbutton_f4, 'f4')))
+			self.list.append(QuickButtonListEntry('',(( ('F4') + _(' long')) + functionbutton_f4_long, 'f3_long')))
+
 		self.list.append(QuickButtonListEntry('',(_('Cross Up') + functionbutton_cross_up, 'cross_up')))
 		self.list.append(QuickButtonListEntry('',(_('Cross Down') + functionbutton_cross_down, 'cross_down')))
 		self.list.append(QuickButtonListEntry('',(_('Cross Left') + functionbutton_cross_left, 'cross_left')))
 		self.list.append(QuickButtonListEntry('',(_('Cross Right') + functionbutton_cross_right, 'cross_right')))
 		self.list.append(QuickButtonListEntry('',(_('Channel +') + functionbutton_channelup, 'channelup')))
 		self.list.append(QuickButtonListEntry('',(_('Channel -') + functionbutton_channeldown, 'channeldown')))
-		self.list.append(QuickButtonListEntry('',(_('Forward >') + functionbutton_next, 'next')))
-		self.list.append(QuickButtonListEntry('',(_('Backward <') + functionbutton_previous, 'previous')))
+		self.list.append(QuickButtonListEntry('',(_('Next >') + functionbutton_next, 'next')))
+		self.list.append(QuickButtonListEntry('',(_('Prev <') + functionbutton_previous, 'previous')))
 		self.list.append(QuickButtonListEntry('',(_('Audio') + functionbutton_audio, 'audio')))
+		self.list.append(QuickButtonListEntry('',((_('Audio') + _(' long')) + functionbutton_audio_long, 'audio_long')))
 		if config.plugins.QuickButton.okexitstate.value:
-			self.list.append(QuickButtonListEntry('',('OK' + functionbutton_ok, 'ok')))
+			self.list.append(QuickButtonListEntry('',(_('OK') + functionbutton_ok, 'ok')))
 			self.list.append(QuickButtonListEntry('',(_('EXIT') + functionbutton_exit, 'exit')))
-		self.list.append(QuickButtonListEntry('',(_('Play') + functionbutton_play, 'play')))
-		self.list.append(QuickButtonListEntry('',(_('Pause') + functionbutton_pause, 'pause')))
+		if getBoxType().startswith('et') or getBoxType().startswith('venton'):
+			self.list.append(QuickButtonListEntry('',(_('Play/Pause') + functionbutton_play, 'play')))
+		else:
+			self.list.append(QuickButtonListEntry('',(_('Play') + functionbutton_play, 'play')))
+			self.list.append(QuickButtonListEntry('',(_('Pause') + functionbutton_pause, 'pause')))
+		self.list.append(QuickButtonListEntry('',(_('Stop') + functionbutton_stop, 'stop')))
 		self.list.append(QuickButtonListEntry('',(_('Rewind <<') + functionbutton_rewind, 'rewind')))
 		self.list.append(QuickButtonListEntry('',(_('FastForward >>') + functionbutton_fastforward, 'fastforward')))
 		
@@ -229,6 +303,7 @@ class MultiQuickButton(Screen):
 		menuentry_state = menuentry
 		info_state = info
 		okexit_state = okexit
+		showbutton_state = showbutton
 		if config.plugins.QuickButton.enable.value:
 			autostart_state += _("on")
 		else:
@@ -249,10 +324,15 @@ class MultiQuickButton(Screen):
 		else:
 			okexit_state += _("off")
 
+		if config.plugins.QuickButton.showbutton.value:
+			showbutton_state += _("on")
+		else:
+			showbutton_state += _("off")
 		self["key_red"].setText(autostart_state)
 		self["key_green"].setText(menuentry_state)
 		self["key_0"].setText(info_state)
 		self["key_1"].setText(okexit_state)
+		self["key_4"].setText(showbutton_state)
 
 	def run(self):
 		returnValue = self["list"].l.getCurrentSelection()[0][1]
@@ -281,11 +361,11 @@ class MultiQuickButton(Screen):
 			if pathExists(path):
 				config.plugins.QuickButton.last_backupdir.value = path
 				config.plugins.QuickButton.last_backupdir.save()
-				self.settigspath = path + "MultiQuickButton_settings.tar.gz"
+				self.settigspath = path + "MultiQuickButton_et-settings_v2.8.4-" + "_" + strftime("%d.%m.%Y") + "_" + ".tar.gz"
 				if fileExists(self.settigspath):
 					self.session.openWithCallback(self.callOverwriteBackup, MessageBox,_("Overwrite existing Backup?."),type = MessageBox.TYPE_YESNO,)
 				else:
-					com = "tar czvf %s /etc/MultiQuickButton/" % (self.settigspath)
+					com = "tar czvf %s /etc/MultiQuickButton/ /usr/share/enigma2/keymap.xml" % (self.settigspath)
 					self.session.open(Console,_("Backup Settings..."),[com])
 			else:
 				self.session.open(
@@ -294,11 +374,11 @@ class MultiQuickButton(Screen):
 					type = MessageBox.TYPE_ERROR,
 					timeout = 5
 					)
-
+			  
 	def callOverwriteBackup(self, res):
 		if res:
-			com = "tar czvf %s /etc/MultiQuickButton/" % (self.settigspath)
-			self.session.open(Console,_("Backup Settings..."),[com])
+			com = "tar czvf %s /etc/MultiQuickButton/ /usr/share/enigma2/keymap.xml" % (self.settigspath)
+			self.session.open(Console,_("Backup Settings"),[com])
 
 	def restore(self):
 		self.session.openWithCallback(
@@ -311,7 +391,7 @@ class MultiQuickButton(Screen):
 
 	def callRestore(self, path):
 		if path is not None:
-			self.settigspath = path + "MultiQuickButton_settings.tar.gz"
+			self.settigspath = path + "MultiQuickButton_et-settings_v2.8.4-" + "_" + strftime("%d.%m.%Y") + "_" + ".tar.gz"
 			if fileExists(self.settigspath):
 				self.session.openWithCallback(self.callOverwriteSettings, MessageBox,_("Overwrite existing Settings?."),type = MessageBox.TYPE_YESNO,)
 			else:
@@ -355,6 +435,16 @@ class MultiQuickButton(Screen):
 		self.updateList()
 		self.updateSettings()
 
+	def showbutton(self):
+		if config.plugins.QuickButton.showbutton.value:
+			config.plugins.QuickButton.showbutton.setValue(False)
+		else:
+			config.plugins.QuickButton.showbutton.setValue(True)
+
+		config.plugins.QuickButton.showbutton.save()
+		self.updateList()
+		self.updateSettings()
+		
 	def toggleOkExit(self):
 		self.mqbkeymapfile = "/usr/lib/enigma2/python/Plugins/Extensions/MultiQuickButton/keymap.xml"
 		self.mqbkeymap = open(self.mqbkeymapfile, "r")

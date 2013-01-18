@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xml>
-	<Menu>
+	<pip>
 		<content>
-			<name>HbbTV (Red-Button)</name>
+			<name>PIP</name>
 			<sel>1</sel>
 			<code><![CDATA[from Screens.InfoBar import InfoBar
 if InfoBar and InfoBar.instance:
-	InfoBar.activateRedButton(InfoBar.instance)
+	InfoBar.showPiP(InfoBar.instance)
 ]]></code>
 		</content>
-	</Menu>
+	</pip>
 </xml>

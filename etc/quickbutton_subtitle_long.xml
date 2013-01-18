@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<Setup>
+		<content>
+			<name>Subtitles Settings</name>
+			<sel>1</sel>
+			<module>Screens.Setup</module>
+			<screen><![CDATA[Setup, "subtitlesetup"]]></screen>
+		</content>
+	</Setup>
+</xml>

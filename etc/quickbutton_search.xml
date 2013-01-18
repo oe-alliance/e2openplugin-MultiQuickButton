@@ -2,8 +2,7 @@
 <xml>
 	<Menu>
 		<content>
-			<name>Infobar EPG Search...</name>
-			<translation>search EPG...</translation>
+			<name>search EPG...</name>
 			<sel>1</sel>
 			<code><![CDATA[
 for plugin in plugins.getPlugins([PluginDescriptor.WHERE_PLUGINMENU ,PluginDescriptor.WHERE_EXTENSIONSMENU, PluginDescriptor.WHERE_EVENTINFO]):

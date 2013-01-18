@@ -17,7 +17,7 @@ from Screens.Screen import Screen
 from Screens.ChoiceBox import ChoiceBox
 from Screens.ChannelSelection import ChannelSelection
 from Screens.MessageBox import MessageBox
-from  Screens.InfoBarGenerics import InfoBarPlugins
+from Screens.InfoBarGenerics import InfoBarPlugins
 from Components.ActionMap import ActionMap
 from Components.PluginComponent import plugins
 from Components.config import config, ConfigSubsection, ConfigYesNo
@@ -148,15 +148,23 @@ def InfoBarPlugins__init__(self):
 				"radio": self.quickSelectGlobal,
 				"radio_long": self.quickSelectGlobal,
 				"tv": self.quickSelectGlobal,
+				"tv_long": self.quickSelectGlobal,
 				"text": self.quickSelectGlobal,
 				"text_long": self.quickSelectGlobal,
-				"help_long": self.quickSelectGlobal,
+				"subtitle": self.quickSelectGlobal,
+				"subtitle_long": self.quickSelectGlobal,
 				"info": self.quickSelectGlobal,
 				"info_long": self.quickSelectGlobal,
-				"end": self.quickSelectGlobal,
-				"end_long": self.quickSelectGlobal,
+				"list": self.quickSelectGlobal,
+				"list_long": self.quickSelectGlobal,
+				"playlist": self.quickSelectGlobal,
+				"playlist_long": self.quickSelectGlobal,
 				"home": self.quickSelectGlobal,
 				"home_long": self.quickSelectGlobal,
+				"end": self.quickSelectGlobal,
+				"end_long": self.quickSelectGlobal,
+				"epg": self.quickSelectGlobal,
+				"epg_long": self.quickSelectGlobal,
 				"cross_up": self.quickSelectGlobal,
 				"cross_down": self.quickSelectGlobal,
 				"cross_left": self.quickSelectGlobal,
@@ -166,15 +174,44 @@ def InfoBarPlugins__init__(self):
 				"next": self.quickSelectGlobal,
 				"previous": self.quickSelectGlobal,
 				"audio": self.quickSelectGlobal,
+				"audio_long": self.quickSelectGlobal,
 				"ok": self.quickSelectGlobal,
+				"ok_long": self.quickSelectGlobal,
 				"exit": self.quickSelectGlobal,	
 				"play": self.quickSelectGlobal,
+				"stop": self.quickSelectGlobal,	
 				"pause": self.quickSelectGlobal,	
+				"activatePiP": self.quickSelectGlobal,
+				"pip_long": self.quickSelectGlobal,
+				"timer": self.quickSelectGlobal,
+				"timer_long": self.quickSelectGlobal,
+				"back": self.quickSelectGlobal,
+				"back_long": self.quickSelectGlobal,
+				"timeshift": self.quickSelectGlobal,
+				"timeshift_long": self.quickSelectGlobal,
+				"portal": self.quickSelectGlobal,
+				"portal_long": self.quickSelectGlobal,
+				"search": self.quickSelectGlobal,
+				"search_long": self.quickSelectGlobal,
 				"fastforward": self.quickSelectGlobal,	
 				"rewind": self.quickSelectGlobal,	
+				"filelist": self.quickSelectGlobal,
+				"guide": self.quickSelectGlobal,
+				"guide_long": self.quickSelectGlobal,
+				"vkey": self.quickSelectGlobal,
+				"vkey_long": self.quickSelectGlobal,
+				"mark": self.quickSelectGlobal,
+				"mark_long": self.quickSelectGlobal,
+				"displayHelp": self.quickSelectGlobal,
+				"help_long": self.quickSelectGlobal,
+				"mainMenu": self.quickSelectGlobal,
+				"menu_long": self.quickSelectGlobal,
+				"slow": self.quickSelectGlobal,
+				"slow_long": self.quickSelectGlobal,
 				"f1": self.quickSelectGlobal,
 				"f2": self.quickSelectGlobal,
 				"f3": self.quickSelectGlobal,
+				"f4": self.quickSelectGlobal,
 			})
 	else:
 		InfoBarPlugins.__init__ = InfoBarPlugins.__init__
@@ -196,7 +233,7 @@ def checkQuickSel(self, path):
 		self.session.open(MessageBox,("XML " + _("Error") + ": %s" % (e)),  MessageBox.TYPE_ERROR)
 		print "[MultiQuickbutton] ERROR: ",e
 		
-	if list <> None:
+	if list != None:
 		if len(list) == 1:
 			self.execQuick(list[0])
 		elif len(list) > 1:
@@ -222,12 +259,12 @@ def getQuickList(self, list):
 	return quickList
 
 def execQuick(self,entry):
-	if entry <> None:
-		if entry[3] <> "":
+	if entry != None:
+		if entry[3] != "":
 			try:
 				module_import = "from " + entry[3] + " import *"
 				exec(module_import)
-				if entry[4] <> "":
+				if entry[4] != "":
 					try:
 						screen = "self.session.open(" + entry[4] + ")"
 						exec(screen)
@@ -235,7 +272,7 @@ def execQuick(self,entry):
 						self.session.open(MessageBox,("Screen " + _("Error") + ": %s" % (e)),  MessageBox.TYPE_ERROR)
 			except Exception, e:
 				self.session.open(MessageBox,("Module " + _("Error") + ": %s" % (e)),  MessageBox.TYPE_ERROR)
-		if entry[5] <> "":
+		if entry[5] != "":
 			try:
 				exec(entry[5])
 			except Exception, e:
@@ -251,9 +288,10 @@ def quickSelectGlobal(self, key):
 
 class MQBActionMap(ActionMap):
 	def action(self, contexts, action):
-		quickSelection = ("red","red_long","green","green_long","yellow","yellow_long","blue","blue_long","pvr","pvr_long","radio","radio_long", \
-				  "text","text_long","help_long","info","info_long","end","end_long","home","home_long","cross_up","cross_down","cross_left", \
-				  "cross_right","previous","next","channelup","channeldown","f1","f2","f3","audio","exit","ok","play","pause","rewind","fastforward","tv")
+		quickSelection = ("vkey","vkey_long","mark","mark_long","guide_long","guide","filelist_long","filelist","red","red_long","green","green_long","yellow","yellow_long","blue","blue_long","pvr","pvr_long","radio","radio_long","text","text_long", \
+						"subtitle","subtitle_long","info","info_long","list","list_long","playlist","playlist_long","epg","epg_long","cross_up","cross_down","cross_left","cross_right","previous","next","end","end_long","home","home_long", \
+						"channelup","channeldown","audio","audio_long","ok","exit","play","pause","fastforward","stop","rewind","showTv","tv_long","activatePiP","pip_long","timer","timer_long","back","back_long","timeshift","timeshift_long","portal","portal_long","search","search_long","displayHelp","help_long","mainMenu","menu_long","slow","slow_long"
+						"f1","f1_long","f2","f2_long","f3","f3_long","f4","f4_long")
 		if (action in quickSelection and self.actions.has_key(action)):
 			res = self.actions[action](action)
 			if res is not None:
@@ -277,7 +315,7 @@ def Plugins(**kwargs):
 				fnc = autostart),
 				PluginDescriptor(
 				name="Multi Quickbutton",
-				description="Multi Quickbutton for Keyboard and RC VU+Version",
+				description="Multi Quickbutton for Keyboard and RC",
 				where = PluginDescriptor.WHERE_PLUGINMENU,
 				icon="multiquickbutton.png",
 				fnc=main),
@@ -287,7 +325,7 @@ def Plugins(**kwargs):
 				fnc=main),
 				PluginDescriptor(
 				name="Multi Quickbutton",
-				description="Multi Quickbutton for Keyboard and RC VU+Version",
+				description="Multi Quickbutton for Keyboard and RC",
 				where = PluginDescriptor.WHERE_MENU,
 				fnc=menu)]
 	else:
@@ -296,7 +334,7 @@ def Plugins(**kwargs):
 				fnc = autostart),
 				PluginDescriptor(
 				name="Multi Quickbutton",
-				description="Multi Quickbutton for Keyboard and RC VU+Version",
+				description="Multi Quickbutton for Keyboard and RC",
 				where = PluginDescriptor.WHERE_PLUGINMENU,
 				icon="multiquickbutton.png",
 				fnc=main),

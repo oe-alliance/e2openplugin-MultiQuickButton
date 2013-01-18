@@ -51,6 +51,7 @@ AC_CONFIG_FILES([
 Makefile
 src/Makefile
 src/pic/Makefile
+src/Screens/Makefile
 po/Makefile
 etc/Makefile
 

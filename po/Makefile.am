@@ -1,3 +1,5 @@
+dist_noinst_SCRIPTS = xml2po.py
+
 PLUGIN = MultiQuickButton
 plugindir = $(libdir)/enigma2/python/Plugins/Extensions/$(PLUGIN)
 
@@ -7,16 +9,20 @@ LANGPO = $(LANGS:=.po)
 
 if UPDATE_PO
 # the TRANSLATORS: allows putting translation comments before the to-be-translated line.
-$(PLUGIN)-py.pot: $(srcdir)/../src/*.py
-	$(XGETTEXT) --no-wrap -L python --from-code=UTF-8 --add-comments="TRANSLATORS:" -d $(PLUGIN) -s -o $@ $^
+$(PLUGIN)-py.pot: $(srcdir)/../src/*.py $(srcdir)/../src/Screens/*.py
+	$(XGETTEXT) --no-wrap -L Python --from-code=UTF-8 -kpgettext:1c,2 --add-comments="TRANSLATORS:" -d @PACKAGE_NAME@ -s -o $@ $^
 
-$(PLUGIN).pot: $(PLUGIN)-py.pot
+$(PLUGIN)-xml.pot: $(srcdir)/../etc/*.xml $(srcdir)/../src/*.xml
+	$(PYTHON) $^ > $@
+
+$(PLUGIN).pot: $(PLUGIN)-py.pot $(PLUGIN)-xml.pot
 	sed --in-place $(PLUGIN)-py.pot --expression=s/CHARSET/UTF-8/
-	$(MSGUNIQ) --no-wrap --no-location $^ -o $@
+	sed --in-place $(PLUGIN)-xml.pot --expression=s/CHARSET/UTF-8/
+	cat $^ | $(MSGUNIQ) --no-wrap --no-location -o $@ -
 
 %.po: $(PLUGIN).pot
 	if [ -f $@ ]; then \
-		$(MSGMERGE) --backup=none --no-wrap --no-location -s -N -U $@ $< && touch $@; \
+		$(MSGMERGE) --backup=none --no-wrap --no-location -s -U $@ $< && touch $@; \
 	else \
 		$(MSGINIT) -l $@ -o $@ -i $< --no-translator; \
 	fi
