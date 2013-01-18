@@ -224,28 +224,42 @@ self.toggleShow()
 ]]></code>
 		</mqbfunction>
 		<mqbfunction>
-			<name>InfoBar EventInfoPlugins</name>
+			<name>EventInfoPlugins</name>
 			<code><![CDATA[from Screens.InfoBar import InfoBar
 if InfoBar and InfoBar.instance:
 	InfoBar.showEventInfoPlugins(InfoBar.instance)
 ]]></code>
 		</mqbfunction>
 		<mqbfunction>
-			<name>InfoBar EventView</name>
+			<name>EventView</name>
 			<code><![CDATA[from Screens.InfoBar import InfoBar
 if InfoBar and InfoBar.instance:
 	InfoBar.openEventView(InfoBar.instance)
 ]]></code>
 		</mqbfunction>
 		<mqbfunction>
+			<name>Graph EPG</name>
+			<code><![CDATA[from Screens.InfoBar import InfoBar
+if InfoBar and InfoBar.instance:
+	InfoBar.openGraphEPG(InfoBar.instance)
+]]></code>
+		</mqbfunction>
+		<mqbfunction>
 			<name>InfoBar EPG</name>
+			<code><![CDATA[from Screens.InfoBar import InfoBar
+if InfoBar and InfoBar.instance:
+ InfoBar.openInfoBarEPG(InfoBar.instance)
+ ]]></code>
+		</mqbfunction>
+		<mqbfunction>
+			<name>Single EPG</name>
 			<code><![CDATA[from Screens.InfoBar import InfoBar
 if InfoBar and InfoBar.instance:
 	InfoBar.openSingleServiceEPG(InfoBar.instance)
 ]]></code>
 		</mqbfunction>
 		<mqbfunction>
-			<name>InfoBar Multi EPG</name>
+			<name>Multi EPG</name>
 			<code><![CDATA[from Screens.InfoBar import InfoBar
 if InfoBar and InfoBar.instance:
 	InfoBar.openMultiServiceEPG(InfoBar.instance)
