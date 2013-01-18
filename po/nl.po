@@ -153,7 +153,7 @@ msgid "Execution finished!!"
 msgstr "Uitvoering klaar!!"
 
 msgid "Exit"
-msgstr "Skuit af"
+msgstr "Exit"
 
 msgid "Extension Selection"
 msgstr "Extensie selectie"
@@ -259,7 +259,7 @@ msgid "Infobar EPG Search..."
 msgstr "Infobar EPG Search..."
 
 msgid "List"
-msgstr "Ljist"
+msgstr "Lijst"
 
 msgid "List of Bouquets"
 msgstr "Bouquet lijst"
@@ -340,7 +340,7 @@ msgid "Play/Pause"
 msgstr "Play/Pause"
 
 msgid "Playlist"
-msgstr "Playlist"
+msgstr "Afspeel-lijst"
 
 msgid "Please select the backup path..."
 msgstr "Kies de backup locatie"
