@@ -9,10 +9,10 @@ LANGPO = $(LANGS:=.po)
 
 if UPDATE_PO
 # the TRANSLATORS: allows putting translation comments before the to-be-translated line.
-$(PLUGIN)-py.pot: $(srcdir)/../src/*.py $(srcdir)/../src/Screens/*.py
+$(PLUGIN)-py.pot: $(top_srcdir)/*.py/src/*.py $(top_srcdir)/*.py/src/Screens/*.py
 	$(XGETTEXT) --no-wrap -L Python --from-code=UTF-8 -kpgettext:1c,2 --add-comments="TRANSLATORS:" -d @PACKAGE_NAME@ -s -o $@ $^
 
-$(PLUGIN)-xml.pot: $(srcdir)/xml2po.py $(srcdir)/../etc/*.xml $(srcdir)/../src/*.xml
+$(PLUGIN)-xml.pot: $(srcdir)/xml2po.py $(top_srcdir)/etc/*.xml $(top_srcdir)/src/*.xml
 	$(PYTHON) $^ > $@
 
 $(PLUGIN).pot: $(PLUGIN)-py.pot $(PLUGIN)-xml.pot
