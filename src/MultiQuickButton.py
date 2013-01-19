@@ -149,7 +149,7 @@ class MultiQuickButton(Screen):
 		self["key_1"] = Label(okexit)
 		self["key_2"] = Label(_("Channels"))
 		self["key_3"] = Label(_("Macros"))
-		self["key_4"] = Label(_("query keys")
+		self["key_4"] = Label(_("query keys"))
 		self.createList()
 		self["list"] = QuickButtonList(list=self.list, selection = 0)
 		self["actions"] = ActionMap(["OkCancelActions", "ColorActions", "NumberActions", "EPGSelectActions"],
@@ -245,8 +245,8 @@ class MultiQuickButton(Screen):
 				self.list.append(QuickButtonListEntry('',( ('Timer') + functionbutton_timer, 'timer')))
 				self.list.append(QuickButtonListEntry('',(( ('Timer') + _(' long')) + functionbutton_timer_long, 'timer_long')))
 		else:
-			self.list.append(QuickButtonListEntry('',(_('EPG') + functionbutton_info, 'epg')))
-			self.list.append(QuickButtonListEntry('',((_('EPG') + _(' long')) + functionbutton_info_long, 'epg_long')))
+			self.list.append(QuickButtonListEntry('',(_('EPG') + functionbutton_info, 'info')))
+			self.list.append(QuickButtonListEntry('',((_('EPG') + _(' long')) + functionbutton_info_long, 'info_long')))
 			self.list.append(QuickButtonListEntry('',(_('Filelist') + functionbutton_pvr, 'pvr')))
 			self.list.append(QuickButtonListEntry('',((_('Filellist') + _(' long')) + functionbutton_pvr_long, 'pvr_long')))
 
