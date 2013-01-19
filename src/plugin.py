@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
-# Multi QuickButton Rel. 2.7
+# Multi QuickButton Rel. 2.8.4
 # from Emanuel CLI 2009
 #
 # ***special thanks*** to Dr.Best & AliAbdul ;-)
 # modified for VU+ by plnick <plnick@vuplus-support.org>
-# modified version is based on original MQB version 2.7
+# modified version is based on original MQB version 2.8.4
 
 #This plugin is free software, you are allowed to
 #modify it (if you keep the license),

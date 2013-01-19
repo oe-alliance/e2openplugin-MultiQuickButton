@@ -482,7 +482,7 @@ class MultiQuickButton(Screen):
 		self.session.open(MultiQuickButtonMacro)
 
 	def showAbout(self):
-		self.session.open(MessageBox,("Multi Quickbutton idea is based on\nGP2\'s Quickbutton\nVersion: 2.7\nby Emanuel CLI-Team 2009\nwww.cablelinux.info\n ***special thanks*** to:\ngutemine & AliAbdul & Dr.Best ;-)\n\nChanges for VU+ by plnick\nplnick@vuplus-support.org\nwww.vuplus-support.org\nVersion %s" % (MultiQuickButton_version)),  MessageBox.TYPE_INFO)
+		self.session.open(MessageBox,("Multi Quickbutton idea is based on\nGP2\'s Quickbutton\nVersion: 2.8.4\nby Emanuel CLI-Team 2009\nwww.cablelinux.info\n ***special thanks*** to:\ngutemine & AliAbdul & Dr.Best ;-)\n\nChanges by Andyblac, OE-Alliance\nVersion %s" % (MultiQuickButton_version)),  MessageBox.TYPE_INFO)
   
 	def callRestart(self, restart):
 		if restart == True:
