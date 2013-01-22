@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MQB for ViX\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-01-18 17:13+0000\n"
+"POT-Creation-Date: 2013-01-22 17:06+0000\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Delagroov <delagroov@gmail.com>\n"
 "Language-Team: Andy Blackburn/Delagroov/Rob van der Does\n"
@@ -36,6 +36,9 @@ msgstr "Audio"
 msgid "AutoTimer"
 msgstr "AutoTimer"
 
+msgid "Automatic Scan"
+msgstr "Automatic Scan"
+
 msgid "Autostart"
 msgstr "Autostart"
 
@@ -44,6 +47,9 @@ msgstr "Terug"
 
 msgid "Backup"
 msgstr "Backup"
+
+msgid "Backup EPG"
+msgstr "Backup EPG"
 
 msgid "Backup Settings"
 msgstr "Backup instellingen"
@@ -54,8 +60,14 @@ msgstr "Back-up instellingen"
 msgid "Backward <"
 msgstr "Achteruit <"
 
+msgid "Bouquetlist"
+msgstr "Bouquetlijst"
+
 msgid "Button : "
 msgstr "Toets:"
+
+msgid "CI (Common Interface) Setup"
+msgstr "CI (Common Interface) Setup"
 
 msgid "Cancel"
 msgstr "Annuleer"
@@ -68,6 +80,9 @@ msgstr "Kanaal +"
 
 msgid "Channel -"
 msgstr "Kanaal -"
+
+msgid "Channel Info"
+msgstr "Kanaal Info"
 
 msgid "Channel Selection"
 msgstr "Kanaal keuze"
@@ -90,6 +105,12 @@ msgstr "Vorige zender"
 msgid "Channels"
 msgstr "Kanalen"
 
+msgid "Clear EPG"
+msgstr "Schoon EPG op"
+
+msgid "Clear EPG and CrossEPG"
+msgstr "Clear EPG and CrossEPG"
+
 msgid "Configure macro"
 msgstr "Stel macro samen"
 
@@ -110,6 +131,9 @@ msgstr "Pijl omhoog"
 
 msgid "DVDPlayer"
 msgstr "DVDPlayer"
+
+msgid "Deep Standby"
+msgstr "Deep Standby"
 
 msgid "DeepStandby"
 msgstr "DeepStandby"
@@ -133,6 +157,9 @@ msgstr "EPG"
 msgid "EPGSearch Plugin"
 msgstr "EPGSearch Plugin"
 
+msgid "ET-Portal"
+msgstr "ET-Portal"
+
 msgid "EXIT"
 msgstr "Exit"
 
@@ -145,6 +172,12 @@ msgstr "Waarde %s bestaat al"
 
 msgid "Error"
 msgstr "Fout"
+
+msgid "EventInfoPlugins"
+msgstr "EventInfoPlugins"
+
+msgid "EventView"
+msgstr "EventView"
 
 msgid "Execution Progress:"
 msgstr "Voortgang"
@@ -195,6 +228,9 @@ msgstr "Functies"
 msgid "GUI Restart"
 msgstr "GUI Restart"
 
+msgid "Graph EPG"
+msgstr "Graph EPG"
+
 msgid "Guide"
 msgstr "Gids"
 
@@ -203,6 +239,9 @@ msgstr "Help"
 
 msgid "HOME"
 msgstr "Home"
+
+msgid "Harddisk Setup"
+msgstr "Harddisk Setup"
 
 msgid "HbbTV (Red-Button)"
 msgstr "HbbTV (Rode-toets)"
@@ -273,6 +312,9 @@ msgstr "Macro's"
 msgid "Main menu"
 msgstr "Hoofdmenu"
 
+msgid "Manual Scan"
+msgstr "Manuele Scan"
+
 msgid "Mark"
 msgstr "Markeer"
 
@@ -288,6 +330,9 @@ msgstr "Mount info"
 msgid "Move PIP"
 msgstr "Move PIP"
 
+msgid "Multi EPG"
+msgstr "Multi EPG"
+
 msgid "Multi QuickButton settings"
 msgstr "Multi QuickButton instellingen"
 
@@ -299,6 +344,9 @@ msgstr "MultiQuickButton macro configuratie"
 
 msgid "Mute"
 msgstr "Mute"
+
+msgid "Network"
+msgstr "Network"
 
 msgid "Next >"
 msgstr "Volgende >"
@@ -315,8 +363,17 @@ msgstr "OK"
 msgid "OK/EXIT"
 msgstr "OK/EXIT"
 
+msgid "OSD3DSetup (Mode)"
+msgstr "OSD3DSetup (Mode)"
+
+msgid "OSDPositionSetup"
+msgstr "OSDPositionSetup"
+
 msgid "Ok"
 msgstr "Ok"
+
+msgid "Open Servicelist"
+msgstr "Open Zenderlijst"
 
 msgid "Overwrite existing Backup?."
 msgstr "Overschrijf de bestaande back-up?"
@@ -338,6 +395,9 @@ msgstr "Play"
 
 msgid "Play/Pause"
 msgstr "Play/Pause"
+
+msgid "Play/Pause Timeshift"
+msgstr "Play/Pause Timeshift"
 
 msgid "Playlist"
 msgstr "Afspeel-lijst"
@@ -384,6 +444,15 @@ msgstr "Reboot"
 msgid "Record"
 msgstr "Opnemen"
 
+msgid "Recording Setup"
+msgstr "Opname instellingen"
+
+msgid "Remount Network Shares"
+msgstr "Mount netwerk shares opnieuw"
+
+msgid "Restart Enigma2"
+msgstr "Restart Enigma2"
+
 msgid "Restart SoftCam"
 msgstr "Restart SoftCam"
 
@@ -400,11 +469,17 @@ msgstr ""
 msgid "Restore"
 msgstr "Herstel"
 
+msgid "Restore EPG"
+msgstr "Herstel EPG"
+
 msgid "Restore Settings..."
 msgstr "Herstel instellingen"
 
 msgid "Rewind <<"
 msgstr "Achteruit spoelen <<"
+
+msgid "Rewind in LiveTV (Permanent-Timeshift)"
+msgstr "Terugspoelen in LiveTV (Permanent-Timeshift)"
 
 msgid "Save"
 msgstr "Sla op"
@@ -415,11 +490,38 @@ msgstr "Sla de instellingen op"
 msgid "Search"
 msgstr "Zoeken"
 
+msgid "SecondInfoBar"
+msgstr "SecondInfoBar"
+
+msgid "Sender 1"
+msgstr "Favoriete Zender 1"
+
+msgid "Sender 2"
+msgstr "Favoriete Zender 2"
+
+msgid "Sender 3"
+msgstr "Favoriete Zender 3"
+
+msgid "Sender 4"
+msgstr "Favoriete Zender 4"
+
+msgid "Sender 5"
+msgstr "Favoriete Zender 5"
+
 msgid "Show PIP"
 msgstr "Show PIP"
 
+msgid "Single EPG"
+msgstr "Single EPG"
+
+msgid "SkinSelector"
+msgstr "SkinSelector"
+
 msgid "Sleeptimer"
 msgstr "Slaaptimer"
+
+msgid "Standby"
+msgstr "Standby"
 
 msgid "Start Teletext"
 msgstr "Start Teletext"
@@ -466,11 +568,32 @@ msgstr "Timers"
 msgid "Toggle AtmoLight"
 msgstr "Toggle AtmoLight"
 
+msgid "Toggle PiPzap-mode"
+msgstr "Toggle PiPzap-mode"
+
+msgid "Tuner Configuration"
+msgstr "Tuner Configuratie"
+
+msgid "Usage Setup"
+msgstr "Gebruikers instellingen"
+
 msgid "VU+ EPG / Info"
 msgstr "VU+ EPG / Info"
 
 msgid "VU+ R-Button"
 msgstr "VU+ R-knop"
+
+msgid "ViX Image Manager"
+msgstr "ViX Image Manager"
+
+msgid "ViX Mount Manager"
+msgstr "ViX Mount Manager"
+
+msgid "ViX Script Runner"
+msgstr "ViX Script Runner"
+
+msgid "ViX Swap Manager"
+msgstr "ViX Swap Manager"
 
 msgid "Vkey"
 msgstr "Vkey"
@@ -480,6 +603,17 @@ msgstr "Volume +"
 
 msgid "Volume -"
 msgstr "Volume -"
+
+msgid "Volume on/off"
+msgstr "Volume Aan/Uit"
+
+#, fuzzy
+msgid "Zap History +"
+msgstr "Volgende zender in geschiedenis"
+
+#, fuzzy
+msgid "Zap History -"
+msgstr "Vorige zender in geschiedenis"
 
 msgid "Zap history back"
 msgstr "Vorige zender in geschiedenis"
@@ -515,6 +649,13 @@ msgstr "rood"
 msgid "search EPG..."
 msgstr "EPG doorzoeken..."
 
+msgid "switch 16:9"
+msgstr "switch 16:9"
+
+#, fuzzy
+msgid "switch 4:3 (Pillarbox) (PanScan)"
+msgstr "Switch 4:3 (Pillarbox) (Pan&Scan)"
+
 msgid "yellow"
 msgstr "geel"
 
@@ -535,9 +676,6 @@ msgstr "geel"
 
 #~ msgid "Remote control macro V"
 #~ msgstr "Remote control macro V"
-
-#~ msgid "Remount Network Shares"
-#~ msgstr "Mount netwerk shares opnieuw"
 
 #~ msgid "VTI Panel"
 #~ msgstr "VTI Panel"
