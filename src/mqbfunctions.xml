@@ -10,23 +10,6 @@
 self.secondInfoBarScreen.show()
 ]]></code>
 		</mqbfunction>
-		<mqbfunction>
-			<name>switch 16:9</name>
-			<code><![CDATA[
-if config.av.policy_169.value == "letterbox":
-	config.av.policy_169.value = "scale"
-elif config.av.policy_169.value == "scale":
-	config.av.policy_169.value = "panscan"
-elif config.av.policy_169.value == "panscan":
-	config.av.policy_169.value = "auto"
-else:
-	config.av.policy_169.value = "letterbox"
-config.av.policy_169.save()
-from Screens.MessageBox import MessageBox
-aspectratio = {"scale": _("Nur skalieren"), "panscan": _("Pan&Scan"), "auto": _("Auto"), "letterbox": _("Letterbox")}
-self.session.open(MessageBox, _("Zeige 16:9 Format als") + "\n" + aspectratio[config.av.policy_169.value], MessageBox.TYPE_INFO, 2)
-]]></code>
-		</mqbfunction>
 		<mqbfunction>						
 			<name>ET-Portal</name>
 			<module>Plugins.Extensions.EtPortal.plugin</module>				
@@ -474,6 +457,23 @@ config.av.policy_43.save()
 from Screens.MessageBox import MessageBox
 aspectratio = {"scale": _("Nur skalieren"), "nonlinear": _("Nichtlinear"), "panscan": _("Pan&Scan"), "auto": _("Auto"), "pillarbox": _("Pillarbox")}
 self.session.open(MessageBox, _("Zeige 4:3 Format als") + "\n" + aspectratio[config.av.policy_43.value], MessageBox.TYPE_INFO, 2)
+]]></code>
+		</mqbfunction>
+		<mqbfunction>
+			<name>switch 16:9</name>
+			<code><![CDATA[
+if config.av.policy_169.value == "letterbox":
+	config.av.policy_169.value = "scale"
+elif config.av.policy_169.value == "scale":
+	config.av.policy_169.value = "panscan"
+elif config.av.policy_169.value == "panscan":
+	config.av.policy_169.value = "auto"
+else:
+	config.av.policy_169.value = "letterbox"
+config.av.policy_169.save()
+from Screens.MessageBox import MessageBox
+aspectratio = {"scale": _("Nur skalieren"), "panscan": _("Pan&Scan"), "auto": _("Auto"), "letterbox": _("Letterbox")}
+self.session.open(MessageBox, _("Zeige 16:9 Format als") + "\n" + aspectratio[config.av.policy_169.value], MessageBox.TYPE_INFO, 2)
 ]]></code>
 		</mqbfunction>
 	</Setup>
