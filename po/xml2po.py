@@ -15,6 +15,12 @@ for arg in sys.argv[1:]:
 		if mqbfunction.getElementsByTagName("trans"):
 			name = str(mqbfunction.getElementsByTagName("translation")[0].childNodes[0].data)
 		attrlist.add((name, None))
+	for mqbfunction in mqbfunctions.getElementsByTagName("mqbfunction"):
+		if mqbfunction.getElementsByTagName("name"):
+			name = str(mqbfunction.getElementsByTagName("name")[0].childNodes[0].data)
+		if mqbfunction.getElementsByTagName("trans"):
+			name = str(mqbfunction.getElementsByTagName("translation")[0].childNodes[0].data)
+		attrlist.add((name, None))
 
 	attrlist = list(attrlist)
 	attrlist.sort(key=lambda a: a[0])
