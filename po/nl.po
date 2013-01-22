@@ -82,7 +82,7 @@ msgid "Channel -"
 msgstr "Kanaal -"
 
 msgid "Channel Info"
-msgstr "Kanaal Info"
+msgstr "Service Informatie"
 
 msgid "Channel Selection"
 msgstr "Kanaal keuze"
@@ -607,11 +607,9 @@ msgstr "Volume -"
 msgid "Volume on/off"
 msgstr "Volume Aan/Uit"
 
-#, fuzzy
 msgid "Zap History +"
 msgstr "Volgende zender in geschiedenis"
 
-#, fuzzy
 msgid "Zap History -"
 msgstr "Vorige zender in geschiedenis"
 
@@ -652,7 +650,6 @@ msgstr "EPG doorzoeken..."
 msgid "switch 16:9"
 msgstr "switch 16:9"
 
-#, fuzzy
 msgid "switch 4:3 (Pillarbox) (PanScan)"
 msgstr "Switch 4:3 (Pillarbox) (Pan&Scan)"
 
