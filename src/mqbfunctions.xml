@@ -157,19 +157,6 @@ if InfoBar and InfoBar.instance:
 ]]></code>
 		</mqbfunction>
 		<mqbfunction>
-			<name>Dolby Digital downmix on/off</name>
-			<code><![CDATA[
-if config.av.downmix_ac3.value == False:
-	config.av.downmix_ac3.value = True
-else:
-	config.av.downmix_ac3.value = False
-config.av.downmix_ac3.save()
-from Screens.MessageBox import MessageBox
-downmix = {True: _("eingeschaltet"), False: _("ausgeschaltet")}
-self.session.open(MessageBox, _("Dolby Digital downmix: ") + downmix[config.av.downmix_ac3.value], MessageBox.TYPE_INFO, 2)
-]]></code>
-		</mqbfunction>
-		<mqbfunction>
 			<name>Bouquetlist</name>
 			<code><![CDATA[from Screens.InfoBar import InfoBar
 if InfoBar and InfoBar.instance:
@@ -198,6 +185,19 @@ if InfoBar and InfoBar.instance:
 			<code><![CDATA[from Screens.InfoBar import InfoBar
 if InfoBar and InfoBar.instance:
 	InfoBar.historyNext(InfoBar.instance)
+]]></code>
+		</mqbfunction>
+		<mqbfunction>
+			<name>Dolby Digital downmix on/off</name>
+			<code><![CDATA[
+if config.av.downmix_ac3.value == False:
+	config.av.downmix_ac3.value = True
+else:
+	config.av.downmix_ac3.value = False
+config.av.downmix_ac3.save()
+from Screens.MessageBox import MessageBox
+downmix = {True: _("eingeschaltet"), False: _("ausgeschaltet")}
+self.session.open(MessageBox, _("Dolby Digital downmix: ") + downmix[config.av.downmix_ac3.value], MessageBox.TYPE_INFO, 2)
 ]]></code>
 		</mqbfunction>
 		<mqbfunction>
