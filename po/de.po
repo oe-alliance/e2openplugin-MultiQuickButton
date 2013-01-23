@@ -2,9 +2,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-07-06 13:11+0100\n"
+"POT-Creation-Date: 2013-01-19 12:41+0000\n"
 "PO-Revision-Date: \n"
-"Last-Translator: plnick\n"
+"Last-Translator: Rob van der Does <robvddoes@gmail.com>\n"
 "Language-Team: \n"
 "Language: \n"
 "MIME-Version: 1.0\n"
@@ -31,11 +31,20 @@ msgstr "Plugin zur MQB Taste hinzufügen"
 msgid "Audio"
 msgstr "Audio"
 
+msgid "AutoTimer"
+msgstr "Autotimer"
+
 msgid "Autostart"
 msgstr "Autostart"
 
+msgid "Back"
+msgstr "Zurück"
+
 msgid "Backup"
 msgstr "Sicherung"
+
+msgid "Backup Settings"
+msgstr "Backup Einstellungen ..."
 
 msgid "Backup Settings..."
 msgstr "Sichere Einstellungen ..."
@@ -116,8 +125,17 @@ msgstr "Dolby Digital downmix an/aus"
 msgid "END"
 msgstr "End"
 
+msgid "EPG"
+msgstr ""
+
+msgid "EPGSearch Plugin"
+msgstr "EPG Suche Erweiterung"
+
 msgid "EXIT"
 msgstr "Beenden"
+
+msgid "End"
+msgstr "Ende"
 
 #, python-format
 msgid "Entry %s already exists."
@@ -125,6 +143,12 @@ msgstr "Eintrag %s existiert bereits."
 
 msgid "Error"
 msgstr "Fehler"
+
+msgid "Execution Progress:"
+msgstr "Ausführung Fortschritt:"
+
+msgid "Execution finished!!"
+msgstr "Ausführung beendet!!"
 
 msgid "Exit"
 msgstr "Beenden"
@@ -154,6 +178,12 @@ msgstr "Lieblingssender 5"
 msgid "File %s nonexistent."
 msgstr "Datei %s existiert nicht."
 
+msgid "Filelist"
+msgstr "Dateiliste"
+
+msgid "Filellist"
+msgstr "Dateiliste"
+
 msgid "Forward >"
 msgstr "Vor >"
 
@@ -163,11 +193,23 @@ msgstr "Funktionen"
 msgid "GUI Restart"
 msgstr "GUI neu starten"
 
+msgid "Guide"
+msgstr ""
+
 msgid "HELP"
 msgstr "Hilfe"
 
 msgid "HOME"
 msgstr "Home"
+
+msgid "HbbTV (Red-Button)"
+msgstr "HbbTV (Red-Button)"
+
+msgid "Home"
+msgstr ""
+
+msgid "IMDb Details..."
+msgstr ""
 
 msgid "Info"
 msgstr "Info"
@@ -193,6 +235,9 @@ msgstr "Direkte Aufnahme"
 msgid "InfoBar Multi EPG"
 msgstr "Mehrfach EPG"
 
+msgid "InfoBar QuickEPG"
+msgstr "Infobar QuickEPG"
+
 msgid "InfoBar Record"
 msgstr "Aufnahmemenü"
 
@@ -205,6 +250,15 @@ msgstr "Radio"
 msgid "InfoBar Show Tv"
 msgstr "Tv"
 
+msgid "InfoBar VIX EPG"
+msgstr "Infobar ViX EPG"
+
+msgid "Infobar EPG Search..."
+msgstr "Infobar EPG Suche"
+
+msgid "List"
+msgstr "Liste"
+
 msgid "List of Bouquets"
 msgstr "Bouquetliste"
 
@@ -216,6 +270,9 @@ msgstr "Makros"
 
 msgid "Main menu"
 msgstr "Hauptmenü"
+
+msgid "Mark"
+msgstr ""
 
 msgid "MediaPlayer"
 msgstr "Media Player"
@@ -241,6 +298,9 @@ msgstr "MultiQuickButton Makro Einstellungen"
 msgid "Mute"
 msgstr "Stumm"
 
+msgid "Next >"
+msgstr "Nächstes>"
+
 msgid "No valid function file found"
 msgstr "Keine Funktionsdatei gefunden"
 
@@ -262,6 +322,9 @@ msgstr "Überschreibe bestehende Sicherung ?"
 msgid "Overwrite existing Settings?."
 msgstr "Überschreibe bestehende Einstellungen ?"
 
+msgid "PIP"
+msgstr "PIP"
+
 msgid "Pause"
 msgstr "Pause"
 
@@ -270,6 +333,12 @@ msgstr "Bildbetrachter"
 
 msgid "Play"
 msgstr "Play"
+
+msgid "Play/Pause"
+msgstr "Play/Pause"
+
+msgid "Playlist"
+msgstr "Playliste"
 
 msgid "Please select the backup path..."
 msgstr "Bitte wählen Sie den Wiederherstellungspfad ..."
@@ -283,8 +352,14 @@ msgstr "Erweiterungen"
 msgid "Plugins"
 msgstr "Plugins"
 
+msgid "Portal"
+msgstr ""
+
 msgid "Power"
 msgstr "Power"
+
+msgid "Prev <"
+msgstr "Vorheriges<"
 
 msgid "Quickbutton Key : "
 msgstr "Quickbutton Taste :"
@@ -297,6 +372,9 @@ msgstr "Ohne speichern der Einstellungen beenden ?"
 
 msgid "RADIO"
 msgstr "Radio"
+
+msgid "Radio"
+msgstr ""
 
 msgid "Reboot"
 msgstr "VU+ neu starten"
@@ -332,6 +410,9 @@ msgstr "Speichern"
 msgid "Save Settings"
 msgstr "Speichere Einstellungen"
 
+msgid "Search"
+msgstr "Suche"
+
 msgid "Show PIP"
 msgstr "Zeige PIP"
 
@@ -344,6 +425,12 @@ msgstr "Teletext"
 msgid "Start Timeshift"
 msgstr "Starte Timeshift"
 
+msgid "Stop"
+msgstr "Stop"
+
+msgid "Stop Timeshift"
+msgstr "Stoppe Timeshift"
+
 msgid "Subservice Selection"
 msgstr "Auswahl Optionskanäle"
 
@@ -352,6 +439,9 @@ msgstr "Untertitel"
 
 msgid "Subtitles"
 msgstr "Untertitel"
+
+msgid "Subtitles Settings"
+msgstr "Untertitel Einstellungen"
 
 msgid "Swap PIP"
 msgstr "Tausche PIP"
@@ -368,17 +458,20 @@ msgstr "TV"
 msgid "Timer"
 msgstr "Geplante Aufnahmen"
 
+msgid "Timers"
+msgstr "Geplante Aufnahmen"
+
 msgid "Toggle AtmoLight"
 msgstr "AtmoLight an/aus"
-
-msgid "VU+ EPG / INFO"
-msgstr "VU+ EPG / INFO"
 
 msgid "VU+ EPG / Info"
 msgstr "VU+ EPG / INFO"
 
 msgid "VU+ R-Button"
 msgstr "VU+R-Taste"
+
+msgid "Vkey"
+msgstr ""
 
 msgid "Volume +"
 msgstr "Lautstärke +"
@@ -411,8 +504,14 @@ msgstr "aus"
 msgid "on"
 msgstr "an"
 
+msgid "query keys"
+msgstr ""
+
 msgid "red"
 msgstr "rot"
+
+msgid "search EPG..."
+msgstr "Durchsuche EPG..."
 
 msgid "yellow"
 msgstr "gelb"
@@ -425,9 +524,6 @@ msgstr "gelb"
 
 #~ msgid "Deactivate OK Exit Button"
 #~ msgstr "Deaktiviere OK EXIT Tasten"
-
-#~ msgid "PIP"
-#~ msgstr "PIP"
 
 #~ msgid "Please Restart MultiQuickButton"
 #~ msgstr "Bitte starten Sie MultiQuickButton neu"
@@ -457,11 +553,11 @@ msgstr "gelb"
 #~ "Starte Enigma2 neu um die Tasten:\n"
 #~ "OK und EXIT zu (de)aktivieren"
 
-#~ msgid "Stop"
-#~ msgstr "Stop"
-
 #~ msgid "VTI Panel"
 #~ msgstr "VTI Panel"
+
+#~ msgid "VU+ EPG / INFO"
+#~ msgstr "VU+ EPG / INFO"
 
 #~ msgid "about Multi Quickbutton rel. %s"
 #~ msgstr "über Multi Quickbutton rel. %s"
