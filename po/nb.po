@@ -1,17 +1,17 @@
-# Hebrew translations for enigma2-plugins package.
-# Copyright (C) 2012 THE enigma2-plugins'S COPYRIGHT HOLDER
+# Norwegian Bokmal translations for enigma2-plugins package.
+# Copyright (C) 2013 THE enigma2-plugins'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the enigma2-plugins package.
-# Automatically generated, 2012.
+# Automatically generated, 2013.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: enigma2-plugins 3.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-01-22 17:06+0000\n"
-"PO-Revision-Date: 2012-07-06 13:11+0100\n"
+"PO-Revision-Date: 2013-01-22 17:06+0000\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
-"Language: he\n"
+"Language: nb\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -35,12 +35,6 @@ msgstr ""
 msgid "Audio"
 msgstr ""
 
-msgid "AutoTimer"
-msgstr ""
-
-msgid "Automatic Scan"
-msgstr ""
-
 msgid "Autostart"
 msgstr ""
 
@@ -48,9 +42,6 @@ msgid "Back"
 msgstr ""
 
 msgid "Backup"
-msgstr ""
-
-msgid "Backup EPG"
 msgstr ""
 
 msgid "Backup Settings"
@@ -62,13 +53,7 @@ msgstr ""
 msgid "Backward <"
 msgstr ""
 
-msgid "Bouquetlist"
-msgstr ""
-
 msgid "Button : "
-msgstr ""
-
-msgid "CI (Common Interface) Setup"
 msgstr ""
 
 msgid "Cancel"
@@ -81,9 +66,6 @@ msgid "Channel +"
 msgstr ""
 
 msgid "Channel -"
-msgstr ""
-
-msgid "Channel Info"
 msgstr ""
 
 msgid "Channel Selection"
@@ -107,12 +89,6 @@ msgstr ""
 msgid "Channels"
 msgstr ""
 
-msgid "Clear EPG"
-msgstr ""
-
-msgid "Clear EPG and CrossEPG"
-msgstr ""
-
 msgid "Configure macro"
 msgstr ""
 
@@ -134,9 +110,6 @@ msgstr ""
 msgid "DVDPlayer"
 msgstr ""
 
-msgid "Deep Standby"
-msgstr ""
-
 msgid "DeepStandby"
 msgstr ""
 
@@ -156,12 +129,6 @@ msgstr ""
 msgid "EPG"
 msgstr ""
 
-msgid "EPGSearch Plugin"
-msgstr ""
-
-msgid "ET-Portal"
-msgstr ""
-
 msgid "EXIT"
 msgstr ""
 
@@ -173,12 +140,6 @@ msgid "Entry %s already exists."
 msgstr ""
 
 msgid "Error"
-msgstr ""
-
-msgid "EventInfoPlugins"
-msgstr ""
-
-msgid "EventView"
 msgstr ""
 
 msgid "Execution Progress:"
@@ -230,9 +191,6 @@ msgstr ""
 msgid "GUI Restart"
 msgstr ""
 
-msgid "Graph EPG"
-msgstr ""
-
 msgid "Guide"
 msgstr ""
 
@@ -242,16 +200,7 @@ msgstr ""
 msgid "HOME"
 msgstr ""
 
-msgid "Harddisk Setup"
-msgstr ""
-
-msgid "HbbTV (Red-Button)"
-msgstr ""
-
 msgid "Home"
-msgstr ""
-
-msgid "IMDb Details..."
 msgstr ""
 
 msgid "Info"
@@ -278,9 +227,6 @@ msgstr ""
 msgid "InfoBar Multi EPG"
 msgstr ""
 
-msgid "InfoBar QuickEPG"
-msgstr ""
-
 msgid "InfoBar Record"
 msgstr ""
 
@@ -291,12 +237,6 @@ msgid "InfoBar Show Radio"
 msgstr ""
 
 msgid "InfoBar Show Tv"
-msgstr ""
-
-msgid "InfoBar VIX EPG"
-msgstr ""
-
-msgid "Infobar EPG Search..."
 msgstr ""
 
 msgid "List"
@@ -314,9 +254,6 @@ msgstr ""
 msgid "Main menu"
 msgstr ""
 
-msgid "Manual Scan"
-msgstr ""
-
 msgid "Mark"
 msgstr ""
 
@@ -332,9 +269,6 @@ msgstr ""
 msgid "Move PIP"
 msgstr ""
 
-msgid "Multi EPG"
-msgstr ""
-
 msgid "Multi QuickButton settings"
 msgstr ""
 
@@ -345,9 +279,6 @@ msgid "MultiQuickButton macro configuration"
 msgstr ""
 
 msgid "Mute"
-msgstr ""
-
-msgid "Network"
 msgstr ""
 
 msgid "Next >"
@@ -365,25 +296,13 @@ msgstr ""
 msgid "OK/EXIT"
 msgstr ""
 
-msgid "OSD3DSetup (Mode)"
-msgstr ""
-
-msgid "OSDPositionSetup"
-msgstr ""
-
 msgid "Ok"
-msgstr ""
-
-msgid "Open Servicelist"
 msgstr ""
 
 msgid "Overwrite existing Backup?."
 msgstr ""
 
 msgid "Overwrite existing Settings?."
-msgstr ""
-
-msgid "PIP"
 msgstr ""
 
 msgid "Pause"
@@ -396,9 +315,6 @@ msgid "Play"
 msgstr ""
 
 msgid "Play/Pause"
-msgstr ""
-
-msgid "Play/Pause Timeshift"
 msgstr ""
 
 msgid "Playlist"
@@ -446,15 +362,6 @@ msgstr ""
 msgid "Record"
 msgstr ""
 
-msgid "Recording Setup"
-msgstr ""
-
-msgid "Remount Network Shares"
-msgstr ""
-
-msgid "Restart Enigma2"
-msgstr ""
-
 msgid "Restart SoftCam"
 msgstr ""
 
@@ -469,16 +376,10 @@ msgstr ""
 msgid "Restore"
 msgstr ""
 
-msgid "Restore EPG"
-msgstr ""
-
 msgid "Restore Settings..."
 msgstr ""
 
 msgid "Rewind <<"
-msgstr ""
-
-msgid "Rewind in LiveTV (Permanent-Timeshift)"
 msgstr ""
 
 msgid "Save"
@@ -490,37 +391,10 @@ msgstr ""
 msgid "Search"
 msgstr ""
 
-msgid "SecondInfoBar"
-msgstr ""
-
-msgid "Sender 1"
-msgstr ""
-
-msgid "Sender 2"
-msgstr ""
-
-msgid "Sender 3"
-msgstr ""
-
-msgid "Sender 4"
-msgstr ""
-
-msgid "Sender 5"
-msgstr ""
-
 msgid "Show PIP"
 msgstr ""
 
-msgid "Single EPG"
-msgstr ""
-
-msgid "SkinSelector"
-msgstr ""
-
 msgid "Sleeptimer"
-msgstr ""
-
-msgid "Standby"
 msgstr ""
 
 msgid "Start Teletext"
@@ -532,9 +406,6 @@ msgstr ""
 msgid "Stop"
 msgstr ""
 
-msgid "Stop Timeshift"
-msgstr ""
-
 msgid "Subservice Selection"
 msgstr ""
 
@@ -542,9 +413,6 @@ msgid "Subtitle"
 msgstr ""
 
 msgid "Subtitles"
-msgstr ""
-
-msgid "Subtitles Settings"
 msgstr ""
 
 msgid "Swap PIP"
@@ -562,37 +430,13 @@ msgstr ""
 msgid "Timer"
 msgstr ""
 
-msgid "Timers"
-msgstr ""
-
 msgid "Toggle AtmoLight"
-msgstr ""
-
-msgid "Toggle PiPzap-mode"
-msgstr ""
-
-msgid "Tuner Configuration"
-msgstr ""
-
-msgid "Usage Setup"
 msgstr ""
 
 msgid "VU+ EPG / Info"
 msgstr ""
 
 msgid "VU+ R-Button"
-msgstr ""
-
-msgid "ViX Image Manager"
-msgstr ""
-
-msgid "ViX Mount Manager"
-msgstr ""
-
-msgid "ViX Script Runner"
-msgstr ""
-
-msgid "ViX Swap Manager"
 msgstr ""
 
 msgid "Vkey"
@@ -602,15 +446,6 @@ msgid "Volume +"
 msgstr ""
 
 msgid "Volume -"
-msgstr ""
-
-msgid "Volume on/off"
-msgstr ""
-
-msgid "Zap History +"
-msgstr ""
-
-msgid "Zap History -"
 msgstr ""
 
 msgid "Zap history back"
@@ -644,14 +479,179 @@ msgstr ""
 msgid "red"
 msgstr ""
 
+msgid "yellow"
+msgstr ""
+
+msgid "PIP"
+msgstr ""
+
+msgid "InfoBar QuickEPG"
+msgstr ""
+
+msgid "InfoBar VIX EPG"
+msgstr ""
+
+msgid "Timers"
+msgstr ""
+
+msgid "AutoTimer"
+msgstr ""
+
+msgid "HbbTV (Red-Button)"
+msgstr ""
+
 msgid "search EPG..."
+msgstr ""
+
+msgid "EPGSearch Plugin"
+msgstr ""
+
+msgid "Stop Timeshift"
+msgstr ""
+
+msgid "Subtitles Settings"
+msgstr ""
+
+msgid "Infobar EPG Search..."
+msgstr ""
+
+msgid "IMDb Details..."
+msgstr ""
+
+msgid "Automatic Scan"
+msgstr ""
+
+msgid "Backup EPG"
+msgstr ""
+
+msgid "Bouquetlist"
+msgstr ""
+
+msgid "CI (Common Interface) Setup"
+msgstr ""
+
+msgid "Channel Info"
+msgstr ""
+
+msgid "Clear EPG"
+msgstr ""
+
+msgid "Clear EPG and CrossEPG"
+msgstr ""
+
+msgid "Deep Standby"
+msgstr ""
+
+msgid "ET-Portal"
+msgstr ""
+
+msgid "EventInfoPlugins"
+msgstr ""
+
+msgid "EventView"
+msgstr ""
+
+msgid "Graph EPG"
+msgstr ""
+
+msgid "Harddisk Setup"
+msgstr ""
+
+msgid "Manual Scan"
+msgstr ""
+
+msgid "Multi EPG"
+msgstr ""
+
+msgid "Network"
+msgstr ""
+
+msgid "OSD3DSetup (Mode)"
+msgstr ""
+
+msgid "OSDPositionSetup"
+msgstr ""
+
+msgid "Open Servicelist"
+msgstr ""
+
+msgid "Play/Pause Timeshift"
+msgstr ""
+
+msgid "Recording Setup"
+msgstr ""
+
+msgid "Remount Network Shares"
+msgstr ""
+
+msgid "Restart Enigma2"
+msgstr ""
+
+msgid "Restore EPG"
+msgstr ""
+
+msgid "Rewind in LiveTV (Permanent-Timeshift)"
+msgstr ""
+
+msgid "SecondInfoBar"
+msgstr ""
+
+msgid "Sender 1"
+msgstr ""
+
+msgid "Sender 2"
+msgstr ""
+
+msgid "Sender 3"
+msgstr ""
+
+msgid "Sender 4"
+msgstr ""
+
+msgid "Sender 5"
+msgstr ""
+
+msgid "Single EPG"
+msgstr ""
+
+msgid "SkinSelector"
+msgstr ""
+
+msgid "Standby"
+msgstr ""
+
+msgid "Toggle PiPzap-mode"
+msgstr ""
+
+msgid "Tuner Configuration"
+msgstr ""
+
+msgid "Usage Setup"
+msgstr ""
+
+msgid "ViX Image Manager"
+msgstr ""
+
+msgid "ViX Mount Manager"
+msgstr ""
+
+msgid "ViX Script Runner"
+msgstr ""
+
+msgid "ViX Swap Manager"
+msgstr ""
+
+msgid "Volume on/off"
+msgstr ""
+
+msgid "Zap History +"
+msgstr ""
+
+msgid "Zap History -"
 msgstr ""
 
 msgid "switch 16:9"
 msgstr ""
 
 msgid "switch 4:3 (Pillarbox) (PanScan)"
-msgstr ""
-
-msgid "yellow"
 msgstr ""
