@@ -9,6 +9,10 @@
 
 from Components.MenuList import MenuList
 from Tools.Directories import SCOPE_CURRENT_SKIN, SCOPE_SKIN_IMAGE, resolveFilename
+try:
+	from Tools.Directories import SCOPE_ACTIVE_SKIN
+except:
+	pass
 from enigma import RT_HALIGN_LEFT, eListboxPythonMultiContent, gFont
 from Tools.LoadPixmap import LoadPixmap
 from __init__ import _
@@ -25,7 +29,10 @@ def QuickButtonListEntry(key, text):
 			path = "/usr/lib/enigma2/python/Plugins/Extensions/MultiQuickButton/pic/" + key + ".png"
 		else:
 			path = "buttons/key_" + key + ".png"
-		png = LoadPixmap(resolveFilename(SCOPE_CURRENT_SKIN, (path)))
+		try:
+			png = LoadPixmap(resolveFilename(SCOPE_ACTIVE_SKIN, (path)))
+		except:
+			png = LoadPixmap(resolveFilename(SCOPE_CURRENT_SKIN, ('skn_default/'+path)))
 		if png is not None:
 			res.append((eListboxPythonMultiContent.TYPE_PIXMAP_ALPHATEST, 5, 0, 35, 25, png))
 	return res
