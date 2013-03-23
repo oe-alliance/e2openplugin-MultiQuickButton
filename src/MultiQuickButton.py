@@ -61,7 +61,7 @@ showbutton=_("query keys") + ": "
 
 values = ("vkey","vkey_long","mark","mark_long","guide_long","guide","filelist_long","filelist","red","red_long","green","green_long","yellow","yellow_long","blue","blue_long","pvr","pvr_long","radio","radio_long","text","text_long", \
 			"subtitle","subtitle_long","info","info_long","list","list_long","playlist","playlist_long","epg","epg_long","cross_up","cross_down","cross_left","cross_right","previous","next", "end","end_long","home","home_long", \
-			"channelup","channeldown","audio","audio_long","ok","exit","play","pause","fastforward","stop","rewind","tv","tv_long","activatePiP","pip_long","timer","timer_long","back","back_long","timeshift","timeshift_long","portal","portal_long","search","search_long","displayHelp","help_long","mainMenu","menu_long","slow","slow_long",
+			"channelup","channeldown","audio","audio_long","ok","exit","play","pause","fastforward","stop","rewind","tv","tv_long","activatePiP","pip_long","timer","timer_long","back","back_long","timeshift","timeshift_long","portal","portal_long","search","search_long","displayHelp","help_long","mainMenu","menu_long","slow","slow_long", \
 			"f1","f1_long","f2","f2_long","f3","f3_long","f4","f4_long")
 
 def getBoxType():
@@ -260,9 +260,10 @@ class MultiQuickButton(Screen):
 			self.list.append(QuickButtonListEntry('',(_('End') + functionbutton_end, 'end')))
 			self.list.append(QuickButtonListEntry('',((_('End') + _(' long')) + functionbutton_end_long, 'end_long')))
 
-		if getBoxType().startswith('venton'):
-			self.list.append(QuickButtonListEntry('',( ('Timer') + functionbutton_timer, 'timer')))
-			self.list.append(QuickButtonListEntry('',(( ('Timer') + _(' long')) + functionbutton_timer_long, 'timer_long')))
+		if getBoxType().startswith('venton') or getBoxType().startswith('gb') or getBoxType().startswith('tm'):
+			if getBoxType().startswith('venton'):
+				self.list.append(QuickButtonListEntry('',( ('Timer') + functionbutton_timer, 'timer')))
+				self.list.append(QuickButtonListEntry('',(( ('Timer') + _(' long')) + functionbutton_timer_long, 'timer_long')))
 			self.list.append(QuickButtonListEntry('',( ('F1') + functionbutton_f1, 'f1')))
 			self.list.append(QuickButtonListEntry('',(( ('F1') + _(' long')) + functionbutton_f1_long, 'f1_long')))
 			self.list.append(QuickButtonListEntry('',( ('F2') + functionbutton_f1, 'f1')))
