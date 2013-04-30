@@ -25,16 +25,18 @@ def QuickButtonListEntry(key, text):
 			res.append((eListboxPythonMultiContent.TYPE_PIXMAP_ALPHATEST, 0, 12, 780, 25, png))
 	else:
 		res.append((eListboxPythonMultiContent.TYPE_TEXT, 45, 00, 780, 25, 0, RT_HALIGN_LEFT, text[0]))
+		path = None
 		if key == "green" or key == "red":
 			path = "/usr/lib/enigma2/python/Plugins/Extensions/MultiQuickButton/pic/" + key + ".png"
-		else:
+		elif key:
 			path = "buttons/key_" + key + ".png"
-		try:
-			png = LoadPixmap(resolveFilename(SCOPE_ACTIVE_SKIN, (path)))
-		except:
-			png = LoadPixmap(resolveFilename(SCOPE_CURRENT_SKIN, ('skn_default/'+path)))
-		if png is not None:
-			res.append((eListboxPythonMultiContent.TYPE_PIXMAP_ALPHATEST, 5, 0, 35, 25, png))
+		if path:
+			try:
+				png = LoadPixmap(resolveFilename(SCOPE_ACTIVE_SKIN, (path)))
+			except:
+				png = LoadPixmap(resolveFilename(SCOPE_CURRENT_SKIN, ('skn_default/'+path)))
+			if png is not None:
+				res.append((eListboxPythonMultiContent.TYPE_PIXMAP_ALPHATEST, 5, 0, 35, 25, png))
 	return res
 
 class QuickButtonList(MenuList):
