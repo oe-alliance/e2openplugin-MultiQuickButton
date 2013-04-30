@@ -237,7 +237,7 @@ def checkQuickSel(self, path):
 		if len(list) == 1:
 			self.execQuick(list[0])
 		elif len(list) > 1:
-			self.session.openWithCallback(self.askForQuickList,ChoiceBox,"Multi Quickbutton Menu %s" % (button), self.getQuickList(list))
+			self.session.openWithCallback(self.askForQuickList,ChoiceBox,title="Multi Quickbutton Menu %s" % (button), list=self.getQuickList(list))
 		else:
 			if os.path.exists(path):
 				self.session.open(QuickButton, path, (_('Quickbutton: Key ') + button))

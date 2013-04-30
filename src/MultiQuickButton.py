@@ -678,7 +678,7 @@ class QuickButton(Screen):
 
 	def add(self):
 		self.changed = True
-		self.session.openWithCallback(self.setNewEntryType,ChoiceBox,_("MQB Functions and Plugins") ,self.getNewEntryType())
+		self.session.openWithCallback(self.setNewEntryType,ChoiceBox,title=_("MQB Functions and Plugins") ,list=self.getNewEntryType())
 
 	def setNewEntryType(self, selection):
 		if selection:
@@ -698,13 +698,13 @@ class QuickButton(Screen):
 	def addfunction(self):
 		self.changed = True
 		try:
-			self.session.openWithCallback(self.QuickPluginSelected,ChoiceBox,_("Functions") ,self.getFunctionList())
+			self.session.openWithCallback(self.QuickPluginSelected,ChoiceBox,title=_("Functions") ,list=self.getFunctionList())
 		except Exception,e:
 			self.session.open(MessageBox,_("No valid function file found"), type = MessageBox.TYPE_ERROR,timeout = 5)
 
 	def addplugin(self):
 		self.changed = True
-		self.session.openWithCallback(self.QuickPluginSelected,ChoiceBox,_("Plugins") ,self.getPluginsList())
+		self.session.openWithCallback(self.QuickPluginSelected,ChoiceBox,title=_("Plugins") ,list=self.getPluginsList())
 
 	def QuickPluginSelected(self, choice):
 		if choice:
