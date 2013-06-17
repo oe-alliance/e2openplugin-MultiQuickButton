@@ -59,7 +59,7 @@ info=_("Info") + ": "
 okexit=_("OK/EXIT") + ": "
 showbutton=_("query keys") + ": "
 
-values = ("vkey","vkey_long","mark","mark_long","guide_long","guide","filelist_long","filelist","red","red_long","green","green_long","yellow","yellow_long","blue","blue_long","pvr","pvr_long","radio","radio_long","text","text_long", \
+values = ("guide_long","guide","filelist_long","filelist","red","red_long","green","green_long","yellow","yellow_long","blue","blue_long","pvr","pvr_long","radio","radio_long","text","text_long", \
 			"subtitle","subtitle_long","info","info_long","list","list_long","playlist","playlist_long","epg","epg_long","cross_up","cross_down","cross_left","cross_right","previous","next", "end","end_long","home","home_long", \
 			"channelup","channeldown","audio","audio_long","ok","exit","play","pause","fastforward","stop","rewind","tv","tv_long","activatePiP","pip_long","timer","timer_long","back","back_long","timeshift","timeshift_long","portal","portal_long","search","search_long","displayHelp","help_long","mainMenu","menu_long","slow","slow_long", \
 			"f1","f1_long","f2","f2_long","f3","f3_long","f4","f4_long")
@@ -226,24 +226,24 @@ class MultiQuickButton(Screen):
 			else:
 				self.list.append(QuickButtonListEntry('',(_('Guide') + functionbutton_epg, 'epg')))
 				self.list.append(QuickButtonListEntry('',((_('Guide') + _(' long')) + functionbutton_epg_long, 'epg_long')))
-				self.list.append(QuickButtonListEntry('',(_('Vkey') + functionbutton_list, 'list')))
-				self.list.append(QuickButtonListEntry('',(( ('Vkey') + _(' long')) + functionbutton_list_long, 'list_long')))
+				self.list.append(QuickButtonListEntry('',(_('Vkey') + functionbutton_pvr, 'pvr')))
+				self.list.append(QuickButtonListEntry('',((_('Vkey') + _(' long')) + functionbutton_pvr_long, 'pvr_long')))
 				self.list.append(QuickButtonListEntry('',(_('Mark') + functionbutton_portal, 'portal')))
-				self.list.append(QuickButtonListEntry('',(( ('Mark') + _(' long')) + functionbutton_portal_long, 'portal_long')))
+				self.list.append(QuickButtonListEntry('',((_('Mark') + _(' long')) + functionbutton_portal_long, 'portal_long')))
 				self.list.append(QuickButtonListEntry('',(_('Playlist') + functionbutton_playlist, 'playlist')))
 				self.list.append(QuickButtonListEntry('',((_('Playlist') + _(' long')) + functionbutton_playlist_long, 'playlist_long')))
 				self.list.append(QuickButtonListEntry('',(_('Filelist') + functionbutton_filelist, 'filelist')))
 				self.list.append(QuickButtonListEntry('',((_('Filelist') + _(' long')) + functionbutton_filelist_long, 'filelist_long')))
-				self.list.append(QuickButtonListEntry('',( ('subtitle') + functionbutton_subtitle, 'subtitle')))
-				self.list.append(QuickButtonListEntry('',(( ('subtitle') + _(' long')) + functionbutton_subtitle_long, 'subtitle_long')))
-				self.list.append(QuickButtonListEntry('',( ('PIP') + functionbutton_activatePiP, 'activatePiP')))
-				self.list.append(QuickButtonListEntry('',(( ('PIP') + _(' long')) + functionbutton_pip_long, 'pip_long')))
-				self.list.append(QuickButtonListEntry('',( ('Timeshift') + functionbutton_timeshift, 'timeshift')))
-				self.list.append(QuickButtonListEntry('',(( ('Timeshift') + _(' long')) + functionbutton_timeshift_long, 'timeshift_long')))
+				self.list.append(QuickButtonListEntry('',(_('Subtitle') + functionbutton_subtitle, 'subtitle')))
+				self.list.append(QuickButtonListEntry('',((_('Subtitle') + _(' long')) + functionbutton_subtitle_long, 'subtitle_long')))
+				self.list.append(QuickButtonListEntry('',(_('PIP') + functionbutton_activatePiP, 'activatePiP')))
+				self.list.append(QuickButtonListEntry('',((_('PIP') + _(' long')) + functionbutton_pip_long, 'pip_long')))
+				self.list.append(QuickButtonListEntry('',(_('Timeshift') + functionbutton_timeshift, 'timeshift')))
+				self.list.append(QuickButtonListEntry('',((_('Timeshift') + _(' long')) + functionbutton_timeshift_long, 'timeshift_long')))
 				self.list.append(QuickButtonListEntry('',(_('Search') + functionbutton_search, 'search')))
-				self.list.append(QuickButtonListEntry('',(( ('Search') + _(' long')) + functionbutton_search_long, 'search_long')))                
-				self.list.append(QuickButtonListEntry('',( ('Timer') + functionbutton_timer, 'timer')))
-				self.list.append(QuickButtonListEntry('',(( ('Timer') + _(' long')) + functionbutton_timer_long, 'timer_long')))
+				self.list.append(QuickButtonListEntry('',((_('Search') + _(' long')) + functionbutton_search_long, 'search_long')))                
+				self.list.append(QuickButtonListEntry('',(_('Timer') + functionbutton_timer, 'timer')))
+				self.list.append(QuickButtonListEntry('',((_('Timer') + _(' long')) + functionbutton_timer_long, 'timer_long')))
 		else:
 			self.list.append(QuickButtonListEntry('',(_('EPG') + functionbutton_info, 'info')))
 			self.list.append(QuickButtonListEntry('',((_('EPG') + _(' long')) + functionbutton_info_long, 'info_long')))

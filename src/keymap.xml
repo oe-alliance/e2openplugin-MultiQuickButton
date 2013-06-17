@@ -28,11 +28,8 @@
 		<key id="KEY_MENU" mapto="menu_long" flags="l" />
 		<key id="KEY_INFO" mapto="info" flags="b" />
 		<key id="KEY_INFO" mapto="info_long" flags="l" />
-		<key id="KEY_VIDEO" mapto="list" flags="b" />
-		<key id="KEY_VIDEO" mapto="list_long" flags="l" />
 		<key id="KEY_BACK" mapto="back" flags="b" />
 		<key id="KEY_BACK" mapto="back_long" flags="l" />
-		<key id="KEY_END" mapto="end" flags="b" />
 		<key id="KEY_END" mapto="end" flags="b" />
 		<key id="KEY_END" mapto="end_long" flags="l" />
 		<key id="KEY_HOME" mapto="home" flags="b" />
@@ -73,8 +70,6 @@
 		<key id="KEY_RESTART" mapto="slow_long" flags="l" />
 		<!-- <key id="KEY_FILE" mapto="filelist" flags="b" /> -->
 		<key id="KEY_FILE" mapto="filelist_long" flags="l" />
-		<key id="KEY_BOOKMARKS" mapto="mark" flags="b" />
-		<key id="KEY_BOOKMARKS" mapto="mark_long" flags="l" />
 		<!-- <key id="KEY_OK" mapto="ok" flags="m" /> -->
 		<!-- <key id="KEY_EXIT" mapto="exit" flags="m" /> -->
 		<key id="KEY_F1" mapto="f1" flags="b" />
