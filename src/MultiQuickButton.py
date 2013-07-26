@@ -260,8 +260,8 @@ class MultiQuickButton(Screen):
 			self.list.append(QuickButtonListEntry('',(_('End') + functionbutton_end, 'end')))
 			self.list.append(QuickButtonListEntry('',((_('End') + _(' long')) + functionbutton_end_long, 'end_long')))
 
-		if getBoxType().startswith('venton') or getBoxType().startswith('gb') or getBoxType().startswith('tm'):
-			if getBoxType().startswith('venton'):
+		if getBoxType().startswith('venton') or getBoxType().startswith('ini') or getBoxType().startswith('gb') or getBoxType().startswith('tm'):
+			if getBoxType().startswith('venton') or getBoxType().startswith('ini'):
 				self.list.append(QuickButtonListEntry('',( ('Timer') + functionbutton_timer, 'timer')))
 				self.list.append(QuickButtonListEntry('',(( ('Timer') + _(' long')) + functionbutton_timer_long, 'timer_long')))
 			self.list.append(QuickButtonListEntry('',( ('F1') + functionbutton_f1, 'f1')))
@@ -286,7 +286,7 @@ class MultiQuickButton(Screen):
 		if config.plugins.QuickButton.okexitstate.value:
 			self.list.append(QuickButtonListEntry('',(_('OK') + functionbutton_ok, 'ok')))
 			self.list.append(QuickButtonListEntry('',(_('EXIT') + functionbutton_exit, 'exit')))
-		if getBoxType().startswith('et') or getBoxType().startswith('venton'):
+		if getBoxType().startswith('et') or getBoxType().startswith('venton') or getBoxType().startswith('ini'):
 			self.list.append(QuickButtonListEntry('',(_('Play/Pause') + functionbutton_play, 'play')))
 		else:
 			self.list.append(QuickButtonListEntry('',(_('Play') + functionbutton_play, 'play')))
