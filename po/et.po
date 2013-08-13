@@ -2,15 +2,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-01-22 17:06+0000\n"
+"POT-Creation-Date: 2013-08-12 21:42+0200\n"
 "PO-Revision-Date: \n"
-"Last-Translator: rimas\n"
+"Last-Translator: Rob van der Does <robvddoes@gmail.com>\n"
 "Language-Team: rimas\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-Basepath: .\n"
+"X-Generator: Poedit 1.5.4\n"
 "X-Poedit-SearchPath-0: .\n"
 
 msgid " long"
@@ -31,30 +31,26 @@ msgstr "Lisa laiendusi"
 msgid "Audio"
 msgstr "Audio"
 
-#, fuzzy
 msgid "AutoTimer"
-msgstr "Taimer"
+msgstr "Autotaimer"
 
 msgid "Automatic Scan"
-msgstr ""
+msgstr "Automaatotsing"
 
 msgid "Autostart"
 msgstr "Autostart"
 
-#, fuzzy
 msgid "Back"
-msgstr "Varunda"
+msgstr "Tagasi"
 
 msgid "Backup"
 msgstr "Varunda"
 
-#, fuzzy
 msgid "Backup EPG"
-msgstr "Varunda"
+msgstr "EPG varundamine"
 
-#, fuzzy
 msgid "Backup Settings"
-msgstr "Varunda seadistus"
+msgstr "Seadistuste varundamine"
 
 msgid "Backup Settings..."
 msgstr "Varunda seadistus"
@@ -63,13 +59,13 @@ msgid "Backward <"
 msgstr "Tagasi <"
 
 msgid "Bouquetlist"
-msgstr ""
+msgstr "Lemmiknimekirjad"
 
 msgid "Button : "
 msgstr "Nupp : "
 
 msgid "CI (Common Interface) Setup"
-msgstr ""
+msgstr "CI (Common Interface) seaded"
 
 msgid "Cancel"
 msgstr "Tühista"
@@ -83,9 +79,8 @@ msgstr "Channel +"
 msgid "Channel -"
 msgstr "Channel -"
 
-#, fuzzy
 msgid "Channel Info"
-msgstr "Channel +"
+msgstr "Kanali andmed"
 
 msgid "Channel Selection"
 msgstr "Kanali valik"
@@ -108,12 +103,11 @@ msgstr "Kanalivahetus -"
 msgid "Channels"
 msgstr "Kanalid"
 
-#, fuzzy
 msgid "Clear EPG"
-msgstr "Inforiba - Saatekava"
+msgstr "Puhasta EPG"
 
 msgid "Clear EPG and CrossEPG"
-msgstr ""
+msgstr "Puhasta EPG ja CrossEPG"
 
 msgid "Configure macro"
 msgstr "Seadista makro"
@@ -136,7 +130,6 @@ msgstr "Rist üles"
 msgid "DVDPlayer"
 msgstr "DVD - mängija"
 
-#, fuzzy
 msgid "Deep Standby"
 msgstr "Sügavooterežiim"
 
@@ -157,19 +150,19 @@ msgid "END"
 msgstr "END"
 
 msgid "EPG"
-msgstr ""
+msgstr "EPG"
 
 msgid "EPGSearch Plugin"
-msgstr ""
+msgstr "EPGSearch laiendus"
 
 msgid "ET-Portal"
-msgstr ""
+msgstr "ET-Portal"
 
 msgid "EXIT"
 msgstr "EXIT"
 
 msgid "End"
-msgstr ""
+msgstr "Lõpp"
 
 #, python-format
 msgid "Entry %s already exists."
@@ -178,19 +171,17 @@ msgstr "Kirje %s on juba olemas."
 msgid "Error"
 msgstr "Viga"
 
-#, fuzzy
 msgid "EventInfoPlugins"
-msgstr "Inforiba saateinfo laiendused"
+msgstr "Saateinfo laiendused"
 
-#, fuzzy
 msgid "EventView"
-msgstr "Inforiba - Saateinfo"
+msgstr "Saateinfo"
 
 msgid "Execution Progress:"
-msgstr ""
+msgstr "Täitmise edenemine:"
 
 msgid "Execution finished!!"
-msgstr ""
+msgstr "Tehtud!!"
 
 msgid "Exit"
 msgstr "Välju"
@@ -221,10 +212,10 @@ msgid "File %s nonexistent."
 msgstr "Faili %s ei ole olemas."
 
 msgid "Filelist"
-msgstr ""
+msgstr "Faililist"
 
 msgid "Filellist"
-msgstr ""
+msgstr "Faililist"
 
 msgid "Forward >"
 msgstr "Edasi >"
@@ -236,7 +227,7 @@ msgid "GUI Restart"
 msgstr "GUI taaskäivitus"
 
 msgid "Graph EPG"
-msgstr ""
+msgstr "Graafiline EPG"
 
 msgid "Guide"
 msgstr ""
@@ -248,17 +239,16 @@ msgid "HOME"
 msgstr "HOME"
 
 msgid "Harddisk Setup"
-msgstr ""
+msgstr "Kõvaketta seaded"
 
-#, fuzzy
 msgid "HbbTV (Red-Button)"
-msgstr "VU+ R-nupp"
+msgstr "HbbTV (punane nupp)"
 
 msgid "Home"
-msgstr ""
+msgstr "Avaleht"
 
 msgid "IMDb Details..."
-msgstr ""
+msgstr "IMDb andmed..."
 
 msgid "Info"
 msgstr "Info"
@@ -284,9 +274,8 @@ msgstr "Inforiba - Kohene salvestamine"
 msgid "InfoBar Multi EPG"
 msgstr "Inforiba - Multi EPG"
 
-#, fuzzy
 msgid "InfoBar QuickEPG"
-msgstr "Inforiba - Saatekava"
+msgstr "Inforiba KiirEPG"
 
 msgid "InfoBar Record"
 msgstr "Inforiba - Salvestamine"
@@ -300,16 +289,14 @@ msgstr "Inforiba - Raadio"
 msgid "InfoBar Show Tv"
 msgstr "Inforiba - TV"
 
-#, fuzzy
 msgid "InfoBar VIX EPG"
-msgstr "Inforiba - Saatekava"
+msgstr "Inforiba ViX EPG"
 
-#, fuzzy
 msgid "Infobar EPG Search..."
-msgstr "Inforiba - Saatekava"
+msgstr "Inforiba EPG otsing..."
 
 msgid "List"
-msgstr ""
+msgstr "Loend"
 
 msgid "List of Bouquets"
 msgstr "Lemmikute nimekiri"
@@ -324,10 +311,10 @@ msgid "Main menu"
 msgstr "Peamenüü"
 
 msgid "Manual Scan"
-msgstr ""
+msgstr "Käsiotsing"
 
 msgid "Mark"
-msgstr ""
+msgstr "Märge"
 
 msgid "MediaPlayer"
 msgstr "Meediamängija"
@@ -341,27 +328,26 @@ msgstr "Haakepunktid"
 msgid "Move PIP"
 msgstr "Liiguta PIP"
 
-#, fuzzy
 msgid "Multi EPG"
-msgstr "Inforiba - Multi EPG"
+msgstr "Multi EPG"
 
 msgid "Multi QuickButton settings"
-msgstr "Multi QuickButton seaded"
+msgstr "MultiQuickButton seaded"
 
 msgid "Multi Quickbutton"
-msgstr "Multi Quickbutton"
+msgstr "MultiQuickbutton"
 
 msgid "MultiQuickButton macro configuration"
-msgstr "Multi QuickButton makro seadistused"
+msgstr "MultiQuickButton makro seadistused"
 
 msgid "Mute"
 msgstr "Vaigista"
 
 msgid "Network"
-msgstr ""
+msgstr "Võrk"
 
 msgid "Next >"
-msgstr ""
+msgstr "Järgmine >"
 
 msgid "No valid function file found"
 msgstr "Kehtivat funktsiooni ei leitud"
@@ -376,16 +362,16 @@ msgid "OK/EXIT"
 msgstr "OK/EXIT"
 
 msgid "OSD3DSetup (Mode)"
-msgstr ""
+msgstr "OSD3D seaded"
 
 msgid "OSDPositionSetup"
-msgstr ""
+msgstr "OSD asukoha seaded"
 
 msgid "Ok"
-msgstr ""
+msgstr "Ok"
 
 msgid "Open Servicelist"
-msgstr ""
+msgstr "Kanalinimekiri"
 
 msgid "Overwrite existing Backup?."
 msgstr "Kirjutad olemasoleva varukoopia üle?"
@@ -394,7 +380,7 @@ msgid "Overwrite existing Settings?."
 msgstr "Kirjutad praeguse seadistuse üle?"
 
 msgid "PIP"
-msgstr ""
+msgstr "PIP"
 
 msgid "Pause"
 msgstr "Pause"
@@ -403,19 +389,16 @@ msgid "Picture Player"
 msgstr "Pildimängija"
 
 msgid "Play"
-msgstr "Esita"
+msgstr "Play"
 
-#, fuzzy
 msgid "Play/Pause"
-msgstr "Pause"
+msgstr "Esitus/paus"
 
-#, fuzzy
 msgid "Play/Pause Timeshift"
-msgstr "Ajanihe"
+msgstr "Ajanihke esitus/paus"
 
-#, fuzzy
 msgid "Playlist"
-msgstr "Esita"
+msgstr "Pleilist"
 
 msgid "Please select the backup path..."
 msgstr "Vali varukoopiale asukoht..."
@@ -436,7 +419,7 @@ msgid "Power"
 msgstr "Toide"
 
 msgid "Prev <"
-msgstr ""
+msgstr "Eelmine <"
 
 msgid "Quickbutton Key : "
 msgstr "Quickbutton nupp:"
@@ -451,7 +434,7 @@ msgid "RADIO"
 msgstr "RADIO"
 
 msgid "Radio"
-msgstr ""
+msgstr "Raadio"
 
 msgid "Reboot"
 msgstr "Taaskäivitus"
@@ -460,14 +443,13 @@ msgid "Record"
 msgstr "Salvestus"
 
 msgid "Recording Setup"
-msgstr ""
+msgstr "Salvestamise seaded"
 
 msgid "Remount Network Shares"
-msgstr ""
+msgstr "Võrgujagude uuesti haakimine"
 
-#, fuzzy
 msgid "Restart Enigma2"
-msgstr "Taaskäivitame Enigma2, et laadida:\n"
+msgstr "Taaskäivita Enigma2"
 
 msgid "Restart SoftCam"
 msgstr "Taaskäivita EMU"
@@ -485,9 +467,8 @@ msgstr ""
 msgid "Restore"
 msgstr "Taasta"
 
-#, fuzzy
 msgid "Restore EPG"
-msgstr "Taasta"
+msgstr "Taasta EPG"
 
 msgid "Restore Settings..."
 msgstr "Taasta seadistus"
@@ -496,7 +477,7 @@ msgid "Rewind <<"
 msgstr "Tagasikerimine <<"
 
 msgid "Rewind in LiveTV (Permanent-Timeshift)"
-msgstr ""
+msgstr "Otsesaate tagasikerimine (pidev ajanihe)"
 
 msgid "Save"
 msgstr "Salvesta"
@@ -505,11 +486,10 @@ msgid "Save Settings"
 msgstr "Salvesta seadistus"
 
 msgid "Search"
-msgstr ""
+msgstr "Otsi"
 
-#, fuzzy
 msgid "SecondInfoBar"
-msgstr "Inforiba"
+msgstr "Teine inforiba"
 
 msgid "Sender 1"
 msgstr ""
@@ -530,17 +510,16 @@ msgid "Show PIP"
 msgstr "Näita PIP"
 
 msgid "Single EPG"
-msgstr ""
+msgstr "Kanali saatekava"
 
 msgid "SkinSelector"
-msgstr ""
+msgstr "Välimuse valik"
 
 msgid "Sleeptimer"
 msgstr "Unetaimer"
 
-#, fuzzy
 msgid "Standby"
-msgstr "Sügavooterežiim"
+msgstr "Ooterežiim"
 
 msgid "Start Teletext"
 msgstr "Teletekst"
@@ -549,11 +528,10 @@ msgid "Start Timeshift"
 msgstr "Ajanihe"
 
 msgid "Stop"
-msgstr ""
+msgstr "Stop"
 
-#, fuzzy
 msgid "Stop Timeshift"
-msgstr "Ajanihe"
+msgstr "Peata ajanihe"
 
 msgid "Subservice Selection"
 msgstr "Alamkanalid"
@@ -564,9 +542,8 @@ msgstr "Subtiitrid"
 msgid "Subtitles"
 msgstr "Subtiitrid"
 
-#, fuzzy
 msgid "Subtitles Settings"
-msgstr "Salvesta seadistus"
+msgstr "Subtiitrite seaded"
 
 msgid "Swap PIP"
 msgstr "Vaheta PIP"
@@ -583,9 +560,11 @@ msgstr "TV"
 msgid "Timer"
 msgstr "Taimer"
 
-#, fuzzy
 msgid "Timers"
-msgstr "Taimer"
+msgstr "Taimerid"
+
+msgid "Timeshift"
+msgstr "Ajanihe"
 
 msgid "Toggle AtmoLight"
 msgstr "AtmoLight"
@@ -594,7 +573,7 @@ msgid "Toggle PiPzap-mode"
 msgstr ""
 
 msgid "Tuner Configuration"
-msgstr ""
+msgstr "Tuuneri seadistamine"
 
 msgid "Usage Setup"
 msgstr ""
@@ -606,16 +585,16 @@ msgid "VU+ R-Button"
 msgstr "VU+ R-nupp"
 
 msgid "ViX Image Manager"
-msgstr ""
+msgstr "ViX tarkvarakoopia"
 
 msgid "ViX Mount Manager"
-msgstr ""
+msgstr "ViX haakepunktid"
 
 msgid "ViX Script Runner"
-msgstr ""
+msgstr "Skriptid"
 
 msgid "ViX Swap Manager"
-msgstr ""
+msgstr "ViX saale haldur"
 
 msgid "Vkey"
 msgstr ""
@@ -626,17 +605,14 @@ msgstr "Heli +"
 msgid "Volume -"
 msgstr "Heli -"
 
-#, fuzzy
 msgid "Volume on/off"
-msgstr "Heli +"
+msgstr "Heli sisse/välja"
 
-#, fuzzy
 msgid "Zap History +"
-msgstr "Eelmisele kanalile ajaloos"
+msgstr "Vaadatud kanalid +"
 
-#, fuzzy
 msgid "Zap History -"
-msgstr "Eelmisele kanalile ajaloos"
+msgstr "Vaadatud kanalid -"
 
 msgid "Zap history back"
 msgstr "Eelmisele kanalile ajaloos"
@@ -670,14 +646,13 @@ msgid "red"
 msgstr "punane"
 
 msgid "search EPG..."
-msgstr ""
+msgstr "EPG otsing"
 
 msgid "switch 16:9"
-msgstr ""
+msgstr "vaheta 16:9"
 
-#, fuzzy
 msgid "switch 4:3 (Pillarbox) (PanScan)"
-msgstr "Vaheta 4:3 (Pillarbox) (Pan&Scan)"
+msgstr "vaheta 4:3 (Pillarbox) (Pan&Scan)"
 
 msgid "yellow"
 msgstr "kollane"
