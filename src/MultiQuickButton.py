@@ -23,7 +23,7 @@ from Plugins.Plugin import PluginDescriptor
 from Screens.Standby import TryQuitMainloop
 from QuickButtonList import QuickButtonList, QuickButtonListEntry
 from QuickButtonXML import QuickButtonXML
-from enigma import getDesktop, getBoxType as e2BoxType
+from enigma import getDesktop, getBoxType
 from Tools.Directories import *
 import xml.sax.xmlreader
 import keymapparser
@@ -63,16 +63,6 @@ values = ("guide_long","guide","filelist_long","filelist","red","red_long","gree
 			"subtitle","subtitle_long","info","info_long","list","list_long","playlist","playlist_long","epg","epg_long","cross_up","cross_down","cross_left","cross_right","previous","next", "end","end_long","home","home_long", \
 			"channelup","channeldown","audio","audio_long","ok","exit","play","pause","fastforward","stop","rewind","tv","tv_long","activatePiP","pip_long","timer","timer_long","back","back_long","timeshift","timeshift_long","portal","portal_long","search","search_long","displayHelp","help_long","mainMenu","menu_long","slow","slow_long", \
 			"f1","f1_long","f2","f2_long","f3","f3_long","f4","f4_long")
-
-def getBoxType():
-	if e2BoxType().startswith('et'):
-		f = open("/proc/stb/info/boxtype")
-		boxtype = f.read().strip()
-		f.close()
-		return boxtype
-	else:
-		return e2BoxType()
-
 
 class MultiQuickButton(Screen):
 
@@ -260,7 +250,7 @@ class MultiQuickButton(Screen):
 			self.list.append(QuickButtonListEntry('',(_('End') + functionbutton_end, 'end')))
 			self.list.append(QuickButtonListEntry('',((_('End') + _(' long')) + functionbutton_end_long, 'end_long')))
 
-		if getBoxType().startswith('venton') or getBoxType().startswith('ini') or getBoxType().startswith('gb') or getBoxType().startswith('tm'):
+		if getBoxType().startswith('venton') or getBoxType().startswith('ini') or getBoxType().startswith('gb') or getBoxType().startswith('tm') or getBoxType().startswith('iqon') or getBoxType().startswith('media') or getBoxType().startswith('opti'):
 			if getBoxType().startswith('venton') or getBoxType().startswith('ini'):
 				self.list.append(QuickButtonListEntry('',( ('Timer') + functionbutton_timer, 'timer')))
 				self.list.append(QuickButtonListEntry('',(( ('Timer') + _(' long')) + functionbutton_timer_long, 'timer_long')))
