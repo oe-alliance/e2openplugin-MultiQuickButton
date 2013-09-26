@@ -62,7 +62,7 @@ showbutton=_("query keys") + ": "
 values = ("guide_long","guide","filelist_long","filelist","red","red_long","green","green_long","yellow","yellow_long","blue","blue_long","pvr","pvr_long","radio","radio_long","text","text_long", \
 			"subtitle","subtitle_long","info","info_long","list","list_long","playlist","playlist_long","epg","epg_long","cross_up","cross_down","cross_left","cross_right","previous","next", "end","end_long","home","home_long", \
 			"channelup","channeldown","audio","audio_long","ok","exit","play","pause","fastforward","stop","rewind","tv","tv_long","activatePiP","pip_long","timer","timer_long","back","back_long","timeshift","timeshift_long","portal","portal_long","search","search_long","displayHelp","help_long","mainMenu","menu_long","slow","slow_long", \
-			"f1","f1_long","f2","f2_long","f3","f3_long","f4","f4_long")
+			"f1","f1_long","f2","f2_long","f3","f3_long","f4","f4_long","favorites","favorites_long","sleep","sleep_long",)
 
 def getBoxType():
 	if e2BoxType().startswith('et') and os.path.exists('/proc/stb/info/boxtype'):
@@ -271,6 +271,10 @@ class MultiQuickButton(Screen):
 			self.list.append(QuickButtonListEntry('',(( ('F3') + _(' long')) + functionbutton_f3_long, 'f3_long')))
 			self.list.append(QuickButtonListEntry('',( ('F4') + functionbutton_f4, 'f4')))
 			self.list.append(QuickButtonListEntry('',(( ('F4') + _(' long')) + functionbutton_f4_long, 'f3_long')))
+			self.list.append(QuickButtonListEntry('',( ('Fav') + functionbutton_favorites, 'favorites')))
+			self.list.append(QuickButtonListEntry('',(( ('Fav') + _(' long')) + functionbutton_favorites_long, 'favorites_long')))
+			self.list.append(QuickButtonListEntry('',( ('Sleep') + functionbutton_sleep, 'sleep')))
+			self.list.append(QuickButtonListEntry('',(( ('Sleep') + _(' long')) + functionbutton_sleep_long, 'sleep_long')))
 
 		self.list.append(QuickButtonListEntry('',(_('Cross Up') + functionbutton_cross_up, 'cross_up')))
 		self.list.append(QuickButtonListEntry('',(_('Cross Down') + functionbutton_cross_down, 'cross_down')))

@@ -114,9 +114,9 @@ if InfoBar and InfoBar.instance:
 ]]></code>
 		</mqbfunction>
 		<mqbfunction>
-			<name>Sleeptimer</name>
-			<module>Screens.SleepTimerEdit</module>
-			<screen><![CDATA[SleepTimerEdit]]></screen>
+			<name>Powertimer</name>
+			<module>Screens.PowerTimerEdit</module>
+			<screen><![CDATA[PowerTimerEditList]]></screen>
 		</mqbfunction>
 		<mqbfunction>
 			<name>Channel Info</name>
