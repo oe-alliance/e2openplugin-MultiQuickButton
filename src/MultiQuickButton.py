@@ -365,7 +365,7 @@ class MultiQuickButton(Screen):
 			if pathExists(path):
 				config.plugins.QuickButton.last_backupdir.value = path
 				config.plugins.QuickButton.last_backupdir.save()
-				self.settigspath = path + "MultiQuickButton_et-settings_v2.8.4-" + "_" + strftime("%d.%m.%Y") + "_" + ".tar.gz"
+				self.settigspath = path + "MultiQuickButton-settings_v2.8.4-" + "_" + strftime("%d.%m.%Y") + "_" + ".tar.gz"
 				if fileExists(self.settigspath):
 					self.session.openWithCallback(self.callOverwriteBackup, MessageBox,_("Overwrite existing Backup?."),type = MessageBox.TYPE_YESNO,)
 				else:
@@ -395,7 +395,7 @@ class MultiQuickButton(Screen):
 
 	def callRestore(self, path):
 		if path is not None:
-			self.settigspath = path + "MultiQuickButton_et-settings_v2.8.4-" + "_" + strftime("%d.%m.%Y") + "_" + ".tar.gz"
+			self.settigspath = path + "MultiQuickButton-settings_v2.8.4-" + "_" + strftime("%d.%m.%Y") + "_" + ".tar.gz"
 			if fileExists(self.settigspath):
 				self.session.openWithCallback(self.callOverwriteSettings, MessageBox,_("Overwrite existing Settings?."),type = MessageBox.TYPE_YESNO,)
 			else:
