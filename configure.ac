@@ -53,7 +53,7 @@ src/Makefile
 src/pic/Makefile
 src/Screens/Makefile
 po/Makefile
-etc/Makefile
+keymaps/Makefile
 
 ])
 AC_OUTPUT

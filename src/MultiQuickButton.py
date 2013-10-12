@@ -174,7 +174,7 @@ class MultiQuickButton(Screen):
 			if config.plugins.QuickButton.info.value:
 				try:
 					functionbutton = " ["
-					path = "/etc/MultiQuickButton/quickbutton_" + button + ".xml"
+					path = "/usr/share/enigma2/keymaps/quickbutton_" + button + ".xml"
 					menu = xml.dom.minidom.parse(path)
 					self.XML_db = QuickButtonXML(menu)
 					for a in self.XML_db.getMenu():
@@ -342,7 +342,7 @@ class MultiQuickButton(Screen):
 		returnValue = self["list"].l.getCurrentSelection()[0][1]
 		if returnValue is not None:
 			if returnValue in values:
-				path = '/etc/MultiQuickButton/quickbutton_' + returnValue + '.xml'
+				path = '/usr/share/enigma2/keymaps/quickbutton_' + returnValue + '.xml'
 				if os.path.exists(path) is True:
 					self.session.openWithCallback(self.updateAfterButtonChange, QuickButton, path, (_("Quickbutton Key : ") + _(returnValue)))
 				else:
@@ -369,7 +369,7 @@ class MultiQuickButton(Screen):
 				if fileExists(self.settigspath):
 					self.session.openWithCallback(self.callOverwriteBackup, MessageBox,_("Overwrite existing Backup?."),type = MessageBox.TYPE_YESNO,)
 				else:
-					com = "tar czvf %s /etc/MultiQuickButton/ /usr/share/enigma2/keymap.xml" % (self.settigspath)
+					com = "tar czvf %s /usr/share/enigma2/keymaps/ /usr/share/enigma2/keymap.xml" % (self.settigspath)
 					self.session.open(Console,_("Backup Settings..."),[com])
 			else:
 				self.session.open(
@@ -381,7 +381,7 @@ class MultiQuickButton(Screen):
 			  
 	def callOverwriteBackup(self, res):
 		if res:
-			com = "tar czvf %s /etc/MultiQuickButton/ /usr/share/enigma2/keymap.xml" % (self.settigspath)
+			com = "tar czvf %s /usr/share/enigma2/keymaps/ /usr/share/enigma2/keymap.xml" % (self.settigspath)
 			self.session.open(Console,_("Backup Settings"),[com])
 
 	def restore(self):

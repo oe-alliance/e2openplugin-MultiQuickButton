@@ -282,7 +282,7 @@ def execQuick(self,entry):
 
 def quickSelectGlobal(self, key):
 	if key:
-		path = '/etc/MultiQuickButton/quickbutton_' + key + '.xml'
+		path = '/usr/share/enigma2/keymaps/quickbutton_' + key + '.xml'
 		if os.path.exists(path):
 			self.checkQuickSel(path)
 		else:
