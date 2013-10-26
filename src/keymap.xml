@@ -14,6 +14,8 @@
 		<key id="KEY_RECORD" mapto="pvr_long" flags="l" />
 		<key id="KEY_VIDEO" mapto="pvr" flags="b" />
 		<key id="KEY_VIDEO" mapto="pvr_long" flags="l" />
+		<key id="KEY_MEDIA" mapto="media" flags="b" />
+		<key id="KEY_MEDIA" mapto="media_long" flags="l" />
 		<key id="KEY_RADIO" mapto="radio" flags="b" />
 		<key id="KEY_RADIO" mapto="radio_long" flags="l" />
 		<key id="KEY_TV" mapto="tv" flags="b" />
