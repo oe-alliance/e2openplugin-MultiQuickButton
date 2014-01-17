@@ -23,7 +23,8 @@ from Plugins.Plugin import PluginDescriptor
 from Screens.Standby import TryQuitMainloop
 from QuickButtonList import QuickButtonList, QuickButtonListEntry
 from QuickButtonXML import QuickButtonXML
-from enigma import getDesktop, getBoxType as e2BoxType
+from enigma import getDesktop
+from boxbranding import getBoxType as e2BoxType
 from Tools.Directories import *
 import xml.sax.xmlreader
 import keymapparser
