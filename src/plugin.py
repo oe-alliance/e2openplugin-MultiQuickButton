@@ -13,24 +13,26 @@
 #This means you also have to distribute
 #source code of your modifications.
 
-from Screens.Screen import Screen
-from Screens.ChoiceBox import ChoiceBox
-from Screens.ChannelSelection import ChannelSelection
-from Screens.MessageBox import MessageBox
-from Screens.InfoBarGenerics import InfoBarPlugins
+from __future__ import absolute_import
+from __future__ import print_function
+from .Screens.Screen import Screen
+from .Screens.ChoiceBox import ChoiceBox
+from .Screens.ChannelSelection import ChannelSelection
+from .Screens.MessageBox import MessageBox
+from .Screens.InfoBarGenerics import InfoBarPlugins
 from Components.ActionMap import ActionMap
 from Components.PluginComponent import plugins
 from Components.config import config, ConfigSubsection, ConfigYesNo
 from Plugins.Plugin import PluginDescriptor
 from Plugins.Plugin import PluginDescriptor
-from QuickButtonXML import QuickButtonXML
-from MultiQuickButton import MultiQuickButton, QuickButton
+from .QuickButtonXML import QuickButtonXML
+from .MultiQuickButton import MultiQuickButton, QuickButton
 
 import xml.sax.xmlreader
 import os.path
 import os
 import keymapparser
-from __init__ import _
+from .__init__ import _
 
 
 baseInfoBarPlugins__init__ = None
@@ -41,10 +43,10 @@ line = "------------------------------------------------------------------"
 def autostart(reason, **kwargs):
 	if reason == 0:
 		if config.plugins.QuickButton.enable.value:
-			print line
-			print "[MultiQuickButton] enabled: ",config.plugins.QuickButton.enable.getValue()
+			print(line)
+			print("[MultiQuickButton] enabled: ", config.plugins.QuickButton.enable.getValue())
 			checkMQBKeys()
-			print line
+			print(line)
 			global baseInfoBarPlugins__init__, baserunPlugin
 			if "session" in kwargs:
 				session = kwargs["session"]
@@ -60,11 +62,11 @@ def autostart(reason, **kwargs):
 				InfoBarPlugins.execQuick = execQuick
 				InfoBarPlugins.quickSelectGlobal = quickSelectGlobal
 		else:
-			print line
-			print "[MultiQuickButton] disabled"
-			print line
+			print(line)
+			print("[MultiQuickButton] disabled")
+			print(line)
 	else:
-		print "[MultiQuickButton] checking keymap.xml..."
+		print("[MultiQuickButton] checking keymap.xml...")
 		rePatchKeymap()
 
 def checkMQBKeys():
@@ -224,7 +226,7 @@ def InfoBarPlugins__init__(self):
 	baseInfoBarPlugins__init__(self)
 
 def runPlugin(self, plugin):
-	baserunPlugin(self,plugin)
+	baserunPlugin(self, plugin)
 
 def checkQuickSel(self, path):
 	list = None
@@ -233,20 +235,20 @@ def checkQuickSel(self, path):
 		menu = xml.dom.minidom.parse(path)
 		db = QuickButtonXML(menu)
 		list = db.getSelection()
-	except Exception, e:
-		self.session.open(MessageBox,("XML " + _("Error") + ": %s" % (e)),  MessageBox.TYPE_ERROR)
-		print "[MultiQuickbutton] ERROR: ",e
+	except Exception as e:
+		self.session.open(MessageBox, ("XML " + _("Error") + ": %s" % (e)),  MessageBox.TYPE_ERROR)
+		print("[MultiQuickbutton] ERROR: ", e)
 		
 	if list != None:
 		if len(list) == 1:
 			self.execQuick(list[0])
 		elif len(list) > 1:
-			self.session.openWithCallback(self.askForQuickList,ChoiceBox,title="Multi Quickbutton Menu %s" % (button), list=self.getQuickList(list))
+			self.session.openWithCallback(self.askForQuickList, ChoiceBox, title="Multi Quickbutton Menu %s" % (button), list=self.getQuickList(list))
 		else:
 			if os.path.exists(path):
 				self.session.open(QuickButton, path, (_('Quickbutton: Key ') + button))
 			else:
-				self.session.open(MessageBox,(_("file %s not found!") % (path)),  MessageBox.TYPE_ERROR)
+				self.session.open(MessageBox, (_("file %s not found!") % (path)),  MessageBox.TYPE_ERROR)
 
 def askForQuickList(self, res):
 	if res is None:
@@ -262,7 +264,7 @@ def getQuickList(self, list):
 		
 	return quickList
 
-def execQuick(self,entry):
+def execQuick(self, entry):
 	if entry != None:
 		if entry[3] != "":
 			try:
@@ -272,15 +274,15 @@ def execQuick(self,entry):
 					try:
 						screen = "self.session.open(" + entry[4] + ")"
 						exec(screen)
-					except Exception, e:
-						self.session.open(MessageBox,("Screen " + _("Error") + ": %s" % (e)),  MessageBox.TYPE_ERROR)
-			except Exception, e:
-				self.session.open(MessageBox,("Module " + _("Error") + ": %s" % (e)),  MessageBox.TYPE_ERROR)
+					except Exception as e:
+						self.session.open(MessageBox, ("Screen " + _("Error") + ": %s" % (e)),  MessageBox.TYPE_ERROR)
+			except Exception as e:
+				self.session.open(MessageBox, ("Module " + _("Error") + ": %s" % (e)),  MessageBox.TYPE_ERROR)
 		if entry[5] != "":
 			try:
 				exec(entry[5])
-			except Exception, e:
-				self.session.open(MessageBox,("Code " + _("Error") + ": %s" % (e)),  MessageBox.TYPE_ERROR)
+			except Exception as e:
+				self.session.open(MessageBox, ("Code " + _("Error") + ": %s" % (e)),  MessageBox.TYPE_ERROR)
 
 def quickSelectGlobal(self, key):
 	if key:
@@ -288,15 +290,15 @@ def quickSelectGlobal(self, key):
 		if os.path.exists(path):
 			self.checkQuickSel(path)
 		else:
-			self.session.open(MessageBox,("file %s not found!" % (path)),  MessageBox.TYPE_ERROR)
+			self.session.open(MessageBox, ("file %s not found!" % (path)),  MessageBox.TYPE_ERROR)
 
 class MQBActionMap(ActionMap):
 	def action(self, contexts, action):
-		quickSelection = ("guide_long","guide","filelist_long","filelist","red","red_long","green","green_long","yellow","yellow_long","blue","blue_long","pvr","pvr_long","radio","radio_long","text","text_long", \
-						"subtitle","subtitle_long","info","info_long","list","list_long","playlist","playlist_long","epg","epg_long","cross_up","cross_down","cross_left","cross_right","previous","next","end","end_long","home","home_long", \
-						"channelup","channeldown","audio","audio_long","ok","exit","play","pause","fastforward","stop","rewind","tv","tv_long","activatePiP","pip_long","timer","timer_long","back","back_long","timeshift","timeshift_long","portal","portal_long","search","search_long","displayHelp","help_long","mainMenu","menu_long","slow","slow_long"
-						"f1","f1_long","f2","f2_long","f3","f3_long","f4","f4_long","favorites","favorites_long","sleep","sleep_long","media","media_long")
-		if (action in quickSelection and self.actions.has_key(action)):
+		quickSelection = ("guide_long", "guide", "filelist_long", "filelist", "red", "red_long", "green", "green_long", "yellow", "yellow_long", "blue", "blue_long", "pvr", "pvr_long", "radio", "radio_long", "text", "text_long", \
+						"subtitle", "subtitle_long", "info", "info_long", "list", "list_long", "playlist", "playlist_long", "epg", "epg_long", "cross_up", "cross_down", "cross_left", "cross_right", "previous", "next", "end", "end_long", "home", "home_long", \
+						"channelup", "channeldown", "audio", "audio_long", "ok", "exit", "play", "pause", "fastforward", "stop", "rewind", "tv", "tv_long", "activatePiP", "pip_long", "timer", "timer_long", "back", "back_long", "timeshift", "timeshift_long", "portal", "portal_long", "search", "search_long", "displayHelp", "help_long", "mainMenu", "menu_long", "slow", "slow_long"
+						"f1", "f1_long", "f2", "f2_long", "f3", "f3_long", "f4", "f4_long", "favorites", "favorites_long", "sleep", "sleep_long", "media", "media_long")
+		if (action in quickSelection and action in self.actions):
 			res = self.actions[action](action)
 			if res is not None:
 				return res

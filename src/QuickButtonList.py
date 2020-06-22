@@ -7,6 +7,7 @@
 #This means you also have to distribute
 #source code of your modifications.
 
+from __future__ import absolute_import
 from Components.MenuList import MenuList
 from Tools.Directories import SCOPE_CURRENT_SKIN, SCOPE_SKIN_IMAGE, resolveFilename
 try:
@@ -15,7 +16,7 @@ except:
 	pass
 from enigma import RT_HALIGN_LEFT, eListboxPythonMultiContent, gFont
 from Tools.LoadPixmap import LoadPixmap
-from __init__ import _
+from .__init__ import _
 
 def QuickButtonListEntry(key, text):
 	res = [ text ]
