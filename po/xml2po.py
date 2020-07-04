@@ -1,27 +1,58 @@
 #!/usr/bin/python
+# -*- coding: utf-8 -*-
 from __future__ import print_function
 import sys
 import os
-import string
+import six
 import re
-import xml.dom.minidom
-from xml.dom import minidom, Node
+from xml.sax import make_parser
+from xml.sax.handler import ContentHandler, property_lexical_handler
+try:
+	from _xmlplus.sax.saxlib import LexicalHandler
+	no_comments = False
+except ImportError:
+	class LexicalHandler:
+		def __init__(self):
+			pass
+	no_comments = True
+
+class parseXML(ContentHandler, LexicalHandler):
+	def __init__(self, attrlist):
+		self.isPointsElement, self.isReboundsElement = 0, 0
+		self.attrlist = attrlist
+		self.last_comment = None
+		self.ishex = re.compile('#[0-9a-fA-F]+\Z')
+
+	def comment(self, comment):
+		if "TRANSLATORS:" in comment:
+			self.last_comment = comment
+
+	def startElement(self, name, attrs):
+		for x in ["text", "title", "value", "caption", "description"]:
+			try:
+				k = six.ensure_str(attrs[x])
+				if k.strip() != "" and not self.ishex.match(k):
+					attrlist.add((k, self.last_comment))
+					self.last_comment = None
+			except KeyError:
+				pass
+
+parser = make_parser()
+
 attrlist = set()
 
+contentHandler = parseXML(attrlist)
+parser.setContentHandler(contentHandler)
+if not no_comments:
+	parser.setProperty(property_lexical_handler, contentHandler)
+
 for arg in sys.argv[1:]:
-	mqbfunctions = xml.dom.minidom.parse(arg)
-	for mqbfunction in mqbfunctions.getElementsByTagName("content"):
-		if mqbfunction.getElementsByTagName("name"):
-			name = str(mqbfunction.getElementsByTagName("name")[0].childNodes[0].data)
-		if mqbfunction.getElementsByTagName("trans"):
-			name = str(mqbfunction.getElementsByTagName("translation")[0].childNodes[0].data)
-		attrlist.add((name, None))
-	for mqbfunction in mqbfunctions.getElementsByTagName("mqbfunction"):
-		if mqbfunction.getElementsByTagName("name"):
-			name = str(mqbfunction.getElementsByTagName("name")[0].childNodes[0].data)
-		if mqbfunction.getElementsByTagName("trans"):
-			name = str(mqbfunction.getElementsByTagName("translation")[0].childNodes[0].data)
-		attrlist.add((name, None))
+	if os.path.isdir(arg):
+		for file in os.listdir(arg):
+			if file.endswith(".xml"):
+				parser.parse(os.path.join(arg, file))
+	else:
+		parser.parse(arg)
 
 	attrlist = list(attrlist)
 	attrlist.sort(key=lambda a: a[0])
@@ -29,11 +60,11 @@ for arg in sys.argv[1:]:
 	for (k, c) in attrlist:
 		print()
 		print('#: ' + arg)
-		string.replace(k, "\\n", "\"\n\"")
+		k.replace("\\n", "\"\n\"")
 		if c:
 			for l in c.split('\n'):
 				print("#. ", l)
-		print('msgid "' + str(k) + '"')
+		print('msgid "' + six.ensure_str(k) + '"')
 		print('msgstr ""')
 
 	attrlist = set()
