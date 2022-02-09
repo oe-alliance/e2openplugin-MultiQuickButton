@@ -15,14 +15,14 @@ from Components.Label import Label
 from Components.PluginComponent import plugins
 from Components.config import config, ConfigSubsection, ConfigYesNo, ConfigLocations, ConfigText, ConfigSelection, getConfigListEntry, ConfigInteger
 from Components.ConfigList import ConfigListScreen
-from .Screens.Screen import Screen
-from .Screens.MessageBox import MessageBox
-from .Screens.ChoiceBox import ChoiceBox
-from .Screens.Console import Console
-from .Screens.LocationBox import LocationBox
+from Screens.Screen import Screen
+from Screens.MessageBox import MessageBox
+from Screens.ChoiceBox import ChoiceBox
+from Screens.Console import Console
+from Screens.LocationBox import LocationBox
 from Components.Sources.List import List
 from Plugins.Plugin import PluginDescriptor
-from .Screens.Standby import TryQuitMainloop
+from Screens.Standby import TryQuitMainloop
 from .QuickButtonList import QuickButtonList, QuickButtonListEntry
 from .QuickButtonXML import QuickButtonXML
 from enigma import getDesktop
@@ -33,8 +33,8 @@ import keymapparser
 import os
 import os.path
 from .__init__ import _
-from time import strftime 
-from time import localtime 
+from time import strftime
+from time import localtime
 
 functionfile = "/usr/lib/enigma2/python/Plugins/Extensions/MultiQuickButton/mqbfunctions.xml"
 config.plugins.QuickButton = ConfigSubsection()
@@ -140,7 +140,7 @@ class MultiQuickButton(Screen):
 		self.session = session
 		self.menu = args
 		self.settigspath = ""
-		
+
 
 		self["background"] = Label('')
 		self["key_red"] = Label(autostart)
@@ -170,7 +170,7 @@ class MultiQuickButton(Screen):
 			"info": self.showAbout,
 		}, -1)
 		self.onShown.append(self.updateSettings)
-		
+
 	def createList(self):
 		self.a = None
 		for button in values:
@@ -194,7 +194,7 @@ class MultiQuickButton(Screen):
 						space1 = " ["
 						space2 = "]"
 					globals()['functionbutton_%s' % button] = space1 + functionbutton + space2
-					
+
 				except Exception as a:
 					self.a = a
 			else:
@@ -243,7 +243,7 @@ class MultiQuickButton(Screen):
 				self.list.append(QuickButtonListEntry('', (_('Timeshift') + functionbutton_timeshift, 'timeshift')))
 				self.list.append(QuickButtonListEntry('', ((_('Timeshift') + _(' long')) + functionbutton_timeshift_long, 'timeshift_long')))
 				self.list.append(QuickButtonListEntry('', (_('Search') + functionbutton_search, 'search')))
-				self.list.append(QuickButtonListEntry('', ((_('Search') + _(' long')) + functionbutton_search_long, 'search_long')))                
+				self.list.append(QuickButtonListEntry('', ((_('Search') + _(' long')) + functionbutton_search_long, 'search_long')))
 				self.list.append(QuickButtonListEntry('', (_('Timer') + functionbutton_timer, 'timer')))
 				self.list.append(QuickButtonListEntry('', ((_('Timer') + _(' long')) + functionbutton_timer_long, 'timer_long')))
 		else:
@@ -305,7 +305,7 @@ class MultiQuickButton(Screen):
 		self.list.append(QuickButtonListEntry('', (_('Stop') + functionbutton_stop, 'stop')))
 		self.list.append(QuickButtonListEntry('', (_('Rewind <<') + functionbutton_rewind, 'rewind')))
 		self.list.append(QuickButtonListEntry('', (_('FastForward >>') + functionbutton_fastforward, 'fastforward')))
-		
+
 	def updateList(self):
 		self.createList()
 		self["list"].l.setList(self.list)
@@ -386,7 +386,7 @@ class MultiQuickButton(Screen):
 					type = MessageBox.TYPE_ERROR,
 					timeout = 5
 					)
-			  
+
 	def callOverwriteBackup(self, res):
 		if res:
 			com = "tar czvf %s /etc/MultiQuickButton/ /usr/share/enigma2/keymap.xml" % (self.settigspath)
@@ -456,7 +456,7 @@ class MultiQuickButton(Screen):
 		config.plugins.QuickButton.showbutton.save()
 		self.updateList()
 		self.updateSettings()
-		
+
 	def toggleOkExit(self):
 		self.mqbkeymapfile = "/usr/lib/enigma2/python/Plugins/Extensions/MultiQuickButton/keymap.xml"
 		self.mqbkeymap = open(self.mqbkeymapfile, "r")
@@ -495,7 +495,7 @@ class MultiQuickButton(Screen):
 
 	def showAbout(self):
 		self.session.open(MessageBox, ("Multi Quickbutton idea is based on\nGP2\'s Quickbutton\nVersion: 2.8.4\nby Emanuel CLI-Team 2009\nwww.cablelinux.info\n ***special thanks*** to:\ngutemine & AliAbdul & Dr.Best ;-)\n\nChanges by Andyblac, OE-Alliance\nVersion %s" % (MultiQuickButton_version)),  MessageBox.TYPE_INFO)
-  
+
 	def callRestart(self, restart):
 		if restart == True:
 			self.session.open(TryQuitMainloop, 3)
@@ -565,10 +565,10 @@ class QuickButton(Screen):
 			for e in self.XML_db.getMenu():
 				if e[1] == "1":
 					list.append(QuickButtonListEntry('green', (_(e[0]), e[0], '1')))
-					
+
 				else:
 					list.append(QuickButtonListEntry('red', (_(e[0]), e[0], '')))
-					
+
 		except Exception as e:
 			self.e = e
 			list = []
@@ -579,7 +579,7 @@ class QuickButton(Screen):
 		self["key_green"] = Label(_("Save"))
 		self["key_yellow"] = Label(_("delete"))
 		self["key_blue"] = Label(_("Add"))
-		self["actions"] = ActionMap(["OkCancelActions", "ColorActions", "DirectionActions"], 
+		self["actions"] = ActionMap(["OkCancelActions", "ColorActions", "DirectionActions"],
 		{
 			"ok": self.run,
 			"cancel": self.cancel,
@@ -600,7 +600,7 @@ class QuickButton(Screen):
 			self.session.open(MessageBox, ("XML " + _("Error") + ": %s" % self.e),  MessageBox.TYPE_ERROR)
 			self.close(None)
 
-			
+
 	def updateTitle(self):
 		self.setTitle(self.newtitle)
 
@@ -672,7 +672,7 @@ class QuickButton(Screen):
 		pluginlist.sort(key = lambda p: p.name)
 		for plugin in pluginlist:
 			if plugin.name in twins:
-				pass 
+				pass
 			else:
 				unic.append((_(plugin.name), plugin.name, "plugins", ""))
 				twins.append(plugin.name)
@@ -735,7 +735,7 @@ class QuickButton(Screen):
 					list.append(QuickButtonListEntry('green', (_(newEntry[0]), _(newEntry[0]), '1')))
 				else:
 					list.append(QuickButtonListEntry('red', (_(newEntry[0]), _(newEntry[0]), '')))
-					
+
 			self["list"].setList(list)
 			if len(self["list"].list) > 0:
 				while True:
@@ -897,7 +897,7 @@ class MultiQuickButtonMacro(Screen):
 		self.selectmacro = True
 		self.configmacro = False
 		self.addkey = False
-		
+
 		self.buttondic = {
 					"011" : "0",
 					"002" : "1",
