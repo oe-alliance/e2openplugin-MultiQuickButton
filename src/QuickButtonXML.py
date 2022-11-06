@@ -39,20 +39,21 @@ class QuickButtonXML(object):
 									if node3.nodeType == Node.ELEMENT_NODE:
 										if node4.nodeType == Node.TEXT_NODE:
 											if node3.nodeName == "name":
-												name = node4.nodeValue.encode('utf-8')
+												name = node4.nodeValue
 											elif node3.nodeName == "sel":
-												sel = node4.nodeValue.encode('utf-8')
+												sel = node4.nodeValue
 											elif node3.nodeName == "module":
-												module = node4.nodeValue.encode('utf-8')
+												module = node4.nodeValue
 										elif node4.nodeType == Node.CDATA_SECTION_NODE:
 											if node3.nodeName == "screen":
-												screen = node4.wholeText.encode('utf-8')
+												screen = node4.wholeText
 											elif node3.nodeName == "code":
-												code = node4.wholeText.encode('utf-8')
-						category = node.nodeName.encode('utf-8')
+												code = node4.wholeText
+						category = node.nodeName
 						mnulist.append((name, sel, category, module, screen, code))
 				mnulist.append(("--", "", "", "", "", ""))
 		return mnulist[:(len(mnulist)-1)]
+
 	def getMenu(self):
 		return self.list
 
